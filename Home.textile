@@ -66,7 +66,8 @@ h2. Platform binaries
 Several people in the Open Source community have spent time creating Ledger distributions for specific platforms.  Below is a list of the ports I know of; if you discover others, please let me know.  If you would like to host a binary on this server, please "send me an e-mail":mailto:jwiegley@gmail.com .
 
 |_.Platform|_.Download link|
-|Mac OS X|"ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip":ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip|
+|Mac OS X (Snow Leopard)|"ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip":ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip|
+|Mac OS X (Leopard)|"ftp://ftp.newartisans.com/pub/ledger/ledger-Leopard-g290cac7.dmg.zip":ftp://ftp.newartisans.com/pub/ledger/ledger-Leopard-g290cac7.dmg.zip|
 |Windows|"http://www.assembla.com/spaces/Goldcoast/documents":http://www.assembla.com/spaces/Goldcoast/documents|
 |Debian Linux|"http://qa.debian.org/developer.php?packages=ledger":http://qa.debian.org/developer.php?packages=ledger|
 |Ubuntu PPA|"https://launchpad.net/~mbudde/+archive/ledger":https://launchpad.net/~mbudde/+archive/ledger (development snapshots)|
