@@ -1,9 +1,15 @@
-The next major version is getting very close, which will be 3.0.0.  As of 2010-06-14, the following "issues":http://newartisans.com/bugzilla/buglist.cgi?bug_file_loc=&bug_file_loc_type=allwordssubstr&bug_id=&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bugidtype=include&chfieldfrom=&chfieldto=Now&chfieldvalue=&deadlinefrom=&deadlineto=&email1=&email2=&emailassigned_to1=1&emailassigned_to2=1&emailcc2=1&emailreporter2=1&emailtype1=substring&emailtype2=substring&field-1-0-0=product&field-1-1-0=bug_status&field-1-2-0=priority&field0-0-0=noop&long_desc=&long_desc_type=substring&priority=P1&priority=P2&priority=P3&product=Ledger&query_format=advanced&remaction=&short_desc=&short_desc_type=allwordssubstr&type-1-0-0=anyexact&type-1-1-0=anyexact&type-1-2-0=anyexact&type0-0-0=noop&value-1-0-0=Ledger&value-1-1-0=NEW%2CASSIGNED%2CREOPENED&value-1-2-0=P1%2CP2%2CP3&votes=&order=bugs.priority%2Cbugs.bug_id stand in the way of release:
+The next major version is getting very close, which will be 3.0.0.
+
+h2. Open Issues
+
+As of 2010-06-15, the following "issues":http://tinyurl.com/28rdzqm stand in the way of release:
 
 |_. Priority |_. Count |_. Meaning |
 | P1 | 0 | Issues that are being worked on presently. |
-| P2 | 11 | Issues soon to be fixed in @master@. |
-| P3 | 21 | Issues that will be fixed before releasing 3.0.0. |
+| P2 | 7 | Issues soon to be fixed in @master@. |
+| P3 | 18 | Issues that will be fixed before releasing 3.0.0. |
+
+h2. Other Issues
 
 Besides these, the other areas which require completion are as follows:
 
@@ -12,3 +18,7 @@ Besides these, the other areas which require completion are as follows:
 # Translate text strings to other languages
 # Create regression tests for all past bugs
 # Create baseline tests for all features
+
+h2. Test Coverage
+
+The "test coverage report":http://ftp.newartisans.com/pub/ledger/lcov/ledger/src/index.html is updated each time a new version is uploaded.
