@@ -11,4 +11,4 @@ Ledger has been ported to a few other languages, in case you'd prefer to pursue 
 [hledger]http://github.com/jwiegley/hledger
 [beancount]http://github.com/jwiegley/beancount
 [cl-ledger]http://github.com/jwiegley/cl-ledger
-[sm-ledger]:http://joyful.com/sm-Ledger.st
+[sm-ledger]http://joyful.com/sm-Ledger.st
