@@ -8,7 +8,7 @@ Ledger has been ported to a few other languages, in case you'd prefer to pursue 
 |"sm-Ledger":sm-ledger|SmallTalk|Proof of concept, abandoned|Simon Michael|
 
 [ledger]http://github.com/jwiegley/ledger
-[hledger]http://github.com/jwiegley/hledger
+[hledger]http://hledger.org
 [beancount]http://github.com/jwiegley/beancount
 [cl-ledger]http://github.com/jwiegley/cl-ledger
 [sm-ledger]http://joyful.com/sm-Ledger.st
