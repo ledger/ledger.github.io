@@ -71,9 +71,8 @@ mirror":http://dir.gmane.org/gmane.comp.finance.ledger.general .
 
 h2. Tips and Tricks
 
-   [[OnReconciling]]
-
-   Various tools at "http://joyful.com/Ledger":http://joyful.com/Ledger
+* [[OnReconciling]]
+* Various tools at "http://joyful.com/Ledger":http://joyful.com/Ledger
 
 h2. IRC
 
