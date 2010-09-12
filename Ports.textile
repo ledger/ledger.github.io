@@ -5,7 +5,7 @@ Ledger has been ported to a few other languages, in case you'd prefer to pursue 
 |"HLedger":hledger|Haskell|*Active*|Simon Michael|
 |"Beancount":beancount|Python|*Active*|Martin Blais|
 |"CL-Ledger":cl-ledger|Common Lisp|Functionally complete, but abandoned|John Wiegley|
-|"sm-Ledger":sm-ledger|SmallTalk|Proof of concept, abandoned|Simon Michael|
+|"sm-Ledger":sm-ledger|SmallTalk|Proof of concept, abandoned|Simon Michael||
 
 [ledger]http://github.com/jwiegley/ledger
 [hledger]http://github.com/jwiegley/hledger
