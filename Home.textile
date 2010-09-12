@@ -9,6 +9,9 @@ For those just joining us, please check out the page on basic [[Terminology]],
 which will help you if you ever try to read the
 "source":http://github.com/jwiegley/ledger .
 
+Also, there have been several [[Ports]] of the Ledger architecture to other
+languages.  Check those out, if you have a linguistic preference!
+
 h1. Features
 
 Here are some of the features of Ledger which set it apart from other
@@ -126,6 +129,8 @@ distributions for specific platforms.  Below is a list of the ports I know of;
 if you discover others, please let me know.  If you would like to host a
 binary on this server, please "send me an e-mail":mailto://jwiegley@gmail.com .
 
+ |_. Platform |_. Download link |
+ | Mac OS X | "ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip":ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip |
  | Windows | "http://www.assembla.com/spaces/Goldcoast/documents":http://www.assembla.com/spaces/Goldcoast/documents |
  | Debian Linux | "http://qa.debian.org/developer.php?packages=ledger":http://qa.debian.org/developer.php?packages=ledger |
  | Gentoo Linux | "http://tstotts.net/linux/ebuilds.html":http://tstotts.net/linux/ebuilds.html |
