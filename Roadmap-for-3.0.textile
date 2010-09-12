@@ -1,0 +1,14 @@
+The next major version is getting very close, which will be 3.0.0.  As of 2010-06-08, the following issues stand in the way of release:
+
+|_. Priority |_. Count |_. Meaning |
+| P1 | 10 | Issues that are being worked on presently. |
+| P2 | 15 | Issues soon to be fixed in @master@. |
+| P3 | 20 | Issues that will be fixed before releasing 3.0.0. |
+
+Besides these, the other areas which require completion are as follows:
+
+# Rewrite the user manual
+# Write the new manual page
+# Translate text strings to other languages
+# Create regression tests for all past bugs
+# Create baseline tests for all features
