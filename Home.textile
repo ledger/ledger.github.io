@@ -1,5 +1,3 @@
-h1. Welcome to Ledger
-
 Ledger is a powerful, double-entry accounting system that is accessed from the
 UNIX command-line.  This may put off some users, as there is no flashy UI,
 but for those who want unparalleled reporting access to their data, there
@@ -124,7 +122,7 @@ h2. Platform binaries
 Several people in the Open Source community have spent time creating Ledger
 distributions for specific platforms.  Below is a list of the ports I know of;
 if you discover others, please let me know.  If you would like to host a
-binary on this server, please send me an e-mail.
+binary on this server, please "send me an e-mail":mailto://jwiegley@gmail.com .
 
  | Windows | "http://www.assembla.com/spaces/Goldcoast/documents":http://www.assembla.com/spaces/Goldcoast/documents |
  | Debian Linux | "http://qa.debian.org/developer.php?packages=ledger":http://qa.debian.org/developer.php?packages=ledger |
