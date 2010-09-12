@@ -8,7 +8,7 @@ Any file that contains Ledger data is called a "journal".  A journal mostly cont
 
 h3. Transaction
 
-An transaction represents something that you want to enter into your journal.  For example, if you just cashed a paycheck from your employer by depositing it into your bank account, this entire action is called an "transaction".  The total cost of every transaction must balance to zero, otherwise Ledger will refuse to read your journal file any further.  This guarantee that no amounts can be lost due to balancing errors.
+A transaction represents something that you want to enter into your journal.  For example, if you just cashed a paycheck from your employer by depositing it into your bank account, this entire action is called an "transaction".  The total cost of every transaction must balance to zero, otherwise Ledger will refuse to read your journal file any further.  This guarantee that no amounts can be lost due to balancing errors.
 
 h3. Posting
 
