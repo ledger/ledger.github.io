@@ -1,4 +1,4 @@
-The next major version is getting very close, which will be 3.0.0.  As of 2010-06-08, the following issues stand in the way of release:
+The next major version is getting very close, which will be 3.0.0.  As of 2010-06-08, the following "issues":http://newartisans.com/bugzilla/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=Ledger&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&deadlinefrom=&deadlineto=&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&priority=P1&priority=P2&priority=P3&emailassigned_to1=1&emailtype1=substring&email1=&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop stand in the way of release:
 
 |_. Priority |_. Count |_. Meaning |
 | P1 | 10 | Issues that are being worked on presently. |
