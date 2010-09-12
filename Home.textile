@@ -72,3 +72,12 @@ Several people in the Open Source community have spent time creating Ledger dist
 |Debian Linux|"http://qa.debian.org/developer.php?packages=ledger":http://qa.debian.org/developer.php?packages=ledger|
 |Ubuntu PPA|"https://launchpad.net/~mbudde/+archive/ledger":https://launchpad.net/~mbudde/+archive/ledger (development snapshots)|
 |Gentoo Linux|"http://tstotts.net/linux/ebuilds.html":http://tstotts.net/linux/ebuilds.html|
+|CentOS 5 (64-bit)|See below|
+
+For CentOS 5 users (64-bit only right now), simply create the file @/etc/yum.repos.d/newartisans.repo@ with these contents:
+
+bc. [newartisans]
+name=New Artisans LLC $releasever - $basearch
+baseurl=http://ftp.newartisans.com/yum/rhel/$releasever/$basearch
+enabled=1
+gpgcheck=0
