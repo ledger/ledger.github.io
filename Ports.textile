@@ -1,0 +1,14 @@
+Ledger has been ported to a few other languages, in case you'd prefer to pursue your coding interests there.  Here are the known ports, and their current status:
+
+ |_. Project | |_. Language |_. Status | Maintainer |
+ | "Ledger":ledger | C++ | This project! *active* | John Wiegley |
+ | "HLedger":hledger | Haskell | *Active* | Simon Michael |
+ | "Beancount":beancount | Python | *Active* | Martin Blais |
+ | "CL-Ledger":cl-ledger | Common Lisp | Functionally complete, but abandoned | John Wiegley |
+ | "sm-Ledger":sm-ledger | SmallTalk | Proof of concept, abandoned | Simon Michael |
+
+[ledger]http://github.com/jwiegley/ledger
+[hledger]http://github.com/jwiegley/hledger
+[beancount]http://github.com/jwiegley/beancount
+[cl-ledger]http://github.com/jwiegley/cl-ledger
+[sm-ledger]:http://joyful.com/sm-Ledger.st
