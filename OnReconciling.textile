@@ -4,9 +4,8 @@ First, I download my bank transactions (from Bank of America) and
 use a "trivial python script":http://sixthdev.versionhost.com/viewvc.cgi/ledger/bofaconvert.py?view=markup
 to convert them to ledger format.
 
-I then open two emacs windows (M-x new-frame)...
-
-And edit the bank statement and my ledger side by side.
+I open two emacs windows (M-x new-frame) so I can edit the 
+bank statement and my ledger side by side.
 
 This is a great setup even if you just want to use ledger-reconcile. However, 
 I'm particularly picky about keeping the effective dates filled in, so as I work 
