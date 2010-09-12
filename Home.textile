@@ -53,7 +53,7 @@ There is a collaborative "Wiki":http://wiki.github.com/jwiegley/ledger for Ledge
 
 h2. Reporting bugs
 
-Ledger uses "org-mode":http://orgmode.org/ for bug tracking, located in the planning branch, in a file named @TODO@.  If you encounter new bugs, please submit them to the "forum/mailing-list":http://groups.google.com/group/ledger-cli .  Your other option is to just "send me an e-mail":mailto://jwiegley@gmail.com , and I will enter a bug on your behalf.
+Ledger uses "org-mode":http://orgmode.org/ for bug tracking, located in the planning branch, in a file named @TODO@.  If you encounter new bugs, please submit them to the "forum/mailing-list":http://groups.google.com/group/ledger-cli .  Your other option is to just "send me an e-mail":mailto:jwiegley@gmail.com , and I will enter a bug on your behalf.
 
 h2. Getting the source
 
