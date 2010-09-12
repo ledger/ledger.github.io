@@ -57,17 +57,9 @@ h2. IRC
 
 Usually the fastest way to get your questions answered is to visit us on IRC, where I can usually be found most days.  We are on the server "irc.freenode.net":irc://irc.freenode.net/ledger .  My nick is “johnw”.
 
-h2. Visit the Wiki
-
-There is a collaborative "Wiki":http://wiki.github.com/jwiegley/ledger for Ledger, which I encourge you to become a part of.  As time goes by I hope to collect know-how from the community of Ledger users so that we may all benefit from wisdom others have gleaned from its use.  At the moment the Wiki is just starting, but this is only the beginning.
-
 h2. Reporting bugs
 
-Ledger uses "org-mode":http://orgmode.org/ for bug tracking, located in the planning branch, in a file named @TODO@.  If you encounter new bugs, please submit them to the "forum/mailing-list":http://groups.google.com/group/ledger-cli .  Your other option is to just "send me an e-mail":mailto:jwiegley@gmail.com , and I will enter a bug on your behalf.
-
-h2. Getting the source
-
-Development for Ledger is hosted here at "GitHub":http://github.com/jwiegley/ledger/ , where you can browse the source, or fork your own path of new development.  If you do fork, just let me know so that I can access your changes and possibly integrate them into the next release.
+Please report bugs and here on Ledger's "Bugzilla":http://newartisans.com/bugzilla/enter_bug.cgi.
 
 h2. Platform binaries
 
