@@ -6,13 +6,13 @@ h3. Journal
 
 Any file that contains Ledger data is called a "journal".  A journal mostly contains "entries", but it can also contain control directives, comments, and a few other things.
 
-h3. Entry
-
-An entry represents something that you want to enter into your journal.  For example, if you just cashed a paycheck from your employer by depositing it into your bank account, this entire action is called an "entry".  The total cost of every entry must balance to zero, otherwise Ledger will refuse to read your journal file any further.  This guarantee that no amounts can be lost due to balancing errors.
-
 h3. Transaction
 
-Each entry is made up of two or more transactions (there is a special case that allows for just one, using virtual transactions).  Now, some people have debated with me my use of "transaction" to describe each item in an entry, but here's why I chose it: when you deposited your paycheck at the bank, two transactions will take place: first, money will be transferred from your employer, and second, money will be transferred into your checking account.  Since these two actions are connected, they are part of the same entry; but in reality, they do not happen at exactly the same time, and they involve two separate institutions, so in reality the entry is composed of two interrelated transactions.  This is why I have named them such.
+An transaction represents something that you want to enter into your journal.  For example, if you just cashed a paycheck from your employer by depositing it into your bank account, this entire action is called an "transaction".  The total cost of every transaction must balance to zero, otherwise Ledger will refuse to read your journal file any further.  This guarantee that no amounts can be lost due to balancing errors.
+
+h3. Posting
+
+Each transaction is made up of two or more postings (there is a special case that allows for just one, using virtual postings).
 
 h3. Account
 
