@@ -47,12 +47,6 @@ There is a "forum/mailing-list":http://groups.google.com/group/ledger-cli for th
 
 Or, if you’d rather read your messages over NNTP using a News Reader like Gnus, visit the "Gmane mirror":http://dir.gmane.org/gmane.comp.finance.ledger.general .
 
-h2. Tips and Tricks
-
-* [[OnReconciling]]
-* [[Multiple Currencies]]
-* Various tools at "http://joyful.com/Ledger":http://joyful.com/Ledger
-
 h2. IRC
 
 Usually the fastest way to get your questions answered is to visit us on IRC, where I can usually be found most days.  We are on the server "irc.freenode.net":irc://irc.freenode.net/ledger .  My nick is “johnw”.
@@ -60,6 +54,12 @@ Usually the fastest way to get your questions answered is to visit us on IRC, wh
 h2. Reporting bugs
 
 Please report bugs on Ledger's "Bugzilla":http://newartisans.com/bugzilla/enter_bug.cgi.
+
+h2. Tips and Tricks
+
+* [[OnReconciling]]
+* [[Multiple Currencies]]
+* Various tools at "http://joyful.com/Ledger":http://joyful.com/Ledger
 
 h2. Platform binaries
 
