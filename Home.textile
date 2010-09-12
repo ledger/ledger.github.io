@@ -6,4 +6,4 @@ Ledger Tips and Tricks:
 
    [[OnReconciling]]
 
-   Various tools at [http://joyful.com/Ledger]
+   Various tools at "http://joyful.com/Ledger":http://joyful.com/Ledger
