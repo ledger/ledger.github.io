@@ -1,9 +1,130 @@
-Welcome to the "ledger":http://www.newartisans.com/software/ledger.html wiki!
+Ledger is a powerful, double-entry accounting system that is accessed from the
+UNIX command-line.  This may put off some users, as there is no flashy UI,
+but for those who want unparalleled reporting access to their data, there
+really is no alternative.
 
-For those just joining us now, please check out the page on basic [[Terminology]], which will help you if you ever try to read the "source":http://github.com/jwiegley/ledger/tree/master .
+For those just joining us, please check out the page on basic [[Terminology]],
+which will help you if you ever try to read the
+"source":http://github.com/jwiegley/ledger .
 
-Ledger Tips and Tricks:
+h1. Features
+
+Here are some of the features of Ledger which set it apart from other
+accounting systems:
+
+* Ledger never creates or modifies your data.  Your entries are kept in a
+  text file that *you maintain*, and you can rest assured, no automated tool
+  will ever change that data.
+
+* Ledger is 100% currency-agnostic.  You can store multiple currencies in any
+  account, convert between them, or even pay in one currency and receive
+  change in another.
+
+* Ledger is international.  Although UTF8 support is not quite there yet,
+  Ledger uses ISO format dates, attaches no meaning to the naming of
+  accounts, and can accept data in either US or European decimal formats.  It
+  will report currencies back to you following the manner of your own
+  entries.
+
+* Ledger uses a simple set of base commands which can be extended in
+  countless ways.  You can create monthly reports, average reports, check
+  account balances, reconcile accounts, keep track of capital gains on
+  stocks, etc.
+
+h1. Getting started
+
+To get started with Ledger, you must manage a text file in Ledger’s own
+textual format.  Here’s what an entry might look like:
+
+<pre>
+2006/10/15 Exxon
+    Expenses:Auto:Gas         $10.00
+    Liabilities:MasterCard
+</pre>
+
+The amount of data required by Ledger is minimal.  It figures out from looking
+at your data what you mean by it and how you want it reported back to you.
+Accounts are created as they appear; currencies are created as they’re
+referenced.  Anywhere that a value can be calculated, you can leave it out --
+such as the balancing @$-10.00@ in the above entry.
+
+Ledger is a double-entry accounting tool, meaning that *all entries must
+balance*.  If an entry does not balance, it will cause an error and the report
+will not be generated.  Ledger is always checking the accuracies of your
+entries at every run; you won’t ever run into problems with “unaccounted” sums
+in an account.
+
+h2. Mailing list
+
+There is a "forum/mailing-list":http://groups.google.com/group/ledger-cli for
+the discussion of issues pertaining to ledger.  Please join and contribute!
+Google Groups also supports RSS, if you prefer that.
+
+Or, if you’d rather read your messages over NNTP using a News Reader like
+Gnus, visit the "Gmane
+mirror":http://dir.gmane.org/gmane.comp.finance.ledger.general .
+
+h2. Tips and Tricks
 
    [[OnReconciling]]
 
    Various tools at "http://joyful.com/Ledger":http://joyful.com/Ledger
+
+h2. IRC
+
+Usually the fastest way to get your questions answered is to visit us on IRC,
+where I can usually be found most days.  We are on the server
+"irc.freenode.net":irc://irc.freenode.net/ledger .  My nick is “johnw”.
+
+h2. Visit the Wiki
+
+There is a collaborative "Wiki":http://wiki.github.com/jwiegley/ledger for
+Ledger, which I encourge you to become a part of.  As time goes by I hope to
+collect know-how from the community of Ledger users so that we may all benefit
+from wisdom others have gleaned from its use.  At the moment the Wiki is just
+starting, but this is only the beginning.
+
+h2. Reporting bugs
+
+Ledger uses "org-mode":http://orgmode.org/ for bug tracking, located in the
+planning branch, in a file named @TODO@.  If you encounter new bugs, please
+submit them to the
+"forum/mailing-list":http://groups.google.com/group/ledger-cli .  Your other
+option is to just "send me an e-mail":mailto://jwiegley@gmail.com , and I will
+enter a bug on your behalf.
+
+h2. Donating CPU time
+
+If you have a server always running that can spare some CPU cycles, consider
+donating time as a "Buildbot":http://buildbot.net/trac slave.  Slaves are used
+to build and verify the current trunk of the development tree on various
+platforms.  By using Buildbot, jobs and their results can be performed
+automatically and with no intervention.  If you are interested, please contact
+me.  Many systems are still needed for complete Buildbot system coverage.
+
+You can view "Ledger’s current buildbot status":http://newartisans.com:9090 at
+any time.
+
+h2. Getting the source
+
+Development for Ledger is hosted here at
+"GitHub":http://github.com/jwiegley/ledger/ , where you can browse the source,
+or fork your own path of new development.  If you do fork, just let me know so
+that I can access your changes and possibly integrate them into the next
+release.
+
+Ledger is freely available under the terms of the BSD license, and may be
+downloaded as a "gzip’d
+tarball":http://sourceforge.net/project/showfiles.php?group_id=112869 .
+
+h2. Platform binaries
+
+Several people in the Open Source community have spent time creating Ledger
+distributions for specific platforms.  Below is a list of the ports I know of;
+if you discover others, please let me know.  If you would like to host a
+binary on this server, please send me an e-mail.
+
+ | Windows | "http://www.assembla.com/spaces/Goldcoast/documents":http://www.assembla.com/spaces/Goldcoast/documents |
+ | Debian Linux | "http://qa.debian.org/developer.php?packages=ledger":http://qa.debian.org/developer.php?packages=ledger |
+ | Gentoo Linux | "http://tstotts.net/linux/ebuilds.html":http://tstotts.net/linux/ebuilds.html |
+
