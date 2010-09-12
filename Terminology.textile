@@ -4,7 +4,7 @@ In the accounting case, however, there are some terms that I use throughout the 
 
 h3. Journal
 
-Any file that contains Ledger data is called a "journal".  A journal mostly contains "entries", but it can also contain control directives, comments, and a few other things.
+Any file that contains Ledger data is called a "journal".  A journal mostly contains "transactions", but it can also contain control directives, comments, and a few other things.
 
 h3. Transaction
 
