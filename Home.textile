@@ -59,7 +59,7 @@ Usually the fastest way to get your questions answered is to visit us on IRC, wh
 
 h2. Reporting bugs
 
-Please report bugs and here on Ledger's "Bugzilla":http://newartisans.com/bugzilla/enter_bug.cgi.
+Please report bugs on Ledger's "Bugzilla":http://newartisans.com/bugzilla/enter_bug.cgi.
 
 h2. Platform binaries
 
