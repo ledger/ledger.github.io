@@ -1,0 +1,3 @@
+If you're a Ledger user, contribute your story here!
+
+The author has been using Ledger to manage his personal finances since its creation in September of 2003.  Previously I had used Quicken rather heavily, and then Gnucash, but always found there were certain custom reports I wanted that were exceedingly hard to achieve.  Plus I was always finding mysteriously unbalanced money, which had to be reconciled into a Misc account.  With Ledger, unbalanced sums are impossible, as they produce an error when attempting to parse the ledger file.
