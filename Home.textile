@@ -72,6 +72,7 @@ Several people in the Open Source community have spent time creating Ledger dist
 |Debian Linux|"http://qa.debian.org/developer.php?packages=ledger":http://qa.debian.org/developer.php?packages=ledger|
 |Ubuntu PPA|"https://launchpad.net/~mbudde/+archive/ledger":https://launchpad.net/~mbudde/+archive/ledger (development snapshots)|
 |Gentoo Linux|"http://tstotts.net/linux/ebuilds.html":http://tstotts.net/linux/ebuilds.html|
+|Homebrew|"http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb":http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb|
 |CentOS 5 (64-bit)|See below|
 
 For CentOS 5 users (64-bit only right now), create the file @/etc/yum.repos.d/newartisans.repo@ with these contents:
