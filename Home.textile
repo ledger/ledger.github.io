@@ -5,3 +5,5 @@ For those just joining us now, please check out the page on basic [[Terminology]
 Ledger Tips and Tricks:
 
    [[OnReconciling]]
+
+   Various tools at http://joyful.com/Ledger
