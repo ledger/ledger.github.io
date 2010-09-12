@@ -74,10 +74,12 @@ Several people in the Open Source community have spent time creating Ledger dist
 |Gentoo Linux|"http://tstotts.net/linux/ebuilds.html":http://tstotts.net/linux/ebuilds.html|
 |CentOS 5 (64-bit)|See below|
 
-For CentOS 5 users (64-bit only right now), simply create the file @/etc/yum.repos.d/newartisans.repo@ with these contents:
+For CentOS 5 users (64-bit only right now), create the file @/etc/yum.repos.d/newartisans.repo@ with these contents:
 
 bc. [newartisans]
 name=New Artisans LLC $releasever - $basearch
 baseurl=http://ftp.newartisans.com/yum/rhel/$releasever/$basearch
 enabled=1
 gpgcheck=0
+
+Once this is done, run @yum install ledger@.
