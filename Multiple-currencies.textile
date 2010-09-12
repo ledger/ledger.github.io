@@ -90,3 +90,8 @@ $ ledger -X AUD -f invoice.dat bal income expenses currency
 
 As you can see our currency gain has fallen from $100 to $50 as the exchange rate has moved again.
 However at all times our balance sheet matched our income statement.
+
+--- 
+Comments:
+
+1. The option -X in version 2.6.2 is not working?!
