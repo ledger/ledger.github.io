@@ -1,0 +1,19 @@
+Ledger doesn't really enforce any kind of accounting principles, so you're free to name things however you like.  In essence, Ledger's just a fancy calculator for moving quantities of "stuff" between "accounts".  Even those definitions are flexible, however, which makes for some interesting possible use cases.
+
+In the accounting case, however, there are some terms that I use throughout the source code that may make some of the docs easier to understand.  Here they are:
+
+.h3 Journal
+
+Any file that contains Ledger data is called a "journal".  A journal mostly contains "entries", but it can also contain control directives, comments, and a few other things.
+
+.h3 Entry
+
+An entry represents something that you want to enter into your journal.  For example, if you just cashed a paycheck from your employer by depositing it into your bank account, this entire action is called an "entry".  The total cost of every entry must balance to zero, otherwise Ledger will refuse to read your journal file any further.  This guarantee that no amounts can be lost due to balancing errors.
+
+.h3 Transaction
+
+Each entry is made up of two or more transactions (there is a special case that allows for just one, using virtual transactions).  Now, some people have debated with me my use of "transaction" to describe each item in an entry, but here's why I chose it: when you deposited your paycheck at the bank, two transactions will take place: first, money will be transferred from your employer, and second, money will be transferred into your checking account.  Since these two actions are connected, they are part of the same entry; but in reality, they do not happen at exactly the same time, and they involve two separate institutions, so in reality the entry is composed of two interrelated transactions.  This is why I have named them such.
+
+.h3 Account
+
+An account is any place that accumulates quantities, of any meaning.  They can be named anything, the names can even contain spaces, and they can mean whatever you want.  Students of accounting will use five top-level names: Equity, Assets, Liabilities, Expenses, Income.  All other accounts are specified as children of these accounts.  This is not required by Ledger, however, nor does it even know anything about what these names mean.  That's all left up to the user.
