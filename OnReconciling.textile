@@ -25,3 +25,9 @@ using a paper statement or even working directly from online banking, because
 if you're missing a transaction, you can just cut and paste.
 
 -MichalWallace
+
+-----
+
+I've got a "similar (Haskell) script":http://www.khjk.org/log/2009/oct/ledger.html for CSV-data, along with some tips on fetching the data via HBCI (online API provided by most German banks):
+
+-Pesco
