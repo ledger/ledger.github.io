@@ -61,7 +61,7 @@ Development for Ledger is hosted here at "GitHub":http://github.com/jwiegley/led
 
 h2. Platform binaries
 
-Several people in the Open Source community have spent time creating Ledger distributions for specific platforms.  Below is a list of the ports I know of; if you discover others, please let me know.  If you would like to host a binary on this server, please "send me an e-mail":mailto://jwiegley@gmail.com .
+Several people in the Open Source community have spent time creating Ledger distributions for specific platforms.  Below is a list of the ports I know of; if you discover others, please let me know.  If you would like to host a binary on this server, please "send me an e-mail":mailto:jwiegley@gmail.com .
 
 |_.Platform|_.Download link|
 |Mac OS X|"ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip":ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip|
