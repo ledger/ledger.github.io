@@ -1,3 +1,3 @@
-Welcome to the [[ledger http://www.newartisans.com/software/ledger.html]] wiki!
+Welcome to the "ledger":http://www.newartisans.com/software/ledger.html wiki!
 
 For those just joining us now, please check out the page on basic [[Terminology]], which will help you if you ever try to read the source.
