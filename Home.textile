@@ -41,6 +41,7 @@ Or, if you’d rather read your messages over NNTP using a News Reader like Gnus
 h2. Tips and Tricks
 
 * [[OnReconciling]]
+* [[Multiple Currencies]]
 * Various tools at "http://joyful.com/Ledger":http://joyful.com/Ledger
 
 h2. IRC
