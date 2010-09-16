@@ -31,6 +31,7 @@ P 2009/02/15 EUR 1.90 AUD
 </code>
 </pre>
 Now let's look at our balance sheet with the euro liability transformed into Australian dollars.
+Note that -X is only supported in ledger 3 or later.
 <pre>
 <code>
 $ ledger -X AUD -f invoice.dat bal assets liabilities
@@ -90,8 +91,3 @@ $ ledger -X AUD -f invoice.dat bal income expenses currency
 
 As you can see our currency gain has fallen from $100 to $50 as the exchange rate has moved again.
 However at all times our balance sheet matched our income statement.
-
---- 
-Comments:
-
-1. The option -X in version 2.6.2 is not working?!
