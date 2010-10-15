@@ -31,7 +31,7 @@ P 2009/02/15 EUR 1.90 AUD
 </code>
 </pre>
 Now let's look at our balance sheet with the euro liability transformed into Australian dollars.
-Note that -X is only supported in ledger 3 or later.
+Note that "-X" is only supported in ledger 3 or later.
 <pre>
 <code>
 $ ledger -X AUD -f invoice.dat bal assets liabilities
