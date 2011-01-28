@@ -2,9 +2,9 @@ h1. Welcome to Ledger
 
 Ledger is a powerful, double-entry accounting system that is accessed from the UNIX command-line.  This may put off some users, as there is no flashy UI, but for those who want unparalleled reporting access to their data, there really is no alternative.
 
-For those just joining us, please check out the page on basic [[Terminology]], which will help you if you ever try to read the "source":http://github.com/jwiegley/ledger .
+For those just joining us, please check out the page on basic "Terminology":Terminology.html, which will help you if you ever try to read the "source":http://github.com/jwiegley/ledger .
 
-Also, there have been several [[Ports]] of the Ledger architecture to other languages.  Check those out, if you have a linguistic preference!
+Also, there have been several "Ports":Ports.html of the Ledger architecture to other languages.  Check those out, if you have a linguistic preference!
 
 h1. Features
 
@@ -57,8 +57,8 @@ Please report bugs on Ledger's "Bugzilla":http://newartisans.com/bugzilla/enter_
 
 h2. Tips and Tricks
 
-* [[OnReconciling]]
-* [[Multiple Currencies]]
+* "OnReconciling":OnReconciling.html
+* "Multiple Currencies":Multiple-currencies.html
 * Various tools at "http://joyful.com/Ledger":http://joyful.com/Ledger
 
 h2. Platform binaries
@@ -66,13 +66,13 @@ h2. Platform binaries
 Several people in the Open Source community have spent time creating Ledger distributions for specific platforms.  Below is a list of the ports I know of; if you discover others, please let me know.  If you would like to host a binary on this server, please "send me an e-mail":mailto:jwiegley@gmail.com .
 
 |_.Platform|_.Download link|
-|Mac OS X (Snow Leopard)|"ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip":ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip|
-|Mac OS X (Leopard)|"ftp://ftp.newartisans.com/pub/ledger/ledger-Leopard-g290cac7.dmg.zip":ftp://ftp.newartisans.com/pub/ledger/ledger-Leopard-g290cac7.dmg.zip|
-|Windows|"http://www.assembla.com/spaces/Goldcoast/documents":http://www.assembla.com/spaces/Goldcoast/documents|
-|Debian Linux|"http://qa.debian.org/developer.php?packages=ledger":http://qa.debian.org/developer.php?packages=ledger|
+|Mac OS X (Snow Leopard)|"ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip":ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip |
+|Mac OS X (Leopard)|"ftp://ftp.newartisans.com/pub/ledger/ledger-Leopard-g290cac7.dmg.zip":ftp://ftp.newartisans.com/pub/ledger/ledger-Leopard-g290cac7.dmg.zip |
+|Windows|"http://www.assembla.com/spaces/Goldcoast/documents":http://www.assembla.com/spaces/Goldcoast/documents |
+|Debian Linux|"http://qa.debian.org/developer.php?packages=ledger":http://qa.debian.org/developer.php?packages=ledger |
 |Ubuntu PPA|"https://launchpad.net/~mbudde/+archive/ledger":https://launchpad.net/~mbudde/+archive/ledger (development snapshots)|
-|Gentoo Linux|"http://tstotts.net/linux/ebuilds.html":http://tstotts.net/linux/ebuilds.html|
-|Homebrew|"http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb":http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb|
+|Gentoo Linux|"http://tstotts.net/linux/ebuilds.html":http://tstotts.net/linux/ebuilds.html |
+|Homebrew|"http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb":http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb |
 |CentOS 5 (64-bit)|See below|
 
 For CentOS 5 users (64-bit only right now), create the file @/etc/yum.repos.d/newartisans.repo@ with these contents:
