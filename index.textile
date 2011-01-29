@@ -6,7 +6,7 @@ For those just joining us, please check out the page on basic "Terminology":Term
 
 Also, there have been several "Ports":Ports.html of the Ledger architecture to other languages.  Check those out, if you have a linguistic preference!
 
-h1. Features
+h2. Features
 
 Here are some of the features of Ledger which set it apart from other accounting systems:
 
@@ -18,7 +18,7 @@ Here are some of the features of Ledger which set it apart from other accounting
 
 * Ledger uses a simple set of base commands which can be extended in countless ways.  You can create monthly reports, average reports, check account balances, reconcile accounts, keep track of capital gains on stocks, etc.
 
-h1. Getting started
+h2. Getting started
 
 To get started with Ledger, you must manage a text file in Ledger’s own textual format.  Here’s what an entry might look like:
 
