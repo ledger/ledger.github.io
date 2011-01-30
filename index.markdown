@@ -1,7 +1,10 @@
-<a href="http://github.com/jwiegley/ledger"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets2.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_gray_6d6d6d.png&path=" alt="Fork me on GitHub"></a>
-<br>
+<a href="http://github.com/jwiegley/ledger">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets2.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_gray_6d6d6d.png&path=" alt="Fork me on GitHub" />
+</a>
 
 # Welcome to Ledger
+
+This is ledger's new site, hopefully soon replacing the [old site](https://github.com/jwiegley/ledger/wiki).
 
 Ledger is a powerful, double-entry accounting system that is accessed
 from the UNIX command-line. This may put off some users, as there is no
