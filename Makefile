@@ -1,4 +1,4 @@
-site: pandocbuild
+site: pandocbuild README.html
 
 ## build site with pandoc
 

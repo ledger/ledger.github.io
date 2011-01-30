@@ -25,3 +25,7 @@ body {
              width: 80%;
              }
 
+pre {
+    background: #F8F8F8; /* same as GitHub, good if using their syntax.css */
+    margin-left: 1em;
+}
