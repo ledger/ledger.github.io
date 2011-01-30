@@ -1,7 +1,23 @@
-
 body {
        background-color:white; 
        color:black;
-       /* font-family:helvetica,arial,freesans,clean,sans-serif; */
        margin: 3em;
+       /* font-family:helvetica,arial,freesans,clean,sans-serif; */
        }
+
+#footer {
+          margin-top:3em;
+          font-family:helvetica,arial,freesans,clean,sans-serif;
+          font-size:small;
+          text-align:center;
+          color:#ccc;
+          }
+
+#footer a:link, #footer a:visited {
+                                    color:#ccc;
+                                    }
+
+#footer hr {
+             border: thin solid #eee;
+             }
+
