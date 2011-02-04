@@ -1,3 +1,5 @@
+# Terminology
+
 Ledger doesn’t really enforce any kind of accounting principles, so
 you’re free to name things however you like. In essence, Ledger’s just a
 fancy calculator for moving quantities of “stuff” between “accounts”.
