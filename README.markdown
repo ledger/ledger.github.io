@@ -35,7 +35,7 @@ Angel (daemon manager) config:
     directory  /repos/ledger-website
     stdout     /repos/ledger-website/github-listener.log
     stderr     /repos/ledger-website/github-listener.log
-    exec       github-listener.py 8080 'sudo -u simon git pull -q && make --quiet'
+    exec       github-listener.py 8080 'sudo -u simon git pull && make'
     delay      1
 
 Cron rules:

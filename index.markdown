@@ -55,7 +55,7 @@ the report will not be generated. Ledger is always checking the
 accuracies of your entries at every run; you won’t ever run into
 problems with “unaccounted” sums in an account.
 
-You use the ledger command line program to see the balance of your
+You use the `ledger` command line program to see the balance of your
 accounts, or the history of a particular account
 
     ledger -f your-file.dat balance
@@ -90,7 +90,7 @@ More docs:
 
 There is a
 [forum/mailing-list](http://groups.google.com/group/ledger-cli) for the
-discussion of issues pertaining to ledger. Please join and contribute!
+discussion of issues pertaining to Ledger. Please join and contribute!
 Google Groups also supports RSS, if you prefer that.
 
 Or, if you’d rather read your messages over NNTP using a News Reader
@@ -111,23 +111,23 @@ Please report bugs on Ledger’s
 
 ## Download
 
-The ledger source is available on [github](http://github.com/jwiegley/ledger).
+The Ledger source is available on [github](http://github.com/jwiegley/ledger).
 
 Several people in the Open Source community have spent time creating
-Ledger distributions for specific platforms. Below is a list of known
-ports; if you discover others, please let me know. If you would like to
-have a binary hosted, please [send an e-mail](mailto:jwiegley@gmail.com).
+Ledger binaries for specific platforms, listed below; if you discover
+others, please let me know. If you would like to have a binary hosted,
+please [send an e-mail](mailto:jwiegley@gmail.com).
 
-  Platform                  Download link
-  ------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Mac OS X (Snow Leopard)   [ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip)
-  Mac OS X (Leopard)        [ftp://ftp.newartisans.com/pub/ledger/ledger-Leopard-g290cac7.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-Leopard-g290cac7.dmg.zip)
-  Windows                   [http://www.assembla.com/spaces/Goldcoast/documents](http://www.assembla.com/spaces/Goldcoast/documents)
-  Debian Linux              [http://qa.debian.org/developer.php?packages=ledger](http://qa.debian.org/developer.php?packages=ledger)
-  Ubuntu PPA                [https://launchpad.net/\~mbudde/+archive/ledger](https://launchpad.net/~mbudde/+archive/ledger) (development snapshots)
-  Gentoo Linux              [http://tstotts.net/linux/ebuilds.html](http://tstotts.net/linux/ebuilds.html)
-  Homebrew                  [http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb](http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb)
-  CentOS 5 (64-bit)         See below
+  Platform                                   Download link
+  ------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Mac OS X (Snow Leopard)                    [ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip)
+  Windows                                    [http://www.assembla.com/spaces/Goldcoast/documents](http://www.assembla.com/spaces/Goldcoast/documents)
+  GNU/Linux:
+  &nbsp; Debian                              [http://qa.debian.org/developer.php?packages=ledger](http://qa.debian.org/developer.php?packages=ledger)
+  &nbsp; Ubuntu PPA  (development snapshots) [https://launchpad.net/\~mbudde/+archive/ledger](https://launchpad.net/~mbudde/+archive/ledger)
+  &nbsp; Gentoo                              [http://tstotts.net/linux/ebuilds.html](http://tstotts.net/linux/ebuilds.html)
+  &nbsp; Homebrew                            [http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb](http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb)
+  &nbsp; CentOS 5 (64-bit)                   See below
 
 ### Installation tips
 
