@@ -4,7 +4,8 @@ The next major version is getting very close, which will be 3.0.0.
 
 ## Open Issues
 
-As of 2010~~06~~15, the following [issues](http://tinyurl.com/28rdzqm)
+As of 2010/06/15, the following
+[issues](http://newartisans.com/bugzilla/buglist.cgi?product=Ledger&field0-0-0=assigned_to&type0-0-0=equals&value0-0-0=johnw%40newartisans.com&field0-1-0=bug_status&type0-1-0=equals&value0-1-0=REOPENED&field0-1-1=bug_status&type0-1-1=equals&value0-1-1=ASSIGNED&field0-1-2=bug_status&type0-1-2=equals&value0-1-2=NEW&field0-1-3=bug_status&type0-1-3=equals&value0-1-3=UNCONFIRMED&field0-2-0=target_milestone&type0-2-0=equals&value0-2-0=3.0.0)
 stand in the way of release:
 
   Priority   Count   Meaning
