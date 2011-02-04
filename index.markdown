@@ -33,10 +33,11 @@ accounting systems:
 
 Ledger is written by John Wiegley and released under the BSD license. It
 has also inspired several [Ports](Ports.html) to other languages.
+Have a listen to [FLOSS Weekly 150: Ledger](http://twit.tv/floss150), recorded 2011/1/26!
 
 ## Getting started
 
-To get started with Ledger, you must manage a text file in Ledger’s own
+To get started with Ledger, add entries to a text file in Ledger’s own
 textual format. Here’s what an entry might look like:
 
     2006/10/15 Exxon
@@ -48,6 +49,7 @@ looking at your data what you mean by it and how you want it reported
 back to you. Accounts are created as they appear; currencies are created
 as they’re referenced. Anywhere that a value can be calculated, you can
 leave it out — such as the balancing `$-10.00` in the above entry.
+Here is a little more about [Terminology](Terminology.html).
 
 Ledger is a double-entry accounting tool, meaning that **all entries
 must balance**. If an entry does not balance, it will cause an error and
@@ -61,7 +63,6 @@ accounts, or the history of a particular account
     ledger -f your-file.dat balance
     ledger -f your-file.dat registry Expenses
 
-Here is a quick guide to [Terminology](Terminology.html).
 
 ## Documentation
 
@@ -86,16 +87,15 @@ More docs:
 
 ## Support
 
-### Mailing list
+### Mail list
 
-There is a
-[forum/mailing-list](http://groups.google.com/group/ledger-cli) for the
-discussion of issues pertaining to Ledger. Please join and contribute!
-Google Groups also supports RSS, if you prefer that.
-
-Or, if you’d rather read your messages over NNTP using a News Reader
-like Gnus, visit the [Gmane
-mirror](http://dir.gmane.org/gmane.comp.finance.ledger.general) .
+The [ledger-cli mail list](http://groups.google.com/group/ledger-cli) is
+for the discussion of issues pertaining to Ledger. Please join and
+contribute!  Google Groups also supports RSS, if you prefer that.  Or, if
+you’d rather read your messages over NNTP using a newsreader like Gnus,
+use the
+[gmane.comp.finance.ledger.general](http://dir.gmane.org/gmane.comp.finance.ledger.general)
+gmane newsgroup.
 
 ### IRC channel
 
