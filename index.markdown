@@ -9,16 +9,6 @@ from the UNIX command-line. This may put off some users, as there is no
 flashy UI, but for those who want unparalleled reporting access to their
 data, there really is no alternative.
 
-For those just joining us, please check out the page on basic
-[Terminology](Terminology.html), which will help you if you ever try to
-read the [source](http://github.com/jwiegley/ledger) .
-
-Also, there have been several [Ports](Ports.html) of the Ledger
-architecture to other languages. Check those out, if you have a
-linguistic preference!
-
-## Features
-
 Here are some of the features of Ledger which set it apart from other
 accounting systems:
 
@@ -40,6 +30,9 @@ accounting systems:
     countless ways. You can create monthly reports, average reports,
     check account balances, reconcile accounts, keep track of capital
     gains on stocks, etc.
+
+Ledger is written by John Wiegley and released under the BSD license. It
+has also inspired several [Ports](Ports.html) to other languages.
 
 ## Getting started
 
@@ -67,6 +60,8 @@ accounts, or the history of a particular account
 
     ledger -f your-file.dat balance
     ledger -f your-file.dat registry Expenses
+
+Here is a quick guide to [Terminology](Terminology.html).
 
 ## Documentation
 
@@ -105,9 +100,9 @@ mirror](http://dir.gmane.org/gmane.comp.finance.ledger.general) .
 ### IRC channel
 
 Usually the fastest way to get your questions answered is to visit us on
-IRC, where I can usually be found most days. We are on the [\#ledger
-channel on irc.freenode.net](irc://irc.freenode.net/ledger) . My nick is
-“johnw”.
+IRC, where I can usually be found most days. We are on the
+[\#ledger](irc://irc.freenode.net/ledger) channel on irc.freenode.net . My
+nick is “johnw”.
 
 ### Reporting bugs
 
@@ -116,13 +111,12 @@ Please report bugs on Ledger’s
 
 ## Download
 
-### Platform binaries
+The ledger source is available on [github](http://github.com/jwiegley/ledger).
 
 Several people in the Open Source community have spent time creating
-Ledger distributions for specific platforms. Below is a list of the
-ports I know of; if you discover others, please let me know. If you
-would like to host a binary on this server, please [send me an
-e-mail](mailto:jwiegley@gmail.com) .
+Ledger distributions for specific platforms. Below is a list of known
+ports; if you discover others, please let me know. If you would like to
+have a binary hosted, please [send an e-mail](mailto:jwiegley@gmail.com).
 
   Platform                  Download link
   ------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -135,7 +129,7 @@ e-mail](mailto:jwiegley@gmail.com) .
   Homebrew                  [http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb](http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb)
   CentOS 5 (64-bit)         See below
 
-### Install tips
+### Installation tips
 
 #### Centos
 
