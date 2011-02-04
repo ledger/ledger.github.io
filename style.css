@@ -8,10 +8,16 @@ body {
 #main {
     padding-left:12em;
     margin-right:3em;
+    margin-left:1em;
     /* width: 600px; */
     /* position: relative; */
     height:100%;
     overflow:auto;
+}
+
+#main h1, #main h2 {
+    position:relative;
+    left:-1em;
 }
 
 #sidebar {
