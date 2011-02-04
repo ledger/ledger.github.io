@@ -1,31 +1,57 @@
 body {
-       background-color:white; 
-       color:black;
-       margin: 3em;
-       /* font-family:helvetica,arial,freesans,clean,sans-serif; */
-       }
+    background-color:white; 
+    color:black;
+    /* margin: 3em; */
+/* font-family:helvetica,arial,freesans,clean,sans-serif; */
+}
+
+#main {
+    padding-left:12em;
+    margin-right:3em;
+    /* width: 600px; */
+    /* position: relative; */
+    height:100%;
+    overflow:auto;
+}
+
+#sidebar {
+    margin-top: 4em;
+    width: 10em;
+    position:fixed;
+    font-weight:bold;
+    font-size:large;
+}
+
+#sidebar ul {
+    list-style-type:none;
+}
+
+#sidebar li {
+    margin:1em 0;
+}
 
 #footer {
-          margin-top:3em;
-          font-family:helvetica,arial,freesans,clean,sans-serif;
-          font-size:small;
-          text-align:center;
-          color:#ccc;
-          }
+    margin-top:3em;
+    font-family:helvetica,arial,freesans,clean,sans-serif;
+    font-size:small;
+    text-align:center;
+    color:#ccc;
+}
 
 #footer a:link, #footer a:visited {
-                                    color:#ccc;
-                                    }
+    color:#ccc;
+}
 
 #footer hr {
-             color: #eee;
-             background-color: #eee;
-             height: 1px;
-             border: 0;
-             width: 80%;
-             }
+    color: #eee;
+    background-color: #eee;
+    height: 1px;
+    border: 0;
+    width: 80%;
+}
 
 pre {
     background: #F8F8F8; /* same as GitHub, good if using their syntax.css */
     margin-left: 1em;
 }
+

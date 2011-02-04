@@ -1,3 +1,5 @@
+# Who's using Ledger ?
+
 If you’re a Ledger user, contribute your story here!
 
 The author has been using Ledger to manage his personal finances since

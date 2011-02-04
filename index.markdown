@@ -4,8 +4,6 @@
 
 # Welcome to Ledger
 
-This is ledger's new site, hopefully soon replacing the [old site](https://github.com/jwiegley/ledger/wiki).
-
 Ledger is a powerful, double-entry accounting system that is accessed
 from the UNIX command-line. This may put off some users, as there is no
 flashy UI, but for those who want unparalleled reporting access to their
@@ -84,7 +82,16 @@ accounts, or the history of a particular account
                                                        [LICENSE-utfcpp](3.0/LICENSE-utfcpp)
   ---------------------------------------------------- ----------------------------------------------------------------
 
-## Mailing list
+More docs:
+
+- [On Reconciling](On-reconciling.html)
+- [Multiple Currencies](Multiple-currencies.html)
+- [Roadmap for 3.0](Roadmap-for-3.0.html)
+- Various tools at [http://joyful.com/Ledger](http://joyful.com/Ledger)
+
+## Support
+
+### Mailing list
 
 There is a
 [forum/mailing-list](http://groups.google.com/group/ledger-cli) for the
@@ -95,25 +102,21 @@ Or, if you’d rather read your messages over NNTP using a News Reader
 like Gnus, visit the [Gmane
 mirror](http://dir.gmane.org/gmane.comp.finance.ledger.general) .
 
-## IRC
+### IRC channel
 
 Usually the fastest way to get your questions answered is to visit us on
 IRC, where I can usually be found most days. We are on the [\#ledger
 channel on irc.freenode.net](irc://irc.freenode.net/ledger) . My nick is
 “johnw”.
 
-## Reporting bugs
+### Reporting bugs
 
 Please report bugs on Ledger’s
 [Bugzilla](http://newartisans.com/bugzilla/enter_bug.cgi).
 
-## Tips and Tricks
+## Download
 
--   [OnReconciling](OnReconciling.html)
--   [Multiple Currencies](Multiple-currencies.html)
--   Various tools at [http://joyful.com/Ledger](http://joyful.com/Ledger)
-
-## Platform binaries
+### Platform binaries
 
 Several people in the Open Source community have spent time creating
 Ledger distributions for specific platforms. Below is a list of the
@@ -131,6 +134,10 @@ e-mail](mailto:jwiegley@gmail.com) .
   Gentoo Linux              [http://tstotts.net/linux/ebuilds.html](http://tstotts.net/linux/ebuilds.html)
   Homebrew                  [http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb](http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb)
   CentOS 5 (64-bit)         See below
+
+### Install tips
+
+#### Centos
 
 For CentOS 5 users (64-bit only right now), create the file
 `/etc/yum.repos.d/newartisans.repo` with these contents:

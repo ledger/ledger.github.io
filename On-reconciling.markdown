@@ -1,3 +1,5 @@
+# On Reconciling
+
 I use emacs to edit and reconcile my corporate ledger.
 
 First, I download my bank transactions (from Bank of America) and \
