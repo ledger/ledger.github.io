@@ -26,6 +26,5 @@ Besides these, the other areas which require completion are as follows:
 
 ## Test Coverage
 
-The [test coverage
-report](http://ftp.newartisans.com/pub/ledger/lcov/ledger/src/index.html)
-is updated each time a new version is uploaded.
+The [test coverage report](http://ftp.newartisans.com/pub/ledger/lcov/) is
+updated each time a new version is uploaded.
