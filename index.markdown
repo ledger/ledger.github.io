@@ -61,7 +61,7 @@ You use the `ledger` command line program to see the balance of your
 accounts, or the history of a particular account
 
     ledger -f your-file.dat balance
-    ledger -f your-file.dat registry Expenses
+    ledger -f your-file.dat register Expenses
 
 
 ## Documentation
