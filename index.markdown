@@ -128,6 +128,8 @@ please [send an e-mail](mailto:jwiegley@gmail.com).
   &nbsp; Gentoo                              [http://tstotts.net/linux/ebuilds.html](http://tstotts.net/linux/ebuilds.html)
   &nbsp; Homebrew                            [http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb](http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb)
   &nbsp; CentOS 5 (64-bit)                   See below
+  &nbsp; Arch Linux                          [http://aur.archlinux.org/packages.php?ID=3086](http://aur.archlinux.org/packages.php?ID=3086)
+
 
 ### Installation tips
 
