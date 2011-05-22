@@ -67,15 +67,13 @@ accounts, or the history of a particular account
 ## Documentation
 
   ---------------------------------------------------- ----------------------------------------------------------------
-  **Ledger 2.6.3**                                     **Ledger 3.0 pre**
-  [Manual](2.6/ledger.html), [(PDF)](2.6/ledger.pdf)   [Old manual](3.0/ledger.html), [(PDF)](3.0/ledger.pdf)
-                                                       [New manual draft](3.0/ledger3.html), [(PDF)](3.0/ledger3.pdf)
-                                                       [ledger (1) man page](3.0/ledger.1.html)
-  [README](2.6/README)                                 [README](3.0/README)
-  [NEWS](2.6/NEWS)                                     [NEWS](3.0/NEWS)
-  [LICENSE](2.6/LICENSE)                               [LICENSE](3.0/LICENSE)
-                                                       [LICENSE-sha1](3.0/LICENSE-sha1)
-                                                       [LICENSE-utfcpp](3.0/LICENSE-utfcpp)
+  **Ledger 2.6.3**                                     **Ledger 3.0 pre-release (master branch)**
+  [Manual](2.6/ledger.html), [(PDF)](2.6/ledger.pdf)   [Old manual](3.0/doc/ledger.html), [(PDF)](3.0/doc/ledger.pdf)
+                                                       [New manual draft](3.0/doc/ledger3.html), [(PDF)](3.0/doc/ledger3.pdf)
+                                                       [ledger (1) man page](3.0/doc/ledger.1.html)
+  [README](2.6/README)                                 [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
+  [NEWS](2.6/NEWS)                                     [NEWS](3.0/doc/NEWS)
+  [LICENSE](2.6/LICENSE)                               [LICENSE](3.0/doc/LICENSE), [LICENSE-sha1](3.0/doc/LICENSE-sha1), [LICENSE-utfcpp](3.0/doc/LICENSE-utfcpp)
   ---------------------------------------------------- ----------------------------------------------------------------
 
 More docs:
