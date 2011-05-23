@@ -26,6 +26,7 @@ body {
     position:fixed;
     font-weight:bold;
     font-size:large;
+    padding:1em;
 }
 
 #sidebar ul {
@@ -33,7 +34,7 @@ body {
 }
 
 #sidebar li {
-    margin:1em 0;
+    /* margin:1em 0; */
 }
 
 #footer {
