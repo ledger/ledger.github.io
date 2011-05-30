@@ -106,12 +106,13 @@ nick is “johnw”.
 
 ### Reporting bugs
 
-Please report bugs on Ledger’s
-[Bugzilla](http://newartisans.com/bugzilla/enter_bug.cgi).
+Please report bugs on Ledger’s bug tracker: 
+[bugs.ledger-cli.org](http://bugs.ledger-cli.org).
 
 ## Download
 
-The Ledger source is available on [github](http://github.com/jwiegley/ledger).
+The Ledger source is available on github:
+[http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger) (git.ledger-cli.org also works.)
 
 Several people in the Open Source community have spent time creating
 Ledger binaries for specific platforms, listed below; if you discover
