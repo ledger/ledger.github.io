@@ -6,7 +6,7 @@ body {
 }
 
 #main {
-    padding-left:12em;
+    padding-left:15em;
     margin-right:3em;
     margin-left:1em;
     /* width: 600px; */
@@ -34,7 +34,7 @@ body {
 }
 
 #sidebar li {
-    /* margin:1em 0; */
+    margin:1em 0;
 }
 
 #footer {
