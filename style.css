@@ -21,7 +21,6 @@ body {
 }
 
 #sidebar {
-    margin-top: 4em;
     width: 10em;
     position:fixed;
     font-weight:bold;
@@ -42,11 +41,11 @@ body {
     font-family:helvetica,arial,freesans,clean,sans-serif;
     font-size:small;
     text-align:center;
-    color:#ccc;
+    /* color:#ccc; */
 }
 
 #footer a:link, #footer a:visited {
-    color:#ccc;
+    /* color:#ccc; */
 }
 
 #footer hr {
