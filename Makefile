@@ -11,3 +11,6 @@ pandocbuild: index.html
 snapshot:
 	tar czf snapshot.tar.gz --exclude snapshot.tar.gz .
 
+
+github-listener:
+	/repos/github-listener/github-listener-yesod.hs 8080 'sudo -u simon git pull && make'
