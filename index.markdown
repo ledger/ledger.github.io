@@ -104,7 +104,7 @@ Here is the official ledger documentation, built from the current source:
   [LICENSE](2.6/LICENSE)                               [LICENSE](3.0/doc/LICENSE), [LICENSE-sha1](3.0/doc/LICENSE-sha1), [LICENSE-utfcpp](3.0/doc/LICENSE-utfcpp)
   ---------------------------------------------------- ----------------------------------------------------------------
 
-You can find more docs at the [ledger wiki](https://github.com/jwiegley/ledger/wiki)
+You can find more docs at the [wiki](https://github.com/jwiegley/ledger/wiki)
 (alias: wiki.ledger-cli.org).
 
 And here is more [about this site](README.html) - please help make it better.
