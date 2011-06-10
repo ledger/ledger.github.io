@@ -3,6 +3,24 @@ body {
     color:black;
     /* margin: 3em; */
 /* font-family:helvetica,arial,freesans,clean,sans-serif; */
+
+/* http://gradients.glrzad.com */
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.98, rgb(255,255,255)),
+    color-stop(1, rgb(0,46,3)),
+    color-stop(1, rgb(0,0,0))
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(255,255,255) 98%,
+    rgb(0,46,3) 100%,
+    rgb(0,0,0) 100%
+);
+
+background-attachment: fixed !important;
 }
 
 #main {
@@ -13,6 +31,7 @@ body {
     /* position: relative; */
     height:100%;
     overflow:auto;
+
 }
 
 #main h1, #main h2 {
