@@ -49,10 +49,15 @@ background-attachment: fixed !important;
 
 #sidebar ul {
     list-style-type:none;
+    font-style:italic;
+    padding:0;
+}
+
+#sidebar ul li {
 }
 
 #sidebar li {
-    margin:1em 0;
+    margin:0.2em;
 }
 
 #identica {
