@@ -1,41 +1,41 @@
 // a modified version of http://blog.foxxtrot.net/2008/10/identica-statuses-widget.html's Foxxtrot.Widget.Identica
+// requires YUI 3.0 and the jquery timeago plugin
 IdenticaLedgerUpdates = function () {
     var target;
     var svc = 'http://identi.ca/';
     var defaultcount = 3;
-    // Requires YUI 3.0
-    /**
-     * _timePhrase is a private function which calculates what to print for the time
-     * of the post. Taken from Laconica 0.6.1 lib/util.php
-     * @method _timePhrase
-     * @argument date
-     **/
-    var _timePhrase = function(date) {
-        var delta = (new Date().getTime() - new Date(date).getTime())/1000;
-        if (delta < 60) {
-            return 'a few seconds ago';
-        } else if (delta < 92) {
-            return 'about a minute ago';
-        } else if (delta < 3300) {
-            return 'about ' + Math.round(delta/60) + ' minutes ago';
-        } else if (delta < 5400) {
-            return 'about an hour ago';
-        } else if (delta < 79200) {
-            return 'about ' + Math.round(delta/3600) + ' hours ago';
-        } else if (delta < 133200) {
-            return 'about a day ago';
-        } else if (delta < 2073600) {
-            return 'about ' + Math.round(delta/86400) + ' days ago';
-        } else if (delta < 3974400) {
-            return 'about a month ago';
-        } else if (delta < 28512000) {
-            return 'about ' + Math.round(delta/259200) + ' months ago';
-        } else if (delta < 41472000) {
-            return 'about a year ago';
-        } else {
-            return 'a very long time ago';
-        }
-    };
+    /* /\** */
+    /*  * _timePhrase is a private function which calculates what to print for the time */
+    /*  * of the post. Taken from Laconica 0.6.1 lib/util.php */
+    /*  * @method _timePhrase */
+    /*  * @argument date */
+    /*  **\/ */
+    /* var _timePhrase = function(date) { */
+    /*     var delta = (new Date().getTime() - new Date(date).getTime())/1000; */
+    /*     if (delta < 60) { */
+    /*         return 'a few seconds ago'; */
+    /*     } else if (delta < 92) { */
+    /*         return 'about a minute ago'; */
+    /*     } else if (delta < 3300) { */
+    /*         return 'about ' + Math.round(delta/60) + ' minutes ago'; */
+    /*     } else if (delta < 5400) { */
+    /*         return 'about an hour ago'; */
+    /*     } else if (delta < 79200) { */
+    /*         return 'about ' + Math.round(delta/3600) + ' hours ago'; */
+    /*     } else if (delta < 133200) { */
+    /*         return 'about a day ago'; */
+    /*     } else if (delta < 2073600) { */
+    /*         return 'about ' + Math.round(delta/86400) + ' days ago'; */
+    /*     } else if (delta < 3974400) { */
+    /*         return 'about a month ago'; */
+    /*     } else if (delta < 28512000) { */
+    /*         return 'about ' + Math.round(delta/259200) + ' months ago'; */
+    /*     } else if (delta < 41472000) { */
+    /*         return 'about a year ago'; */
+    /*     } else { */
+    /*         return 'a very long time ago'; */
+    /*     } */
+    /* }; */
     
     var _userLink = function(msg) {
     	var le = /@(\w+)/g, i;
@@ -83,8 +83,9 @@ IdenticaLedgerUpdates = function () {
             for (i = 0 ; i < dents.length ; i += 1) {
               if (!dents[i].text.match(/heath/i)) { // filter out off-topic stuff (heath ledger)
                 text += "<li><span>" + _userLink(_uriLink(dents[i].text)) + "</span> ";
-                text += '<a href="' + svc + 'notice/' + dents[i].id + '">';
-                text += _timePhrase(dents[i].created_at) + "</a></li>";
+                text += '<br><i><a href="' + svc + 'notice/' + dents[i].id + '">';
+                text += jQuery.timeago(new Date(dents[i].created_at));
+                text += '</a></i></li>';
               }
             }
             target.set('innerHTML', text);
