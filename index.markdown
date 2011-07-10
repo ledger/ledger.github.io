@@ -84,22 +84,19 @@ Please report bugs in [bugs.ledger-cli.org](http://bugs.ledger-cli.org).
 
 ## Documentation
 
-Here is the official ledger documentation, built from the current source:
+Official ledger documentation, built from the current source:
 
-  ---------------------------------------------------- ----------------------------------------------------------------
-  **Ledger 2.6.3**                                     **Ledger 3.0 pre-release (master branch)**
-  [Manual](2.6/ledger.html), [(PDF)](2.6/ledger.pdf)   [Old manual](3.0/doc/ledger.html), [(PDF)](3.0/doc/ledger.pdf)
-                                                       [New manual draft](3.0/doc/ledger3.html), [(PDF)](3.0/doc/ledger3.pdf)
-                                                       [ledger (1) man page](3.0/doc/ledger.1.html)
-  [README](2.6/README)                                 [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
-  [NEWS](2.6/NEWS)                                     [NEWS](3.0/doc/NEWS)
-  [LICENSE](2.6/LICENSE)                               [LICENSE](3.0/doc/LICENSE), [LICENSE-sha1](3.0/doc/LICENSE-sha1), [LICENSE-utfcpp](3.0/doc/LICENSE-utfcpp)
-  ---------------------------------------------------- ----------------------------------------------------------------
+  ------------------------------------------------------ ------ ----------------------------------------------------------------
+  **Ledger 2.6.3**                                       &nbsp; **Ledger 3.0 pre-release (master branch)**
+  [README](2.6/README)                                   &nbsp; [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
+  [NEWS](2.6/NEWS)                                       &nbsp; [NEWS](3.0/doc/NEWS)
+  [Manual](2.6/ledger.html) [(pdf)](2.6/ledger.pdf)      &nbsp; [Manual](3.0/doc/ledger.html) [(pdf)](3.0/doc/ledger.pdf), [New manual draft](3.0/doc/ledger3.html) [(pdf)](3.0/doc/ledger3.pdf), [man page](3.0/doc/ledger.1.html)
+  ------------------------------------------------------ ------ ---------------------------------------------------------------
 
-You can find more docs at the [wiki](https://github.com/jwiegley/ledger/wiki)
+More docs and notes are on the [ledger wiki](https://github.com/jwiegley/ledger/wiki)
 (alias: wiki.ledger-cli.org).
 
-And here is more [about this site](README.html) - please help make it better.
+And here's more [about this site](README.html), so you can help improve it.
 
 ## Download
 
