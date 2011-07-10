@@ -55,6 +55,16 @@ background-attachment: fixed !important;
     margin:1em 0;
 }
 
+#identica {
+    font-size:smaller;
+    font-weight:normal;
+}
+
+#identica li {
+    list-style-type:none;
+    margin-top:0.5em;
+}
+
 #footer {
     margin-top:3em;
     font-family:helvetica,arial,freesans,clean,sans-serif;

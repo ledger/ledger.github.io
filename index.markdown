@@ -68,12 +68,11 @@ accounts, or the history of a particular account
 
 ### Mail list
 
-The [ledger-cli mail list](http://groups.google.com/group/ledger-cli) 
-(alias: list.ledger-cli.org) 
-is for the discussion of issues pertaining to Ledger. 
-Please join and contribute!  Google Groups also supports RSS, if you
-prefer that.  Or, if you’d rather read your messages over NNTP using a
-newsreader like Gnus, use the
+The [ledger-cli mail list](http://groups.google.com/group/ledger-cli)  (alias: list.ledger-cli.org)
+is for the discussion of issues pertaining to Ledger. Please join and
+contribute!  Google Groups also supports RSS, if you prefer that.  Or, if
+you’d rather read your messages over NNTP using a newsreader like Gnus,
+use the
 [gmane.comp.finance.ledger.general](http://dir.gmane.org/gmane.comp.finance.ledger.general)
 gmane newsgroup.
 
@@ -112,8 +111,7 @@ And here is more [about this site](README.html) - please help make it better.
 ## Download
 
 The Ledger source is available on github:
-[http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger)
-(alias: git.ledger-cli.org) 
+[http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger) (alias: git.ledger-cli.org)
 
 Several people in the Open Source community have spent time creating
 Ledger binaries for specific platforms, listed below; if you discover
