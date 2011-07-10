@@ -64,29 +64,22 @@ accounts, or the history of a particular account
     ledger -f your-file.dat register Expenses
 
 
-## Support
+## Community
 
-### Mail list
+**IRC channel**  
+Often the fastest way to get your questions answered is to visit us in the
+[\#ledger](irc://irc.freenode.net/ledger) channel on
+irc.freenode.net. John Wiegley's nick is `johnw`.
 
-The [ledger-cli mail list](http://groups.google.com/group/ledger-cli)  (alias: list.ledger-cli.org)
-is for the discussion of issues pertaining to Ledger. Please join and
-contribute!  Google Groups also supports RSS, if you prefer that.  Or, if
-you’d rather read your messages over NNTP using a newsreader like Gnus,
-use the
-[gmane.comp.finance.ledger.general](http://dir.gmane.org/gmane.comp.finance.ledger.general)
-gmane newsgroup.
+**Mail list**  
+The [ledger-cli mail list](http://groups.google.com/group/ledger-cli)
+(alias: list.ledger-cli.org) is for all Ledger discussion. Please join
+and contribute!  If you'd rather use a NNTP newsreader or gmane's interface,
+see [gmane.comp.finance.ledger.general](http://dir.gmane.org/gmane.comp.finance.ledger.general).
+Searching the list archives is another good way to find answers.
 
-### IRC channel
-
-Usually the fastest way to get your questions answered is to visit us on
-IRC, where I can usually be found most days. We are on the
-[\#ledger](irc://irc.freenode.net/ledger) channel on irc.freenode.net . My
-nick is “johnw”.
-
-### Reporting bugs
-
-Please report bugs on Ledger’s bug tracker: 
-[bugs.ledger-cli.org](http://bugs.ledger-cli.org).
+**Bug tracker**  
+Please report bugs in [bugs.ledger-cli.org](http://bugs.ledger-cli.org).
 
 
 ## Documentation
