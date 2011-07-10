@@ -87,8 +87,8 @@ More docs:
 
 ### Mail list
 
-The [ledger-cli mail list](http://groups.google.com/group/ledger-cli) is
-for the discussion of issues pertaining to Ledger. Please join and
+The [ledger-cli mail list](http://groups.google.com/group/ledger-cli)  (alias: list.ledger-cli.org)
+is for the discussion of issues pertaining to Ledger. Please join and
 contribute!  Google Groups also supports RSS, if you prefer that.  Or, if
 you’d rather read your messages over NNTP using a newsreader like Gnus,
 use the
@@ -110,7 +110,7 @@ Please report bugs on Ledger’s bug tracker:
 ## Download
 
 The Ledger source is available on github:
-[http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger) (git.ledger-cli.org also works.)
+[http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger) (alias: git.ledger-cli.org)
 
 Several people in the Open Source community have spent time creating
 Ledger binaries for specific platforms, listed below; if you discover
