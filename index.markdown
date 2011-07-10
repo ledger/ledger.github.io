@@ -63,6 +63,21 @@ accounts, or the history of a particular account
     ledger -f your-file.dat balance
     ledger -f your-file.dat register Expenses
 
+## Documentation
+
+Official ledger documentation, built from the current source:
+
+  ------------------------------------------------------ ------ ----------------------------------------------------------------
+  **Ledger 2.6.3**                                       &nbsp; **Ledger 3.0 pre-release (master branch)**
+  [README](2.6/README)                                   &nbsp; [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
+  [NEWS](2.6/NEWS)                                       &nbsp; [NEWS](3.0/doc/NEWS)
+  [Manual](2.6/ledger.html) [(pdf)](2.6/ledger.pdf)      &nbsp; [Manual](3.0/doc/ledger.html) [(pdf)](3.0/doc/ledger.pdf), [New manual draft](3.0/doc/ledger3.html) [(pdf)](3.0/doc/ledger3.pdf), [man page](3.0/doc/ledger.1.html)
+  ------------------------------------------------------ ------ ---------------------------------------------------------------
+
+The [ledger wiki](https://github.com/jwiegley/ledger/wiki) (alias: wiki.ledger-cli.org)
+has more docs and notes.
+
+And here's more [about this site](README.html), so you can help improve it.
 
 ## Community
 
@@ -80,23 +95,6 @@ Searching the list archives is another good way to find answers.
 
 **Bug tracker**  
 Please report bugs in [bugs.ledger-cli.org](http://bugs.ledger-cli.org).
-
-
-## Documentation
-
-Official ledger documentation, built from the current source:
-
-  ------------------------------------------------------ ------ ----------------------------------------------------------------
-  **Ledger 2.6.3**                                       &nbsp; **Ledger 3.0 pre-release (master branch)**
-  [README](2.6/README)                                   &nbsp; [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
-  [NEWS](2.6/NEWS)                                       &nbsp; [NEWS](3.0/doc/NEWS)
-  [Manual](2.6/ledger.html) [(pdf)](2.6/ledger.pdf)      &nbsp; [Manual](3.0/doc/ledger.html) [(pdf)](3.0/doc/ledger.pdf), [New manual draft](3.0/doc/ledger3.html) [(pdf)](3.0/doc/ledger3.pdf), [man page](3.0/doc/ledger.1.html)
-  ------------------------------------------------------ ------ ---------------------------------------------------------------
-
-More docs and notes are on the [ledger wiki](https://github.com/jwiegley/ledger/wiki)
-(alias: wiki.ledger-cli.org).
-
-And here's more [about this site](README.html), so you can help improve it.
 
 ## Download
 
@@ -119,7 +117,6 @@ please [send an e-mail](mailto:jwiegley@gmail.com).
   &nbsp; Homebrew                            [http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb](http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb)
   &nbsp; CentOS 5 (64-bit)                   See below
   &nbsp; Arch Linux                          [http://aur.archlinux.org/packages.php?ID=3086](http://aur.archlinux.org/packages.php?ID=3086)
-
 
 ### Installation tips
 
