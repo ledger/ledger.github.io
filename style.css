@@ -41,33 +41,41 @@ background-attachment: fixed !important;
 
 #sidebar {
     width: 10em;
+    padding:2em 1em;
     position:fixed;
+}
+
+#sidebar .heading {
     font-weight:bold;
     font-size:large;
-    padding:1em;
 }
 
 #sidebar ul {
     list-style-type:none;
     font-style:italic;
-    padding:0;
+    margin-top:0;
+    padding-left:0.5em;
+    white-space:nowrap;
 }
 
 #sidebar ul li {
-}
-
-#sidebar li {
-    margin:0.2em;
+    font-size:large;
 }
 
 #identica {
-    font-size:smaller;
-    font-weight:normal;
+    font-size:small;
+    font-style:italic;
 }
 
-#identica li {
+#identicawidget {
+    /* height: 30em; */
+    /* overflow:auto; */
+}
+
+#identicawidget li {
     list-style-type:none;
-    margin-top:0.5em;
+    padding:1em 0 0 0.5em;
+    font-style:normal;
 }
 
 #footer {

@@ -7,44 +7,51 @@
     <script src="http://yui.yahooapis.com/3.0.0pr1/build/yui/yui-min.js" type="text/javascript"></script>
     <script src="http://ledger-cli.org/identicawidget.js" type="text/javascript"></script>
     <script src="http://ledger-cli.org/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $$(document).ready(function() { IdenticaLedgerUpdates.getUpdates('#identicawidget'); });
+    </script>
   </head>
   <body>
+
     <div id="header">
     </div>
+
     <div id="sidebar">
 
-    <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html#getting-started">Getting Started</a>
-    <li><a href="index.html#support">Support</a>
-    <li><a href="index.html#documentation">Documentation</a>
-    <li><a href="http://wiki.ledger-cli.org">Wiki</a>
-    <li><a href="index.html#download">Download</a>
-    </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#getting-started">Getting Started</a>
+        <li><a href="index.html#support">Support</a>
+        <li><a href="index.html#documentation">Documentation</a>
+        <li><a href="http://wiki.ledger-cli.org">Wiki</a>
+        <li><a href="index.html#download">Download</a>
+      </ul>
 
-    Related projects:
-    <ul style="white-space:nowrap;">
-    <li><a href="http://hledger.org">hledger</a></li>
-    <li><a href="https://furius.ca/beancount/">BeanCount</a>
-    <li><a href="https://launchpad.net/csv2ledger">CSV2ledger</a>
-    <li><a href="http://ericbetts.org/ledgeraddons">EB's addons</a>
-    <li><a href="http://joyful.com/projects.html#ledgertools">SM's addons</a>
-    </ul>
+      <span class="heading">Related projects:</span>
+      <ul>
+        <li><a href="http://hledger.org">hledger</a></li>
+        <li><a href="https://furius.ca/beancount/">BeanCount</a>
+        <li><a href="https://launchpad.net/csv2ledger">CSV2ledger</a>
+        <li><a href="http://ericbetts.org/ledgeraddons">EB's addons</a>
+        <li><a href="http://joyful.com/projects.html#ledgertools">SM's addons</a>
+      </ul>
 
-    identi.ca:
-    <div id="identica"></div>
-    <script type="text/javascript">
-      $$(document).ready(function() {
-      Foxxtrot.Widgets.Identica.getUpdates('#identica', {count:3});
-      });
-    </script>
-
+      <span class="heading">identi.ca:</span>
+      <div id="identica">
+        (Post to <a href="http://identi.ca">identi.ca</a> with #ledger tag.
+        You can also join the <a href="http://identi.ca/group/ledgerites">ledgerites</a> group.)
+        <div id="identicawidget"></div>
+      </div>
+      
     </div>
+
     <div id="main">
-$body$
+      $body$
     </div>
+
     <div id="footer">
       <hr />
     </div>
+
   </body>
 </html>

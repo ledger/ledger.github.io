@@ -1,7 +1,8 @@
-if (typeof Foxxtrot === 'undefined' || !Foxxtrot) { Foxxtrot = {}; }
-Foxxtrot.Widgets = Foxxtrot.Widgets || {};
-Foxxtrot.Widgets.Identica = function () {
-    var target, svc;
+// a modified version of http://blog.foxxtrot.net/2008/10/identica-statuses-widget.html's Foxxtrot.Widget.Identica
+IdenticaLedgerUpdates = function () {
+    var target;
+    var svc = 'http://identi.ca/';
+    var defaultcount = 3;
     // Requires YUI 3.0
     /**
      * _timePhrase is a private function which calculates what to print for the time
@@ -59,17 +60,6 @@ Foxxtrot.Widgets.Identica = function () {
     };
 
     return {
-        updatesCallback: function(dents) {
-            var i, text = "";
-            for (i = 0 ; i < dents.length ; i += 1) {
-              if (!dents[i].text.match(/heath/i)) { // filter out off-topic stuff (heath ledger)
-                text += "<li><span>" + _userLink(_uriLink(dents[i].text)) + "</span> ";
-                text += '<a href="' + svc + 'notice/' + dents[i].id + '">';
-                text += _timePhrase(dents[i].created_at) + "</a></li>";
-              }
-            }
-            target.set('innerHTML', text);
-        },
         getUpdates: function (el, o) {
             var URL;
             o = o || {};
@@ -82,11 +72,22 @@ Foxxtrot.Widgets.Identica = function () {
             /*     URL += "public_timeline.json?"; */
             /* } */
             URL = "http://identi.ca/api/statusnet/tags/timeline/ledger.json?";
-            o.count = o.count || 5;
-            URL += "count=" + o.count + "&";
+            o.count = o.count || defaultcount;
+            URL += "count=" + (o.count-1) + "&";  // identi.ca adds one
 
-            URL += "callback=Foxxtrot.Widgets.Identica.updatesCallback";
+            URL += "callback=IdenticaLedgerUpdates.updatesCallback";
             YUI().Get.script(URL);
+        },
+        updatesCallback: function(dents) {
+            var i, text = "";
+            for (i = 0 ; i < dents.length ; i += 1) {
+              if (!dents[i].text.match(/heath/i)) { // filter out off-topic stuff (heath ledger)
+                text += "<li><span>" + _userLink(_uriLink(dents[i].text)) + "</span> ";
+                text += '<a href="' + svc + 'notice/' + dents[i].id + '">';
+                text += _timePhrase(dents[i].created_at) + "</a></li>";
+              }
+            }
+            target.set('innerHTML', text);
         }
     };
 }();
