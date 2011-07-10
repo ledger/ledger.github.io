@@ -34,7 +34,16 @@ body {
 }
 
 #sidebar li {
-    /* margin:1em 0; */
+}
+
+#identica {
+    font-size:smaller;
+    font-weight:normal;
+}
+
+#identica li {
+    list-style-type:none;
+    margin-top:0.5em;
 }
 
 #footer {
