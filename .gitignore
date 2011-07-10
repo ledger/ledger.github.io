@@ -1,3 +1,10 @@
 *.html
 snapshot.tar.gz
 *.log
+
+_*
+hakyll*
+*.hamlet
+old
+client_session_key.aes
+
