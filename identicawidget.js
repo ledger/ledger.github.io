@@ -62,9 +62,11 @@ Foxxtrot.Widgets.Identica = function () {
         updatesCallback: function(dents) {
             var i, text = "";
             for (i = 0 ; i < dents.length ; i += 1) {
+              if (!dents[i].text.match(/heath/i)) { // filter out off-topic stuff (heath ledger)
                 text += "<li><span>" + _userLink(_uriLink(dents[i].text)) + "</span> ";
                 text += '<a href="' + svc + 'notice/' + dents[i].id + '">';
                 text += _timePhrase(dents[i].created_at) + "</a></li>";
+              }
             }
             target.set('innerHTML', text);
         },
