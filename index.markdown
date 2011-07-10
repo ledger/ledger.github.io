@@ -33,7 +33,7 @@ accounting systems:
 
 Ledger, begun in 2003, is written by John Wiegley and released under the BSD license.
 It has also inspired several [ports](http://wiki.ledger-cli.org/Ports) to other languages.
-You can hear John explain Ledger in [FLOSS Weekly 150: Ledger](http://twit.tv/floss150), recorded on 2011/01/26.
+You can hear John explain Ledger in the [2011/01/26 FLOSS Weekly podcast](http://twit.tv/floss150).
 
 ## Getting started
 
@@ -58,7 +58,7 @@ accuracies of your entries at every run; you won’t ever run into
 problems with “unaccounted” sums in an account.
 
 You use the `ledger` command line program to see the balance of your
-accounts, or the history of a particular account
+accounts, or the history of a particular account:
 
     ledger -f your-file.dat balance
     ledger -f your-file.dat register Expenses

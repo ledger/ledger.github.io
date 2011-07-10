@@ -82,8 +82,8 @@ IdenticaLedgerUpdates = function () {
             var i, text = "";
             for (i = 0 ; i < dents.length ; i += 1) {
               if (!dents[i].text.match(/heath/i)) { // filter out off-topic stuff (heath ledger)
-                text += "<li><span>" + _userLink(_uriLink(dents[i].text)) + "</span> ";
-                text += '<br><i><a href="' + svc + 'notice/' + dents[i].id + '">';
+                text += '<li><span class="notice">' + _userLink(_uriLink(dents[i].text)) + '</span> ';
+                text += '<br><i><a class="timestamp" href="' + svc + 'notice/' + dents[i].id + '">';
                 text += jQuery.timeago(new Date(dents[i].created_at));
                 text += '</a></i></li>';
               }

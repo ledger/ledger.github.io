@@ -72,14 +72,16 @@ background-attachment: fixed !important;
 }
 
 #identicawidget {
-    /* height: 30em; */
-    /* overflow:auto; */
 }
 
 #identicawidget li {
     list-style-type:none;
     padding:1em 0 0 0.5em;
     font-style:normal;
+}
+
+#identicawidget a.timestamp:link, #identicawidget a.timestamp:visited {
+    color:gray;
 }
 
 #footer {
