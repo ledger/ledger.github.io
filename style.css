@@ -31,12 +31,16 @@ background-attachment: fixed !important;
     /* position: relative; */
     height:100%;
     overflow:auto;
-
 }
 
 #main h1, #main h2 {
     position:relative;
     left:-1em;
+}
+
+#main td {
+    padding-right:1em;
+    background-color:#f0f0f0;
 }
 
 #sidebar {

@@ -31,9 +31,9 @@ accounting systems:
     check account balances, reconcile accounts, keep track of capital
     gains on stocks, etc.
 
-Ledger is written by John Wiegley and released under the BSD license. It
-has also inspired several [ports](http://wiki.ledger-cli.org/Ports) to other languages.
-Have a listen to [FLOSS Weekly 150: Ledger](http://twit.tv/floss150), recorded 2011/1/26!
+Ledger, begun in 2003, is written by John Wiegley and released under the BSD license.
+It has also inspired several [ports](http://wiki.ledger-cli.org/Ports) to other languages.
+You can hear John explain Ledger in [FLOSS Weekly 150: Ledger](http://twit.tv/floss150), recorded on 2011/01/26.
 
 ## Getting started
 
@@ -67,12 +67,12 @@ accounts, or the history of a particular account
 
 Official ledger documentation, built from the current source:
 
-  ------------------------------------------------------ ------ ----------------------------------------------------------------
-  **Ledger 2.6.3**                                       &nbsp; **Ledger 3.0 pre-release (master branch)**
-  [README](2.6/README)                                   &nbsp; [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
-  [NEWS](2.6/NEWS)                                       &nbsp; [NEWS](3.0/doc/NEWS)
-  [Manual](2.6/ledger.html) [(pdf)](2.6/ledger.pdf)      &nbsp; [Manual](3.0/doc/ledger.html) [(pdf)](3.0/doc/ledger.pdf), [New manual draft](3.0/doc/ledger3.html) [(pdf)](3.0/doc/ledger3.pdf), [man page](3.0/doc/ledger.1.html)
-  ------------------------------------------------------ ------ ---------------------------------------------------------------
+  Ledger 2.6.3                                           Ledger 3.0 pre-release (master branch)
+  ------------------------------------------------------ ----------------------------------------------------------------
+  [README](2.6/README)                                   [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
+  [NEWS](2.6/NEWS)                                       [NEWS](3.0/doc/NEWS)
+  [Manual](2.6/ledger.html) [(pdf)](2.6/ledger.pdf)      [Manual](3.0/doc/ledger.html) [(pdf)](3.0/doc/ledger.pdf), [New manual draft](3.0/doc/ledger3.html) [(pdf)](3.0/doc/ledger3.pdf), [Man page](3.0/doc/ledger.1.html)
+  ------------------------------------------------------ ---------------------------------------------------------------
 
 The [ledger wiki](https://github.com/jwiegley/ledger/wiki) (alias: wiki.ledger-cli.org)
 has more docs and notes.
@@ -82,16 +82,15 @@ And here's more [about this site](README.html), so you can help improve it.
 ## Community
 
 **IRC channel**  
-Often the fastest way to get your questions answered is to visit us in the
-[\#ledger](irc://irc.freenode.net/ledger) channel on
-irc.freenode.net. John Wiegley's nick is `johnw`.
+Visit us in the [\#ledger](irc://irc.freenode.net/ledger) channel on irc.freenode.net
+to get your questions answered quickly. John Wiegley's nick is `johnw`.
 
 **Mail list**  
 The [ledger-cli mail list](http://groups.google.com/group/ledger-cli)
-(alias: list.ledger-cli.org) is for all Ledger discussion. Please join
+(alias: list.ledger-cli.org) is the main place for Ledger discussions. Please join
 and contribute!  If you'd rather use a NNTP newsreader or gmane's interface,
 see [gmane.comp.finance.ledger.general](http://dir.gmane.org/gmane.comp.finance.ledger.general).
-Searching the list archives is another good way to find answers.
+Searching the list archive is another good way to find answers.
 
 **Bug tracker**  
 Please report bugs in [bugs.ledger-cli.org](http://bugs.ledger-cli.org).
@@ -115,14 +114,10 @@ please [send an e-mail](mailto:jwiegley@gmail.com).
   &nbsp; Ubuntu PPA  (development snapshots) [https://launchpad.net/\~mbudde/+archive/ledger](https://launchpad.net/~mbudde/+archive/ledger)
   &nbsp; Gentoo                              [http://tstotts.net/linux/ebuilds.html](http://tstotts.net/linux/ebuilds.html)
   &nbsp; Homebrew                            [http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb](http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb)
-  &nbsp; CentOS 5 (64-bit)                   See below
   &nbsp; Arch Linux                          [http://aur.archlinux.org/packages.php?ID=3086](http://aur.archlinux.org/packages.php?ID=3086)
+  &nbsp; CentOS 5 (64-bit)                   See below
 
-### Installation tips
-
-#### Centos
-
-For CentOS 5 users (64-bit only right now), create the file
+On CentOS 5 (64-bit only right now), create the file
 `/etc/yum.repos.d/newartisans.repo` with these contents:
 
     [newartisans]
@@ -131,4 +126,4 @@ For CentOS 5 users (64-bit only right now), create the file
     enabled=1
     gpgcheck=0
 
-Once this is done, run `yum install ledger`.
+and then run `yum install ledger`.
