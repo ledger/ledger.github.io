@@ -32,7 +32,7 @@ accounting systems:
     gains on stocks, etc.
 
 Ledger is written by John Wiegley and released under the BSD license. It
-has also inspired several [Ports](Ports.html) to other languages.
+has also inspired several [ports](http://wiki.ledger-cli.org/Ports) to other languages.
 Have a listen to [FLOSS Weekly 150: Ledger](http://twit.tv/floss150), recorded 2011/1/26!
 
 ## Getting started
@@ -49,7 +49,7 @@ looking at your data what you mean by it and how you want it reported
 back to you. Accounts are created as they appear; currencies are created
 as they’re referenced. Anywhere that a value can be calculated, you can
 leave it out — such as the balancing `$-10.00` in the above entry.
-Here is a little more about [Terminology](Terminology.html).
+Here is a little more about [terminology](http://wiki.ledger-cli.org/Terminology).
 
 Ledger is a double-entry accounting tool, meaning that **all entries
 must balance**. If an entry does not balance, it will cause an error and
