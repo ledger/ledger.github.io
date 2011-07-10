@@ -64,25 +64,6 @@ accounts, or the history of a particular account
     ledger -f your-file.dat register Expenses
 
 
-## Documentation
-
-  ---------------------------------------------------- ----------------------------------------------------------------
-  **Ledger 2.6.3**                                     **Ledger 3.0 pre-release (master branch)**
-  [Manual](2.6/ledger.html), [(PDF)](2.6/ledger.pdf)   [Old manual](3.0/doc/ledger.html), [(PDF)](3.0/doc/ledger.pdf)
-                                                       [New manual draft](3.0/doc/ledger3.html), [(PDF)](3.0/doc/ledger3.pdf)
-                                                       [ledger (1) man page](3.0/doc/ledger.1.html)
-  [README](2.6/README)                                 [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
-  [NEWS](2.6/NEWS)                                     [NEWS](3.0/doc/NEWS)
-  [LICENSE](2.6/LICENSE)                               [LICENSE](3.0/doc/LICENSE), [LICENSE-sha1](3.0/doc/LICENSE-sha1), [LICENSE-utfcpp](3.0/doc/LICENSE-utfcpp)
-  ---------------------------------------------------- ----------------------------------------------------------------
-
-More docs:
-
-- [On Reconciling](On-reconciling.html)
-- [Multiple Currencies](Multiple-currencies.html)
-- [Roadmap for 3.0](Roadmap-for-3.0.html)
-- Various tools at [http://joyful.com/Ledger](http://joyful.com/Ledger)
-
 ## Support
 
 ### Mail list
@@ -106,6 +87,26 @@ nick is “johnw”.
 
 Please report bugs on Ledger’s bug tracker: 
 [bugs.ledger-cli.org](http://bugs.ledger-cli.org).
+
+
+## Documentation
+
+Here is the official ledger documentation, built from the current source:
+
+  ---------------------------------------------------- ----------------------------------------------------------------
+  **Ledger 2.6.3**                                     **Ledger 3.0 pre-release (master branch)**
+  [Manual](2.6/ledger.html), [(PDF)](2.6/ledger.pdf)   [Old manual](3.0/doc/ledger.html), [(PDF)](3.0/doc/ledger.pdf)
+                                                       [New manual draft](3.0/doc/ledger3.html), [(PDF)](3.0/doc/ledger3.pdf)
+                                                       [ledger (1) man page](3.0/doc/ledger.1.html)
+  [README](2.6/README)                                 [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
+  [NEWS](2.6/NEWS)                                     [NEWS](3.0/doc/NEWS)
+  [LICENSE](2.6/LICENSE)                               [LICENSE](3.0/doc/LICENSE), [LICENSE-sha1](3.0/doc/LICENSE-sha1), [LICENSE-utfcpp](3.0/doc/LICENSE-utfcpp)
+  ---------------------------------------------------- ----------------------------------------------------------------
+
+You can find more docs at the [wiki](https://github.com/jwiegley/ledger/wiki)
+(alias: wiki.ledger-cli.org).
+
+And here is more [about this site](README.html) - please help make it better.
 
 ## Download
 

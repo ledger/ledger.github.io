@@ -3,16 +3,35 @@ body {
     color:black;
     /* margin: 3em; */
 /* font-family:helvetica,arial,freesans,clean,sans-serif; */
+
+/* http://gradients.glrzad.com */
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.98, rgb(255,255,255)),
+    color-stop(1, rgb(0,46,3)),
+    color-stop(1, rgb(0,0,0))
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(255,255,255) 98%,
+    rgb(0,46,3) 100%,
+    rgb(0,0,0) 100%
+);
+
+background-attachment: fixed !important;
 }
 
 #main {
-    padding-left:12em;
+    padding-left:15em;
     margin-right:3em;
     margin-left:1em;
     /* width: 600px; */
     /* position: relative; */
     height:100%;
     overflow:auto;
+
 }
 
 #main h1, #main h2 {
@@ -21,7 +40,6 @@ body {
 }
 
 #sidebar {
-    margin-top: 4em;
     width: 10em;
     position:fixed;
     font-weight:bold;
@@ -34,6 +52,7 @@ body {
 }
 
 #sidebar li {
+    margin:1em 0;
 }
 
 #identica {
@@ -51,11 +70,11 @@ body {
     font-family:helvetica,arial,freesans,clean,sans-serif;
     font-size:small;
     text-align:center;
-    color:#ccc;
+    /* color:#ccc; */
 }
 
 #footer a:link, #footer a:visited {
-    color:#ccc;
+    /* color:#ccc; */
 }
 
 #footer hr {
