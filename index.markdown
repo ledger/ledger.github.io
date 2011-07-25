@@ -107,14 +107,14 @@ others, please let me know. If you would like to have a binary hosted,
 please [send an e-mail](mailto:jwiegley@gmail.com).
 
 ### Mac OS X
-- [ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip) (3.0; requires Snow Leopard, boost lib installed)
+- [John's ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip) (3.0; requires Snow Leopard, boost lib installed)
 - `port install ledger` (2.6)
 - `fink install ledger` (2.6)
 - `brew install ledger` (2.6)
 - `brew install ledger --HEAD` (3.0 `next` branch)
 
 ### Windows
-- [http://www.assembla.com/spaces/Goldcoast/documents](http://www.assembla.com/spaces/Goldcoast/documents) (2.6)
+- [AlexanderAA's binary](http://www.assembla.com/spaces/Goldcoast/documents) (2.6)
 
 ### GNU/Linux
 - [Debian](http://qa.debian.org/developer.php?packages=ledger) (2.6)
