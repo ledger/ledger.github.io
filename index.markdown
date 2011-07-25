@@ -98,32 +98,28 @@ Please report bugs in [bugs.ledger-cli.org](http://bugs.ledger-cli.org).
 ## Download
 
 The Ledger source is available on github:
-[http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger) (alias: git.ledger-cli.org)
+[http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger)
+(alias: git.ledger-cli.org)
 
 Several people in the Open Source community have spent time creating
 Ledger binaries for specific platforms, listed below; if you discover
 others, please let me know. If you would like to have a binary hosted,
 please [send an e-mail](mailto:jwiegley@gmail.com).
 
-  Platform                                   Download link
-  ------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Mac OS X (Snow Leopard)                    [ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip)
-  Windows                                    [http://www.assembla.com/spaces/Goldcoast/documents](http://www.assembla.com/spaces/Goldcoast/documents)
-  GNU/Linux:
-  &nbsp; Debian                              [http://qa.debian.org/developer.php?packages=ledger](http://qa.debian.org/developer.php?packages=ledger)
-  &nbsp; Ubuntu PPA  (development snapshots) [https://launchpad.net/\~mbudde/+archive/ledger](https://launchpad.net/~mbudde/+archive/ledger)
-  &nbsp; Gentoo                              [http://tstotts.net/linux/ebuilds.html](http://tstotts.net/linux/ebuilds.html)
-  &nbsp; Homebrew                            [http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb](http://github.com/mxcl/homebrew/blob/master/Library/Formula/ledger.rb)
-  &nbsp; Arch Linux                          [http://aur.archlinux.org/packages.php?ID=3086](http://aur.archlinux.org/packages.php?ID=3086)
-  &nbsp; CentOS 5 (64-bit)                   See below
+### Mac OS X
+- [ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip) (3.0; requires Snow Leopard, boost lib installed)
+- `port install ledger` (2.6)
+- `fink install ledger` (2.6)
+- `brew install ledger` (2.6)
+- `brew install ledger --HEAD` (3.0 `next` branch)
 
-On CentOS 5 (64-bit only right now), create the file
-`/etc/yum.repos.d/newartisans.repo` with these contents:
+### Windows
+- [http://www.assembla.com/spaces/Goldcoast/documents](http://www.assembla.com/spaces/Goldcoast/documents) (2.6)
 
-    [newartisans]
-    name=New Artisans LLC $releasever - $basearch
-    baseurl=http://ftp.newartisans.com/yum/rhel/$releasever/$basearch
-    enabled=1
-    gpgcheck=0
-
-and then run `yum install ledger`.
+### GNU/Linux
+- [Debian](http://qa.debian.org/developer.php?packages=ledger) (2.6)
+- [Ubuntu](https://launchpad.net/~mbudde/+archive/ledger) (3.0)
+- [Gentoo](http://packages.gentoo.org/package/app-office/ledger) (2.6)
+- [Arch Linux](http://aur.archlinux.org/packages.php?ID=3086) (2.6)
+- [CentOS 6](http://pkgs.org/centos-6-rhel-6/epel-i386/ledger-2.6.3-2.el6.i686.rpm.html) (2.6)
+- [Nixpkgs](http://hydra.nixos.org/job/nixpkgs/trunk/ledger/) (2.6)
