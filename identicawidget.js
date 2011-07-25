@@ -84,6 +84,7 @@ IdenticaLedgerUpdates = function () {
               if (!dents[i].text.match(/heath/i)) { // filter out off-topic stuff (heath ledger)
                 text += '<li><span class="notice">' + _userLink(_uriLink(dents[i].text)) + '</span> ';
                 text += '<br><i><a class="timestamp" href="' + svc + 'notice/' + dents[i].id + '">';
+                text += dents[i].user.screen_name + ', ';
                 text += jQuery.timeago(new Date(dents[i].created_at));
                 text += '</a></i></li>';
               }
