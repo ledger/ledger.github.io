@@ -71,6 +71,10 @@ background-attachment: fixed !important;
     font-style:italic;
 }
 
+#sidebar a.feed {
+    font-size:small;
+}
+
 #identicawidget {
 }
 
