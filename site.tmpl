@@ -8,27 +8,29 @@
     <script language="javascript" type="text/javascript" src="jquery.truncator.js"></script>
     <script src="jquery.timeago.js" type="text/javascript"></script>
     <script type="text/javascript">
+      var num_items = 3;
+      var desc_length = 100;
       function pipeCallback(obj){ 
         var i;
         var h='';
-        h += '<span class="heading">Planet Ledger</span>';
+        h += '<a class="heading" href="http://pipes.yahoo.com/pipes/pipe.info?_id=5729836f3c71d2d91261feaa18d22b05">Planet Ledger</span>';
         h += '&nbsp;<a href="http://pipes.yahoo.com/pipes/pipe.run?_id=5729836f3c71d2d91261feaa18d22b05&_render=rss" type="application/atom+xml"'+
              ' title="planet ledger RSS feed">'+
              '<img src="rss_icon.gif" border=0 /></a>'+
-             '<br><span class="small">blog posts and tweets about ledger and family</span>';
+             '<br><span class="small">blog posts and tweets about ledger and family'+
+             ' (<a href="mailto:webmaster@ledger-cli.org?subject=planet ledger update" title="click to submit a new feed or an update">add me</a>)</span>';
         h += '<ul class="small">';
-        for (i = 0; i < 3 ; i++){
+        for (i = 0; i < num_items ; i++){
           h += '<li>';
           if (obj.value.items[i].title)
             h += '<a class="title" href="' + obj.value.items[i].link + '">'+obj.value.items[i].title + '</a>';
           h += ' <span class="desc">' + obj.value.items[i].description + '...</span>'+
-               '<br><span class="date">' + jQuery.timeago(obj.value.items[i].pubDate) + '</span>'+
+               ' <span class="date">' + jQuery.timeago(obj.value.items[i].pubDate) + '</span>'+
                '</li>';
-//.substring(0,200)
         }
         h += '</ul>';
         $$('#planet').html(h);
-        $$('.desc').truncate({max_length:200})
+        $$('.desc').truncate({max_length:desc_length})
       }
     </script>
   </head>
