@@ -107,7 +107,7 @@ others, please let me know. If you would like to have a binary hosted,
 please [send an e-mail](mailto:jwiegley@gmail.com).
 
 ### Mac OS X
-- [John's ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip) (3.0; requires Snow Leopard, boost lib installed)
+- [John's ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip) (3.0; requires Snow Leopard with boost lib installed)
 - `port install ledger` (2.6)
 - `fink install ledger` (2.6)
 - `brew install ledger` (2.6)
