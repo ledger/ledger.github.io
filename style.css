@@ -110,6 +110,10 @@ background-attachment: fixed !important;
     font-size:small;
 }
 
+.italic {
+    font-style:italic;
+}
+
 .nowrap {
     white-space:nowrap;
 }
