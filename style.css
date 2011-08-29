@@ -49,42 +49,31 @@ background-attachment: fixed !important;
     position:fixed;
 }
 
-#sidebar .heading {
+#sidebar div .heading {
     font-weight:bold;
     font-size:large;
 }
 
-#sidebar ul {
+#sidebar div ul {
     list-style-type:none;
-    font-style:italic;
     margin-top:0;
-    padding-left:0.5em;
-    white-space:nowrap;
+    padding-left:0em;
 }
 
-#sidebar ul li {
-    font-size:large;
-}
-
-#identica {
-    font-size:small;
-    font-style:italic;
-}
-
-#sidebar a.feed {
-    font-size:small;
-}
-
-#identicawidget {
-}
-
-#identicawidget li {
-    list-style-type:none;
-    padding:1em 0 0 0.5em;
+#planet li {
+    padding:1em 0 0 0;
     font-style:normal;
 }
 
-#identicawidget a.timestamp:link, #identicawidget a.timestamp:visited {
+.title {
+    font-weight:bold;
+}
+
+.desc p {
+    display:inline;
+}
+
+.date {
     color:gray;
 }
 
@@ -106,6 +95,18 @@ background-attachment: fixed !important;
     height: 1px;
     border: 0;
     width: 80%;
+}
+
+.large {
+    font-size:large;
+}
+
+.small {
+    font-size:small;
+}
+
+.nowrap {
+    white-space:nowrap;
 }
 
 pre {

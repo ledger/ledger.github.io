@@ -46,3 +46,9 @@ Cron rules:
     # pull latest site, fallback in case github listener not running
     */15 * * * * simon  cd /repos/ledger-website; git pull -q && make --quiet
 
+Planet sidebar: the feed comes from http://pipes.yahoo.com/simonmichael/ledger ,
+which aggregates
+
+- some known blogs
+- twitter #ledgercli hashtag
+- identi.ca #ledger hashtag
