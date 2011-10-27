@@ -67,17 +67,17 @@ accounts, or the history of a particular account:
 
 Official ledger documentation, built from the current source:
 
-  Ledger 2.6.3                                           Ledger 3.0 pre-release (`next` branch)
-  ------------------------------------------------------ ----------------------------------------------------------------
-  [README](2.6/README)                                   [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
-  [NEWS](2.6/NEWS)                                       [NEWS](3.0/doc/NEWS)
-  [Manual](2.6/ledger.html) [(pdf)](2.6/ledger.pdf)      [Manual](3.0/doc/ledger.html) [(pdf)](3.0/doc/ledger.pdf), [New manual draft](3.0/doc/ledger3.html) [(pdf)](3.0/doc/ledger3.pdf), [Man page draft](3.0/doc/ledger.1.html)
-  ------------------------------------------------------ ---------------------------------------------------------------
+  [Ledger 2.6.3](https://github.com/jwiegley/ledger/commits/maint) [Ledger 3.0 `next` branch](https://github.com/jwiegley/ledger/commits/next)
+  ---------------------------------------------------------------- ----------------------------------------------------------------
+  [README](2.6/README)                                             [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
+  [NEWS](2.6/NEWS)                                                 [NEWS](3.0/doc/NEWS)
+  [Manual](2.6/ledger.html) ([pdf](2.6/ledger.pdf))                [Old manual](3.0/doc/ledger.html) ([pdf](3.0/doc/ledger.pdf)), [New manual](3.0/doc/ledger3.html) ([pdf](3.0/doc/ledger3.pdf)), [ledger(1) man page](3.0/doc/ledger.1.html)
+  ---------------------------------------------------------------- ---------------------------------------------------------------
 
 The [ledger wiki](https://github.com/jwiegley/ledger/wiki) (alias: wiki.ledger-cli.org)
 has more docs and notes.
 
-And here's more [about this site](README.html), so you can help improve it.
+And [about ledger-cli.org](README.html) documents this site, so you can help improve it.
 
 ## Community
 
