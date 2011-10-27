@@ -67,12 +67,12 @@ accounts, or the history of a particular account:
 
 Official ledger documentation, built from the current source:
 
-  [Ledger 2.6.3](https://github.com/jwiegley/ledger/commits/maint) [Ledger 3.0 `next` branch](https://github.com/jwiegley/ledger/commits/next)
-  ---------------------------------------------------------------- ----------------------------------------------------------------
-  [README](2.6/README)                                             [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
-  [NEWS](2.6/NEWS)                                                 [NEWS](3.0/doc/NEWS)
-  **[Manual](2.6/ledger.html)** ([pdf](2.6/ledger.pdf))            **[Manual](3.0/doc/ledger3.html)** ([pdf](3.0/doc/ledger3.pdf)), [man page](3.0/doc/ledger.1.html) (and a somewhat updated [old manual](3.0/doc/ledger.html))
-  ---------------------------------------------------------------- ---------------------------------------------------------------
+  [Ledger 2.6.3](https://github.com/jwiegley/ledger/commits/maint) (deprecated)  [Ledger 3.0 `next` branch](https://github.com/jwiegley/ledger/commits/next) (recommended)
+  ------------------------------------------------------------------------------ ----------------------------------------------------------------
+  [README](2.6/README)                                                           [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
+  [NEWS](2.6/NEWS)                                                               [NEWS](3.0/doc/NEWS)
+  **[Manual](2.6/ledger.html)** ([pdf](2.6/ledger.pdf))                          **[Manual](3.0/doc/ledger3.html)** ([pdf](3.0/doc/ledger3.pdf)), [man page](3.0/doc/ledger.1.html) (and a somewhat updated [old manual](3.0/doc/ledger.html))
+  ------------------------------------------------------------------------------ ---------------------------------------------------------------
 
 The [ledger wiki](https://github.com/jwiegley/ledger/wiki) (alias: wiki.ledger-cli.org)
 has more docs and notes.
