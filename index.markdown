@@ -33,9 +33,12 @@ accounting systems:
 
 Ledger, begun in 2003, is written by John Wiegley and released under the BSD license.
 It has also inspired several [ports](http://wiki.ledger-cli.org/Ports) to other languages.
-You can hear John explain Ledger in the [2011/01/26 FLOSS Weekly podcast](http://twit.tv/floss150).
 
-## Getting started
+## Documentation
+
+John gave a nice introduction to Ledger on the [2011/01/26 FLOSS Weekly podcast](http://twit.tv/floss150) (audio/video).
+
+### Getting started
 
 To get started with Ledger, add entries to a text file in Ledger’s own
 textual format. Here’s what an entry might look like:
@@ -63,23 +66,41 @@ accounts, or the history of a particular account:
     ledger -f your-file.dat balance
     ledger -f your-file.dat register Expenses
 
-## Documentation
+###Official documentation
 
-Official ledger documentation, built from the current source:
+  Ledger 2.6.3 (deprecated) ([changes](https://github.com/jwiegley/ledger/commits/maint)) Ledger 3.0 `next` branch (recommended) ([changes](https://github.com/jwiegley/ledger/commits/next))
+  --------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------
+  [README](2.6/README)                                                                    [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
+  [NEWS](2.6/NEWS)                                                                        [NEWS](3.0/doc/NEWS)
+  **[Manual](2.6/ledger.html)** ([pdf](2.6/ledger.pdf))                                   **[Manual](3.0/doc/ledger3.html)** ([pdf](3.0/doc/ledger3.pdf)), [man page](3.0/doc/ledger.1.html) (and a somewhat updated [old manual](3.0/doc/ledger.html))
+  --------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------
 
-  [Ledger 2.6.3](https://github.com/jwiegley/ledger/commits/maint) (deprecated)  [Ledger 3.0 `next` branch](https://github.com/jwiegley/ledger/commits/next) (recommended)
-  ------------------------------------------------------------------------------ ----------------------------------------------------------------
-  [README](2.6/README)                                                           [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
-  [NEWS](2.6/NEWS)                                                               [NEWS](3.0/doc/NEWS)
-  **[Manual](2.6/ledger.html)** ([pdf](2.6/ledger.pdf))                          **[Manual](3.0/doc/ledger3.html)** ([pdf](3.0/doc/ledger3.pdf)), [man page](3.0/doc/ledger.1.html) (and a somewhat updated [old manual](3.0/doc/ledger.html))
-  ------------------------------------------------------------------------------ ---------------------------------------------------------------
+The [ledger wiki](https://github.com/jwiegley/ledger/wiki) *(alias:
+wiki.ledger-cli.org)* has some more notes.
+[About ledger-cli.org](README.html) documents this site so you can help
+improve it.
 
-The [ledger wiki](https://github.com/jwiegley/ledger/wiki) (alias: wiki.ledger-cli.org)
-has more docs and notes.
+## Download
 
-And [about ledger-cli.org](README.html) documents this site, so you can help improve it.
+The Ledger source is available at
+[http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger)
+*(alias: git.ledger-cli.org)*
 
-## Community
+Several people in the Open Source community have spent time creating
+Ledger binaries for specific platforms. If you discover others or would
+like to have a binary hosted, please
+[let John know](mailto:jwiegley@gmail.com).
+
+  GNU/Linux                                                                                      Windows                                                                           Mac OS X                                                                                                                                              
+  ---------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------- 
+  [Ubuntu](https://launchpad.net/~mbudde/+archive/ledger) (3.0)                                  [AlexanderAA's binary](http://www.assembla.com/spaces/Goldcoast/documents) (2.6)  [John's ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip) (3.0, needs Snow Leopard & boost lib)    
+  [Debian](http://qa.debian.org/developer.php?packages=ledger) (2.6)                                                                                                               `brew install ledger --HEAD` (3.0)                                                                                                  
+  [Gentoo](http://packages.gentoo.org/package/app-office/ledger) (2.6)                                                                                                             `brew install ledger` (2.6)                                                                                                                       
+  [Arch Linux](http://aur.archlinux.org/packages.php?ID=3086) (2.6)                                                                                                                `fink install ledger` (2.6)                                                                                                                       
+  [CentOS 6](http://pkgs.org/centos-6-rhel-6/epel-i386/ledger-2.6.3-2.el6.i686.rpm.html) (2.6)                                                                                     `port install ledger` (2.6)                                                                                                                       
+  [Nixpkgs](http://hydra.nixos.org/job/nixpkgs/trunk/ledger/) (2.6)                                                                                                                                                                                                                                                                      
+
+## Support
 
 **IRC channel**  
 Visit us in the [\#ledger](irc://irc.freenode.net/ledger) channel on irc.freenode.net
@@ -95,31 +116,3 @@ Searching the list archive is another good way to find answers.
 **Bug tracker**  
 Please report bugs in [bugs.ledger-cli.org](http://bugs.ledger-cli.org).
 
-## Download
-
-The Ledger source is available on github:
-[http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger)
-*(alias: git.ledger-cli.org)*
-
-Several people in the Open Source community have spent time creating
-Ledger binaries for specific platforms, listed below; if you discover
-others, please let me know. If you would like to have a binary hosted,
-please [send an e-mail](mailto:jwiegley@gmail.com).
-
-### Mac OS X
-- [John's ledger-current.dmg.zip](ftp://ftp.newartisans.com/pub/ledger/ledger-current.dmg.zip) (3.0; requires Snow Leopard with boost lib installed)
-- `port install ledger` (2.6)
-- `fink install ledger` (2.6)
-- `brew install ledger` (2.6)
-- `brew install ledger --HEAD` (3.0 `next` branch)
-
-### Windows
-- [AlexanderAA's binary](http://www.assembla.com/spaces/Goldcoast/documents) (2.6)
-
-### GNU/Linux
-- [Debian](http://qa.debian.org/developer.php?packages=ledger) (2.6)
-- [Ubuntu](https://launchpad.net/~mbudde/+archive/ledger) (3.0)
-- [Gentoo](http://packages.gentoo.org/package/app-office/ledger) (2.6)
-- [Arch Linux](http://aur.archlinux.org/packages.php?ID=3086) (2.6)
-- [CentOS 6](http://pkgs.org/centos-6-rhel-6/epel-i386/ledger-2.6.3-2.el6.i686.rpm.html) (2.6)
-- [Nixpkgs](http://hydra.nixos.org/job/nixpkgs/trunk/ledger/) (2.6)
