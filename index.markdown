@@ -87,7 +87,7 @@ to get your questions answered quickly. John Wiegley's nick is `johnw`.
 
 **Mail list**  
 The [ledger-cli mail list](http://groups.google.com/group/ledger-cli)
-(alias: list.ledger-cli.org) is the main place for Ledger discussions. Please join
+*(alias: list.ledger-cli.org)* is the main place for Ledger discussions. Please join
 and contribute!  If you'd rather use a NNTP newsreader or gmane's interface,
 see [gmane.comp.finance.ledger.general](http://dir.gmane.org/gmane.comp.finance.ledger.general).
 Searching the list archive is another good way to find answers.
@@ -99,7 +99,7 @@ Please report bugs in [bugs.ledger-cli.org](http://bugs.ledger-cli.org).
 
 The Ledger source is available on github:
 [http://github.com/jwiegley/ledger](http://github.com/jwiegley/ledger)
-(alias: git.ledger-cli.org)
+*(alias: git.ledger-cli.org)*
 
 Several people in the Open Source community have spent time creating
 Ledger binaries for specific platforms, listed below; if you discover
