@@ -68,7 +68,7 @@ accounts, or the history of a particular account:
 
 ###Official documentation
 
-  Ledger 2.6.3 (deprecated) ([changes](https://github.com/jwiegley/ledger/commits/maint)) Ledger 3.0 `next` branch (recommended) ([changes](https://github.com/jwiegley/ledger/commits/next))
+  Ledger 2.6.3 (deprecated) ([changes](https://github.com/jwiegley/ledger/commits/maint)) Ledger 3.0 `next` branch (recommended) ([manual changes](https://github.com/jwiegley/ledger/commits/next/doc/ledger3.texi), [all changes](https://github.com/jwiegley/ledger/commits/next))
   --------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------
   [README](2.6/README)                                                                    [README-1ST](3.0/README-1ST), [README.textile](3.0/README.textile), [doc/README](3.0/doc/README)
   [NEWS](2.6/NEWS)                                                                        [NEWS](3.0/doc/NEWS)
