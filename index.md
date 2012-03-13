@@ -66,7 +66,7 @@ accounts, or the history of a particular account:
     ledger -f your-file.dat balance
     ledger -f your-file.dat register Expenses
 
-###Official documentation
+### Official documentation
 
   Ledger 2.6.3 (deprecated) ([changes](https://github.com/jwiegley/ledger/commits/maint)) Ledger 3.0 `next` branch (recommended) ([manual changes](https://github.com/jwiegley/ledger/commits/next/doc/ledger3.texi), [all changes](https://github.com/jwiegley/ledger/commits/next))
   --------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------
