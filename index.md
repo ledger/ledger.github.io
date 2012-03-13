@@ -77,7 +77,7 @@ accounts, or the history of a particular account:
 
 The [ledger wiki](https://github.com/jwiegley/ledger/wiki) *(alias:
 wiki.ledger-cli.org)* has some more notes.
-[About ledger-cli.org](README.html) documents this site so you can help
+[About ledger-cli.org](about.html) documents this site so you can help
 improve it.
 
 ## Download

@@ -1,10 +1,9 @@
+*.hi
+*.o
 *.html
+site
+_*
+*.org
 snapshot.tar.gz
 *.log
-
-_*
-hakyll*
-*.hamlet
-old
-client_session_key.aes
-
+*.aes
