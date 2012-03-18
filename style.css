@@ -1,96 +1,70 @@
 body {
     background-color:white; 
     color:black;
-    /* margin: 3em; */
-/* font-family:helvetica,arial,freesans,clean,sans-serif; */
-
-/* http://gradients.glrzad.com */
-background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.98, rgb(255,255,255)),
-    color-stop(0.9999, rgb(0,46,3)),
-    color-stop(1, rgb(0,0,0))
-);
-background-image: -moz-linear-gradient(
-    center bottom,
-    rgb(255,255,255) 98%,
-    rgb(0,46,3) 100%,
-    rgb(0,0,0) 100%
-);
-
-background-attachment: fixed !important;
+    font-family:sans-serif;
 }
 
-#main {
-    padding-left:15em;
-    margin-right:3em;
-    margin-left:1em;
-    /* width: 600px; */
-    /* position: relative; */
-    height:100%;
-    overflow:auto;
+#content {
+    max-width:60em;
+    margin:0 auto;
 }
 
-#main h1, #main h2 {
-    position:relative;
-    left:-1em;
+#header {
+    width:100%;
+    height:60px;
+    border-bottom:3px solid gray;
+    padding:0 1em;
 }
 
-#main td {
-    padding-right:1em;
-    background-color:#f0f0f0;
+#header li {
+    display:inline;
+    margin:1em;
 }
 
-#sidebar {
-    width: 10em;
-    padding:2em 1em;
-    position:fixed;
-}
-
-#sidebar div .heading {
-    font-weight:bold;
-    font-size:large;
-}
-
-#planet a.heading:link, #planet a.heading:visited {
-    color:black;
+#header a {
     text-decoration:none;
 }
 
-#sidebar div ul {
-    list-style-type:none;
-    margin-top:0;
-    padding-left:0em;
-}
-
-#planet li {
-    padding:1em 0 0 0;
-    font-style:normal;
-}
-
-.title {
-    font-weight:bold;
-}
-
-.desc p {
+#logo {
+    font-size:50px;
     display:inline;
 }
 
-.date {
-    color:gray;
+#navlinks {
+    display:inline;
+}
+
+#navlinks ul {
+    display:inline;
+}
+
+#navlinks li {
+    white-space:nowrap;
+}
+
+#main {
+    padding:0 1em;
+}
+
+pre, code, tt {
+    font-family:consolas, monospace;
+}
+
+pre {
+    margin:0 0 0 1em;
+}
+
+pre code {
+    padding:0.5em;
+    display:inline-block;
+    background: #eee;
+    font-size:small;
 }
 
 #footer {
     margin-top:3em;
-    font-family:helvetica,arial,freesans,clean,sans-serif;
     font-size:small;
     text-align:center;
-    /* color:#ccc; */
-}
-
-#footer a:link, #footer a:visited {
     /* color:#ccc; */
 }
 
@@ -110,16 +84,67 @@ background-attachment: fixed !important;
     font-size:small;
 }
 
-.italic {
-    font-style:italic;
-}
-
 .nowrap {
     white-space:nowrap;
 }
 
-pre {
-    background: #F8F8F8; /* same as GitHub, good if using their syntax.css */
-    margin-left: 1em;
-}
+/* #main { */
+/*     /\* padding-left:15em; *\/ */
+/*     margin:0 auto; */
+/*     /\* margin-right:3em; *\/ */
+/*     /\* margin-left:1em; *\/ */
+/*     /\* width: 600px; *\/ */
+/*     /\* position: relative; *\/ */
+/*     height:100%; */
+/*     overflow:auto; */
+/* } */
+
+/* #main h1, #main h2 { */
+/*     position:relative; */
+/*     left:-1em; */
+/* } */
+
+/* #main td { */
+/*     padding-right:1em; */
+/*     background-color:#f0f0f0; */
+/* } */
+
+/* #sidebar { */
+/*     width: 10em; */
+/*     padding:2em 1em; */
+/*     position:fixed; */
+/* } */
+
+/* #sidebar div .heading { */
+/*     font-weight:bold; */
+/*     font-size:large; */
+/* } */
+
+/* #planet a.heading:link, #planet a.heading:visited { */
+/*     color:black; */
+/*     text-decoration:none; */
+/* } */
+
+/* #sidebar div ul { */
+/*     list-style-type:none; */
+/*     margin-top:0; */
+/*     padding-left:0em; */
+/* } */
+
+/* #planet li { */
+/*     padding:1em 0 0 0; */
+/*     font-style:normal; */
+/* } */
+
+/* .title { */
+/*     font-weight:bold; */
+/* } */
+
+/* .desc p { */
+/*     display:inline; */
+/* } */
+
+/* .date { */
+/*     color:gray; */
+/* } */
 

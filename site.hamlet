@@ -2,69 +2,34 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>#{title}</title>
-    <script src="jquery.js" type="text/javascript"></script>
-    <script language="javascript" type="text/javascript" src="jquery.truncator.js"></script>
-    <script src="jquery.timeago.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      var num_items = 3;
-      var desc_length = 100;
-      function pipeCallback(obj){ 
-        var i;
-        var h='';
-        h += '<a class="heading" href="http://pipes.yahoo.com/pipes/pipe.info?_id=5729836f3c71d2d91261feaa18d22b05">Ledger news</span>';
-        h += '&nbsp;<a href="http://pipes.yahoo.com/pipes/pipe.run?_id=5729836f3c71d2d91261feaa18d22b05&_render=rss" type="application/atom+xml"'+
-             ' title="planet ledger RSS feed">'+
-             '<img src="rss_icon.gif" border=0 /></a>'+
-             '<br><span class="small"><em>blog posts &amp; dents <!-- and tweets --> about ledger and family'+
-             ' (<a href="mailto:webmaster@ledger-cli.org?subject=add to ledger news feed" title="click to submit a new feed or an update">add your blog!</a>)</em></span>';
-        h += '<ul class="small">';
-        for (i = 0; i < num_items ; i++){
-          h += '<li>';
-          if (obj.value.items[i].title)
-            h += '<a class="title" href="' + obj.value.items[i].link + '">'+obj.value.items[i].title + '</a>';
-          h += ' <span class="desc">' + obj.value.items[i].description + '...</span>'+
-               ' <span class="date">' + jQuery.timeago(obj.value.items[i].pubDate) + '</span>'+
-               '</li>';
-        }
-        h += '</ul>';
-        \$('#planet').html(h);
-        \$('.desc').truncate({max_length:desc_length})
-      }
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <!-- <script type="text/javascript" src="jquery.js"></script> -->
+    <!-- <script type="text/javascript" src="jquery.truncator.js"></script> -->
+    <!-- <script type="text/javascript" src="jquery.timeago.js"></script> -->
 
   <body>
-    <div id="header">
+    <div id="content">
 
-    <div id="sidebar">
-      <div class="large nowrap">
-        <ul>
-          <li><a href="index.html">Home</a>
-          <li><a href="index.html#documentation">Documentation</a>
-          <!-- <li><a href="http://wiki.ledger-cli.org">Wiki</a> -->
-          <li><a href="index.html#download">Download</a>
-          <li><a href="index.html#support">Support</a>
-      <div class="large nowrap">
-        <span class="heading">Related projects</span>
-        <ul class="nowrap">
-          <li><a href="http://hledger.org">hledger</a>
-          <li><a href="http://furius.ca/beancount/">BeanCount</a>
-          <li><a href="https://launchpad.net/csv2ledger">CSV2ledger</a>
-          <li><a href="https://github.com/quentinsf/icsv2ledger">icsv2ledger</a>
-          <li><a href="http://ericbetts.org/ledgeraddons">EB's addons</a>
-          <li><a href="http://joyful.com/repos/ledgertools/">SM's addons</a>
-      <!-- <div class=""> -->
-      <!--   <p> -->
-      <!--     twitter: #ledgercli<br /> -->
-      <!--     identi.ca: #ledger, <a href="http://identi.ca/group/ledgerites">ledgerites group</a><br /> -->
-      <!--   </p> -->
-      <!-- </div>       -->
-      <div id="planet" class="">
+      <a href="http://git.ledger-cli.org/" style="position:absolute; top:0; right:0; border:0;" >
+        <img width="149" height="149" src="https://assets2.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_gray_6d6d6d.png&path=" alt="Fork me on GitHub" />
 
-    <div id="main">
-      #{body}
+      <div id="header">
+        <div id="logo">
+          <a href="/" style="color:black;">Ledger</a>
 
-    <div id="footer">
-      <hr />
+        <div id="navlinks">
+          <ul>
+            <li><a href="index.html">Home</a>
+            <li><a href="features.html">Features</a>
+            <li><a href="docs.html">Docs</a>
+            <li><a href="download.html">Download</a>
+            <li><a href="contribute.html">Contribute</a>
+            <li><a href="http://wiki.ledger-cli.org/">Wiki -></a>
 
-    <script type="text/javascript" src="http://pipes.yahoo.com/pipes/pipe.run?_id=5729836f3c71d2d91261feaa18d22b05&_render=json&_callback=pipeCallback"></script>
+        <div style="clear:both;">
+
+      <div id="main">
+        #{body}
+
+      <div id="footer">
