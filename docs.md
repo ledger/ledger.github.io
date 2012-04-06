@@ -13,5 +13,3 @@
 The [ledger wiki](http://wiki.ledger-cli.org) has a few more notes.
 
 John gave a nice introduction to Ledger on the [2011/01/26 FLOSS Weekly podcast](http://twit.tv/floss150).
-
-[About ledger-cli.org](about.html) documents this site so you can help improve it.

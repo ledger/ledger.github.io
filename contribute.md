@@ -17,3 +17,5 @@ Please report bugs in [bugs.ledger-cli.org](http://bugs.ledger-cli.org).
 **Code**  
 The [ledger source code](http://git.ledger-cli.org/) is available on Github.
 
+**Site**
+[About ledger-cli.org](about.html) documents this site so you can help improve it.
