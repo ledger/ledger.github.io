@@ -1,3 +1,7 @@
+---
+title: About the site - Ledger
+---
+
 # About the site
 
 The ledger-cli.org site is kept in the main ledger repo's

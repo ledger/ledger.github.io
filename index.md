@@ -1,3 +1,7 @@
+---
+title: Ledger, a powerful command-line accounting system
+---
+
 # Welcome to Ledger
 
 Ledger is a powerful, double-entry accounting system that is accessed from

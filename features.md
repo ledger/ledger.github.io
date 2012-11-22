@@ -1,3 +1,7 @@
+---
+title: Features - Ledger
+---
+
 # Features
 
 Ledger is a powerful, double-entry accounting system that is accessed

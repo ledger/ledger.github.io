@@ -1,3 +1,7 @@
+---
+title: Contribute - Ledger
+---
+
 # Contribute
 
 **IRC channel**  

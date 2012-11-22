@@ -1,3 +1,7 @@
+---
+title: Download - Ledger
+---
+
 # Getting ledger
 
 The [ledger source code](http://git.ledger-cli.org/) is available on Github.

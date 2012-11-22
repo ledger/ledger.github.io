@@ -1,3 +1,7 @@
+---
+title: Documentation - Ledger
+---
+
 # Documentation
 
 **[Ledger 3.0 manual](3.0/doc/ledger3.html)**
