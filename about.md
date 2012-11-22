@@ -5,7 +5,7 @@ title: About the site - Ledger
 # About the site
 
 The ledger-cli.org site is kept in the main ledger repo's
-[`website`](https://github.com/jwiegley/ledger/tree/website) branch.  It
+[`website`](https://github.com/ledger/ledger/tree/website) branch.  It
 is static html generated from markdown by
 [hakyll](http://jaspervdj.be/hakyll).  Commits are announced on #ledger,
 and published to ledger-cli.org every 15 minutes.
@@ -13,8 +13,8 @@ and published to ledger-cli.org every 15 minutes.
 
 Version-specific documentation, with urls beginning `/3.0/` or
 `/2.6/`, comes from the ledger docs in the
-[`next`](https://github.com/jwiegley/ledger/tree/next) and
-[`maint`](https://github.com/jwiegley/ledger/tree/maint) branches
+[`next`](https://github.com/ledger/ledger/tree/next) and
+[`maint`](https://github.com/ledger/ledger/tree/maint) branches
 respectively.
 
 <!-- The news feed on the front page comes from this -->
@@ -45,11 +45,11 @@ Apache vhost:
 
       # git.ledger-cli.org -> git repo
       RewriteCond %{HTTP_HOST} ^git.ledger-cli.org$
-      RewriteRule ^(.*)                    http://github.com/jwiegley/ledger$1 [L]
+      RewriteRule ^(.*)                    http://github.com/ledger/ledger$1 [L]
 
       # wiki.ledger-cli.org -> wiki
       RewriteCond %{HTTP_HOST} ^wiki.ledger-cli.org$
-      RewriteRule ^(.*)                    http://github.com/jwiegley/ledger/wiki$1 [L]
+      RewriteRule ^(.*)                    http://github.com/ledger/ledger/wiki$1 [L]
 
       # serve almost everything else from the hakyll-generated website
       RewriteCond %{REQUEST_URI} !^/(cgi-bin|awstats|icons)
