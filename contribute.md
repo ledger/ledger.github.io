@@ -17,7 +17,6 @@ Searching the list archive is another good way to find answers.
 
 **Bug tracker**  
 Please report bugs at [bugs.ledger-cli.org](http://bugs.ledger-cli.org) (Bugzilla).
-(There is also a [github issue tracker](http://git.ledger-cli.org/ledger/issues) but Bugzilla is preferred.)
 
 **Code**  
 The [ledger source code](http://git.ledger-cli.org/) is available on Github, contributions welcome!
