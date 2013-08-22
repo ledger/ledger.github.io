@@ -13,7 +13,7 @@ import System.Cmd (system)
 main:: IO ()
 main = do
  hakyll $ do
-  match "*.hamlet"    hamlet
+  match "*.html"      html
   match "*.md"        page
   match "*.css"       css
   match "*.js"        file
@@ -23,11 +23,11 @@ main = do
  system "[ -d _site ] && ln -sf ../../ledger2.6 _site/2.6"
  return ()
 
-hamlet = compile templateCompiler
-css    = route idRoute >> compile compressCssCompiler
-file   = route idRoute >> compile copyFileCompiler
-page   = do
+html = compile templateCompiler
+css  = route idRoute >> compile compressCssCompiler
+file = route idRoute >> compile copyFileCompiler
+page = do
   route $ setExtension "html"
-  compile $ pageCompiler
-   >>> applyTemplateCompiler "site.hamlet"
-   >>> relativizeUrlsCompiler
+  compile $ pandocCompiler
+   >>= loadAndApplyTemplate "site.html" defaultContext
+   >>= relativizeUrls
