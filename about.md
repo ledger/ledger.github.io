@@ -11,7 +11,7 @@ Commits are published to ledger-cli.org on the quarter-hour. <!-- immediately. -
 
 Version-specific documentation, with urls beginning `/3.0/` or
 `/2.6/`, comes from the ledger docs in the
-[`next`](https://github.com/ledger/ledger/tree/next) and
+[`master`](https://github.com/ledger/ledger/tree/master) and
 [`maint`](https://github.com/ledger/ledger/tree/maint) branches
 respectively.
 
