@@ -7,7 +7,7 @@ title: About the site - Ledger
 The ledger-cli.org site is kept in the
 [ledger-website](https://github.com/ledger/ledger-website) repo ([changes](https://github.com/ledger/ledger-website/commits/master)).
 It is static html generated from markdown by [hakyll](http://jaspervdj.be/hakyll).
-Commits are published to ledger-cli.org on the quarter-hour. <!-- immediately. -->
+Commits will normally appear on ledger-cli.org immediately, otherwise on the hour.
 
 Version-specific documentation, with urls beginning `/3.0/` or
 `/2.6/`, comes from the ledger docs in the
