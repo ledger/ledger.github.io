@@ -1,21 +1,20 @@
-!!!
+<!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>#{title}</title>
+    <meta charset="utf-8">
+    <title>$title$</title>
     <link type="text/css" rel="stylesheet" href="style.css" />
     <!-- <script type="text/javascript" src="jquery.js"></script> -->
     <!-- <script type="text/javascript" src="jquery.truncator.js"></script> -->
     <!-- <script type="text/javascript" src="jquery.timeago.js"></script> -->
-
+  </head>
   <body>
     <div id="content">
       <a href="http://git.ledger-cli.org/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-
       <div id="header">
         <div id="logo">
           <a href="/" style="color:black;">Ledger</a>
-
+        </div>
         <div id="navlinks">
           <ul>
             <li><a href="index.html">Home</a>
@@ -24,10 +23,15 @@
             <li><a href="download.html">Download</a>
             <li><a href="contribute.html">Contribute</a>
             <li><a href="http://wiki.ledger-cli.org/">Wiki -></a>
-
-        <div style="clear:both;">
-
+          </ul>
+        </div>
+      </div>
+      <div style="clear:both;"></div>
       <div id="main">
-        #{body}
-
+        $body$
+      </div>
       <div id="footer">
+      </div>
+    </div>
+  </body>
+</html>
