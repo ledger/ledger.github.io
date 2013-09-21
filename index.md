@@ -1,8 +1,8 @@
 ---
-title: Ledger, a powerful command-line accounting system
+title: ledger, a powerful command-line accounting system
 ---
 
-# Welcome to Ledger
+# Welcome to ledger
 
 Ledger is a powerful, double-entry accounting system that is accessed from
 the UNIX command-line. Ledger, begun in 2003, is written by John Wiegley
