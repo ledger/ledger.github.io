@@ -33,4 +33,6 @@ The [ledger wiki](http://wiki.ledger-cli.org)
 [ledger on Wikipedia](https://en.wikipedia.org/wiki/Ledger_%28software%29)
  <span class=dim> ([changes](https://en.wikipedia.org/w/index.php?title=Ledger_%28software%29&action=history)) </span>
 
-John gave a nice audio introduction to Ledger in the [2011/01/26 FLOSS Weekly show](http://twit.tv/floss150).
+John gave a nice audio introduction to Ledger in the [2011/01/26 FLOSS Weekly show](http://twit.tv/floss150) 
+
+[Ledger and Text based Accounting](http://www.adamsinfoserv.com/AISTWiki/pub/AIS/Presentations/Ledger.pdf) (pdf) is a 2009 presentation by Russell Adams
