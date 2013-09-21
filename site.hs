@@ -15,6 +15,8 @@ main = do
  hakyll $ do
   match "*.tmpl"      template
   match "*.md"        page
+  match "3.0/doc/*.html" file
+  match "2.6/*.html" file
   match "*.css"       css
   match "*.js"        file
   match "*.gif"       file
