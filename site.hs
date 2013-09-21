@@ -16,7 +16,9 @@ main = do
   match "*.tmpl"      template
   match "*.md"        page
   match "3.0/doc/*.html" file
+  match "3.0/doc/*.pdf" file
   match "2.6/*.html" file
+  match "2.6/*.pdf" file
   match "*.css"       css
   match "*.js"        file
   match "*.gif"       file
