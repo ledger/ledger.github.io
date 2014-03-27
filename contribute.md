@@ -5,7 +5,7 @@ title: Contribute - Ledger
 # Contribute
 
 **IRC channel**  
-Visit us in the [\#ledger](irc://irc.freenode.net/ledger) channel on irc.freenode.net
+Visit us in the [\#ledger](http://webchat.freenode.net?randomnick=1&channels=%23ledger&uio=OT10cnVlde) channel on irc.freenode.net
 to get your questions answered quickly. John Wiegley's nick is `johnw`.
 
 **Mail list**  
