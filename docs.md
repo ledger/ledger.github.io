@@ -35,3 +35,4 @@ The [ledger wiki](http://wiki.ledger-cli.org)
 
 John gave a nice audio introduction to Ledger in the [2011/01/26 FLOSS Weekly show](http://twit.tv/floss150) 
 
+[More docs](http://hledger.org/more-docs) on hledger.org lists hledger, Ledger, and accounting resources
