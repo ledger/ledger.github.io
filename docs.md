@@ -35,4 +35,3 @@ The [ledger wiki](http://wiki.ledger-cli.org)
 
 John gave a nice audio introduction to Ledger in the [2011/01/26 FLOSS Weekly show](http://twit.tv/floss150) 
 
-[Ledger and Text based Accounting](http://www.adamsinfoserv.com/AISTWiki/pub/AIS/Presentations/Ledger.pdf) (pdf) is a 2009 presentation by Russell Adams
