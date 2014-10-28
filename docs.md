@@ -17,6 +17,7 @@ title: Documentation - Ledger
  <span class=dim> ([changes](https://github.com/ledger/ledger/commits/master/doc/ledger.1)) </span>
 
 [ledger-mode manual](3.0/doc/ledger-mode.html)
+ and [pdf](3.0/doc/ledger-mode.pdf)
  <span class=dim> ([changes](https://github.com/ledger/ledger/commits/master/doc/ledger-mode.texi)) </span>
 
 </td><td>
