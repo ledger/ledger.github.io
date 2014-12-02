@@ -5,7 +5,7 @@ title: Download - Ledger
 # Getting ledger
 
 The [ledger source code](http://git.ledger-cli.org/) is available on Github.
-[![Build Status](https://travis-ci.org/ledger/ledger.png?branch=master)](https://travis-ci.org/ledger/ledger)
+[![Build Status](https://travis-ci.org/ledger/ledger.svg?branch=master)](https://travis-ci.org/ledger/ledger)
 
 Several people in the Open Source community have spent time creating
 Ledger binaries for specific platforms. If you discover others or would
