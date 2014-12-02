@@ -8,7 +8,7 @@ Help: ghc --make site && ./site
 
 import Control.Arrow ((>>>))
 import Hakyll
-import System.Cmd (system)
+import System.Process (system)
 
 main:: IO ()
 main = do
