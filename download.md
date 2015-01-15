@@ -19,6 +19,6 @@ like to have a binary hosted, please
   [Gentoo](http://packages.gentoo.org/package/app-office/ledger) (3.1)                                                                                                                [`fink`](http://www.finkproject.org/) `install` [`ledger`](http://pdb.finkproject.org/pdb/package.php/ledger) (3.1)                                   [NetBSD](http://pkgsrc.se/wip/ledger) package
   [Arch Linux](https://aur.archlinux.org/packages/ledger/) (3.1)                                                                                                                      [`port`](https://www.macports.org/) `install` [`ledger`](https://trac.macports.org/browser/trunk/dports/finance/ledger/Portfile) (2.6)
   [Slackware](http://slackbuilds.org/repository/14.1/business/ledger/) (3.1)
-  [CentOS 6](http://pkgs.org/centos-6-rhel-6/epel-i386/ledger-2.6.3-2.el6.i686.rpm.html) (2.6)
+  [CentOS 7](http://pkgs.org/centos-7/epel-testing-x86_64/ledger-3.1-2.el7.x86_64.rpm.html) (3.1)
   [Nixpkgs](http://hydra.nixos.org/job/nixpkgs/trunk/ledger/) (2.6)
 
