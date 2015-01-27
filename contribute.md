@@ -25,5 +25,5 @@ The [ledger source code](http://git.ledger-cli.org/) is available on Github, con
 [About ledger-cli.org](about.html) documents this site so you can help improve it.
 
 **Twitter**  
-[#ledgercli tweets](https://twitter.com/search?q=%23ledgercli&src=typd&f=realtime) Ledger-related posts on twitter.
-[@LedgerTips](https://twitter.com/ledgertips) posts tips for Ledger, hledger, beancount and similar.
+[#ledgercli tweets](https://twitter.com/search?q=%23ledgercli&src=typd&f=realtime) Ledger-related posts on twitter.  
+[\@LedgerTips](https://twitter.com/ledgertips) posts tips for Ledger, hledger, beancount and similar.
