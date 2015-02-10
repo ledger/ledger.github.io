@@ -20,5 +20,6 @@ like to have a binary hosted, please
   [Arch Linux](https://aur.archlinux.org/packages/ledger/) (3.1)                                                                                                                      [`port`](https://www.macports.org/) `install` [`ledger`](https://trac.macports.org/browser/trunk/dports/finance/ledger/Portfile) (2.6)
   [Slackware](http://slackbuilds.org/repository/14.1/business/ledger/) (3.1)
   [CentOS 7](http://pkgs.org/centos-7/epel-testing-x86_64/ledger-3.1-2.el7.x86_64.rpm.html) (3.1)
+  [OpenSUSE](http://software.opensuse.org/package/ledger?search_term=ledger) (3.1)
   [Nixpkgs](http://hydra.nixos.org/job/nixpkgs/trunk/ledger/) (2.6)
 
