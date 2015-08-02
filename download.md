@@ -11,7 +11,7 @@ The [ledger source code](http://git.ledger-cli.org/) is available on Github.
 edger/ledger)
 [![Status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://github.com/ledger/ledger/pulse/monthly)
 [![License](https://img.shields.io/badge/license-BSD-blue.svg?style=flat)](http://opensource.org/licenses/BSD-3-Clause)
-[![GitHub release](https://img.shields.io/github/tag/ledger/ledger.svg?style=flat)](https://github.com/ledger/ledger/releases)
+[![GitHub release](https://img.shields.io/github/release/ledger/ledger.svg?style=flat)](https://github.com/ledger/ledger/releases)
 
 Several people in the Open Source community have spent time creating
 Ledger binaries for specific platforms. If you discover others or would
