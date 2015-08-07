@@ -17,7 +17,7 @@ and released under the BSD license.  It has also inspired several
 To get started with Ledger, add transactions to a text file in Ledger’s
 own textual format. Here’s what a single transaction might look like:
 
-    2006/10/15 Exxon
+    2015/10/12 Exxon
         Expenses:Auto:Gas         $10.00
         Liabilities:MasterCard   $-10.00
 
@@ -32,6 +32,6 @@ You use the `ledger` command line program to see the balance of your accounts:
 or the history of a particular account:
 
     $ ledger -f your-file.dat register Expenses
-    06-Oct-15 Exxon               Expenses:Auto:Gas          $10.00      $10.00
+    15-Oct-12 Exxon               Expenses:Auto:Gas          $10.00      $10.00
 
 Read more about Ledger's [features](features.html).
