@@ -1,0 +1,42 @@
+sudo: false
+
+# Do not choose a language; we provide our own build tools.
+language: generic
+
+# Caching so the next build will be fast too.
+cache:
+  directories:
+    - $HOME/.stack
+
+# Ensure necessary system libraries are present
+addons:
+  apt:
+    packages:
+      - libgmp-dev
+      - texinfo
+      - groff
+      - texlive
+      - texlive-fonts-recommended
+      - texlive-generic-extra
+      - texlive-generic-recommended
+      - texlive-latex-recommended
+
+before_install:
+  - mkdir -p ~/.local/bin
+  - export PATH=$HOME/.local/bin:$PATH
+  - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
+
+install:
+  - stack --no-terminal --install-ghc install hakyll
+script:
+  - stack --no-terminal ghc site.hs
+  - ./site build
+  - ./build_docs.sh
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: $AWS_S3_BUCKET
+  region: $AWS_S3_BUCKET_REGION
+  local_dir: _site
+  skip_cleanup: true
