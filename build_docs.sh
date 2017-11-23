@@ -5,9 +5,9 @@ set -x
 mkdir -p _site/3.0/doc
 mkdir -p _site/2.6
 
-curl https://raw.githubusercontent.com/ledger/ledger/master/doc/ledger3.texi > ledger3.texi
-curl https://raw.githubusercontent.com/ledger/ledger/master/doc/ledger.1 > ledger.1
-curl https://raw.githubusercontent.com/ledger/ledger/maint/ledger.texi > ledger2.texi
+curl https://raw.githubusercontent.com/ledger/ledger/v3.1.1/doc/ledger3.texi > ledger3.texi
+curl https://raw.githubusercontent.com/ledger/ledger/v3.1.1/doc/ledger.1 > ledger.1
+curl https://raw.githubusercontent.com/ledger/ledger/v2.6.3/ledger.texi > ledger2.texi
 
 curl https://raw.githubusercontent.com/ledger/ledger-mode/master/doc/ledger-mode.texi > ledger-mode.texi
 
