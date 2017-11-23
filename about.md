@@ -21,4 +21,37 @@ url alias: [wiki.ledger-cli.org](http://wiki.ledger-cli.org).
 The site is built using [Travis CI](https://travis-ci.org/ledger/ledger-website) and deploys to an Amazon S3 bucket
 which is then served up with an Amazon CloudFront distribution.
 
+We use this small [Lambda@Edge](http://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html) function to serve redirects and to redirect bare domain to `www`:
+
+    'use strict';
+    
+    exports.handler = (event, context, callback) => {
+        const request = event.Records[0].cf.request;
+        const host = request.headers.host[0].value;
+        const response = { 
+            status: '302',
+            statusDescription: 'Found',
+            headers: {
+                location: [{
+                    key: 'Location',
+                    value: 'http://www.ledger-cli.org',
+                }],
+            },
+        };
+    
+        if (host != 'www.ledger-cli.org') {
+            if (host === 'git.ledger-cli.org') {
+                response.headers.location[0].value = 'https://github.com/ledger/ledger'
+            } else if (host === 'list.ledger-cli.org') {
+                response.headers.location[0].value = 'http://groups.google.com/group/ledger-cli'
+            } else if (host === 'wiki.ledger-cli.org') {
+                response.headers.location[0].value = 'https://github.com/ledger/ledger/wiki'
+            }
+            callback(null, response);
+        } else {
+            callback(null, request);
+        }
+    };
+
+
 The current webmaster is <a href="mailto:pete@petekeen.net">Pete Keen</a>. All help is welcome.
