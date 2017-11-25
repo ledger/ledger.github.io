@@ -34,7 +34,7 @@ We use this small [Lambda@Edge](http://docs.aws.amazon.com/lambda/latest/dg/lamb
             headers: {
                 location: [{
                     key: 'Location',
-                    value: 'http://www.ledger-cli.org',
+                    value: 'https://www.ledger-cli.org',
                 }],
             },
         };
