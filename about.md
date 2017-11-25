@@ -28,28 +28,32 @@ We use this small [Lambda@Edge](http://docs.aws.amazon.com/lambda/latest/dg/lamb
     exports.handler = (event, context, callback) => {
         const request = event.Records[0].cf.request;
         const host = request.headers.host[0].value;
-        var response = { 
-            status: '302',
-            statusDescription: 'Found',
-            headers: {
-                location: [{
-                    key: 'Location',
-                    value: 'https://www.ledger-cli.org',
-                }],
-            },
-        };
     
-        if (host != 'www.ledger-cli.org') {
-            if (host === 'git.ledger-cli.org') {
-                response.headers.location[0].value = 'https://github.com/ledger/ledger'
-            } else if (host === 'list.ledger-cli.org') {
-                response.headers.location[0].value = 'http://groups.google.com/group/ledger-cli'
-            } else if (host === 'wiki.ledger-cli.org') {
-                response.headers.location[0].value = 'https://github.com/ledger/ledger/wiki'
-            }
-            callback(null, response);
-        } else {
+        if (host == "www.ledger-cli.org") {
             callback(null, request);
+        } else {
+            var redirectTarget = 'https://www.ledger-cli.org';
+    
+            if (host == "git.ledger-cli.org") {
+                redirectTarget = "https://github.com/ledger/ledger";
+            } else if (host == "list.ledger-cli.org") {
+                redirectTarget = "https://groups.google.com/group/ledger-cli";
+            } else if (host == "wiki.ledger-cli.org") {
+                redirectTarget = "https://github.com/ledger/ledger/wiki";
+            }
+            
+            var response = { 
+                status: '302',
+                statusDescription: 'Found',
+                headers: {
+                    location: [{
+                        key: 'Location',
+                        value: redirectTarget,
+                    }],
+                },
+            };
+            
+            callback(null, response);
         }
     };
 
