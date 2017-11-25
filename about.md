@@ -28,7 +28,7 @@ We use this small [Lambda@Edge](http://docs.aws.amazon.com/lambda/latest/dg/lamb
     exports.handler = (event, context, callback) => {
         const request = event.Records[0].cf.request;
         const host = request.headers.host[0].value;
-        const response = { 
+        var response = { 
             status: '302',
             statusDescription: 'Found',
             headers: {
