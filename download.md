@@ -27,4 +27,5 @@ like to have a binary hosted, please
   [CentOS 7](http://pkgs.org/centos-7/epel-testing-x86_64/ledger-3.1-2.el7.x86_64.rpm.html) (3.1)
   [OpenSUSE](http://software.opensuse.org/package/ledger?search_term=ledger) (3.1)
   [Nixpkgs](https://hydra.nixos.org/job/nixos/release-17.09/nixpkgs.ledger.x86_64-linux) (3.1.1)
+  [GNU Guix/GuixSD](https://www.gnu.org/software/guix/packages/L/) (3.1.1)
 
