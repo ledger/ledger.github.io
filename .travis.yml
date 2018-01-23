@@ -6,7 +6,6 @@ language: ruby
 addons:
   apt:
     packages:
-      - libgmp-dev
       - texinfo
       - groff
       - texlive
