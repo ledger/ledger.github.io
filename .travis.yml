@@ -17,7 +17,7 @@ addons:
 
 script:
   - bundle exec middleman build
-  - ./build_docs.sh
+  - make docs
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
