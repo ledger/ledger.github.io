@@ -7,3 +7,5 @@ _*
 snapshot.tar.gz
 *.log
 *.aes
+vendor/
+.bundle/
