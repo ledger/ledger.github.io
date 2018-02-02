@@ -16,7 +16,7 @@ see [gmane.comp.finance.ledger.general](http://dir.gmane.org/gmane.comp.finance.
 Searching the list archive is another good way to find answers.
 
 **Bug tracker**  
-Please report bugs at [bugs.ledger-cli.org](http://bugs.ledger-cli.org) (Bugzilla).
+Please report bugs at the [github issue page](https://github.com/ledger/ledger/issues).
 
 **Code**  
 The [ledger source code](http://git.ledger-cli.org/) is available on Github, contributions welcome!
