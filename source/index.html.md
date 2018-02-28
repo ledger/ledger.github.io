@@ -12,7 +12,7 @@ title: ledger, a powerful command-line accounting system
 Ledger is a powerful, double-entry accounting system that is accessed from
 the UNIX command-line. Ledger, begun in 2003, is written by John Wiegley
 and released under the BSD license.  It has also inspired several
-[ports](http://wiki.ledger-cli.org/Ports) to other languages.
+[ports](https://github.com/ledger/ledger/wiki/Ports) to other languages.
 
 To get started with Ledger, add transactions to a text file in Ledger’s
 own textual format. Here’s what a single transaction might look like:
