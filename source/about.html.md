@@ -15,7 +15,7 @@ Version-specific documentation, with urls beginning `/3.0/` or
 [`maint`](https://github.com/ledger/ledger/tree/maint) branches
 respectively.
 
-There is also a wiki, that of the ledger repo on Github, with a convenient
+There is also a wiki, that of the ledger repo on GitHub, with a convenient
 url alias: [wiki.ledger-cli.org](http://wiki.ledger-cli.org).
 
 The site is built using [Travis CI](https://travis-ci.org/ledger/ledger-website) and deploys to an Amazon S3 bucket

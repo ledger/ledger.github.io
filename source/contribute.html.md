@@ -16,10 +16,10 @@ see [gmane.comp.finance.ledger.general](http://dir.gmane.org/gmane.comp.finance.
 Searching the list archive is another good way to find answers.
 
 **Bug tracker**  
-Please report bugs at the [github issue page](https://github.com/ledger/ledger/issues).
+Please report bugs at the [GitHub issue page](https://github.com/ledger/ledger/issues).
 
 **Code**  
-The [ledger source code](http://git.ledger-cli.org/) is available on Github, contributions welcome!
+The [ledger source code](http://git.ledger-cli.org/) is available on GitHub, contributions welcome!
 
 **Website**  
 [About ledger-cli.org](about.html) documents this site so you can help improve it.

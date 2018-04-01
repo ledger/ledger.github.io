@@ -4,7 +4,7 @@ title: Download - Ledger
 
 # Getting ledger
 
-The [ledger source code](http://git.ledger-cli.org/) is available on Github.
+The [ledger source code](http://git.ledger-cli.org/) is available on GitHub.
 [![Build Status master](https://img.shields.io/travis/ledger/ledger/master.svg?label=master&style=flat)](https://travis-ci.org/ledger/ledger)
 [![Build Status next](https://img.shields.io/travis/ledger/ledger/next.svg?label=next&style=flat)](https://travis-ci.org/ledger/ledger)
 [![Status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://github.com/ledger/ledger/pulse/monthly)
