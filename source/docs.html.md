@@ -19,4 +19,4 @@ title: Documentation - Ledger
 * [ledger on Wikipedia](https://en.wikipedia.org/wiki/Ledger_%28software%29)
  <span class=dim> ([changes](https://en.wikipedia.org/w/index.php?title=Ledger_%28software%29&action=history)) </span>
 * John gave a nice audio introduction to Ledger in the [2011/01/26 FLOSS Weekly show](http://twit.tv/floss150) 
-* hledger.org's [more docs](http://hledger.org/more-docs) has some useful Ledger and accounting links
+* hledger.org's [more docs](https://github.com/simonmichael/hledger/wiki/More%20docs) has some useful Ledger and accounting links
