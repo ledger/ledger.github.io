@@ -8,8 +8,8 @@ HTML    := $(addsuffix .html,$(basename $(TEXINFO)) $(MANPAGE))
 BUILD   := build
 
 HOST                       := https://raw.githubusercontent.com/ledger
-ledger3.texi_repopath      := ledger/v3.1.1/doc
-ledger.1_repopath          := ledger/v3.1.1/doc
+ledger3.texi_repopath      := ledger/v3.1.2/doc
+ledger.1_repopath          := ledger/v3.1.2/doc
 ledger.texi_repopath       := ledger/v2.6.3
 ledger-mode.texi_repopath  := ledger-mode/master/doc
 
