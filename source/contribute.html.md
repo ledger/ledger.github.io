@@ -11,7 +11,7 @@ to get your questions answered quickly. John Wiegley's nick is `johnw`.
 **Mail list**  
 The [ledger-cli mail list](http://list.ledger-cli.org/)
 is the main place for Ledger discussions. Please join
-and contribute!  If you'd rather use a NNTP newsreader or gmane's interface,
+and contribute!  If you'd rather use an NNTP newsreader or gmane's interface,
 see [gmane.comp.finance.ledger.general](http://dir.gmane.org/gmane.comp.finance.ledger.general).
 Searching the list archive is another good way to find answers.
 
