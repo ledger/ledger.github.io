@@ -23,7 +23,7 @@ like to have a binary hosted, please
 |[Gentoo](http://packages.gentoo.org/package/app-office/ledger) (3.2.1)                                                                                                                ||[`fink`](http://www.finkproject.org/) `install` [`ledger`](http://pdb.finkproject.org/pdb/package.php/ledger) (3.1)                                 |[NetBSD](https://pkgsrc.se/finance/ledger) package (3.2.1) |
 |[Arch Linux](https://www.archlinux.org/packages/community/x86_64/ledger/) (3.2.1)                                                                                                                      ||[`port`](https://www.macports.org/) `install` [`ledger`](https://trac.macports.org/browser/trunk/dports/finance/ledger/Portfile) (3.1.1)||||
 |[Fedora](https://src.fedoraproject.org/rpms/ledger/) (3.2.1)||||
-|[Slackware](https://slackbuilds.org/repository/15.0/business/ledger/) (3.1.3)||||
+|[Slackware](https://slackbuilds.org/repository/15.0/business/ledger/) (3.2.1)||||
 |[CentOS 7](https://centos.pkgs.org/7/epel-x86_64/ledger-3.1.1-1.el7.x86_64.rpm.html) (3.1.1)||||
 |[openSUSE](http://software.opensuse.org/package/ledger?search_term=ledger) (3.2.1)||||
 |[Nixpkgs](https://hydra.nixos.org/job/nixos/trunk-combined/nixpkgs.ledger.x86_64-linux) (3.1.3)||||
