@@ -10,13 +10,13 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: awalsh128/cache-apt-pkgs-action@v1
       with:
-        packages: texinfo groff texlive texlive-fonts-recommended texlive-generic-extra texlive-generic-recommended texlive-latex-recommended
+        packages: texinfo groff texlive-full
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
