@@ -18,6 +18,8 @@ ledger.1_build             := 3.0/doc
 ledger.texi_build          := 2.6
 ledger-mode.texi_build     := 3.0/doc
 
+export LATEX = luatex
+
 docs: init pdf html
 
 pdf: $(PDF)
