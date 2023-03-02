@@ -14,12 +14,13 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     env:
-      LATEX: lualatex
+      PDFTEX: xetex
     steps:
     - uses: actions/checkout@v3
     - uses: awalsh128/cache-apt-pkgs-action@v1
       with:
         packages: texinfo groff texlive-full
+        version: 1.0
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
