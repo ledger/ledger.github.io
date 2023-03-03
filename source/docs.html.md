@@ -8,9 +8,9 @@ title: Documentation - Ledger
 .dim, .dim a:link, .dim a:visited { color:#ccc; }
 </style>
 
-* <b><a href="3.0/doc/ledger3.html">Ledger 3 manual</a></b> and <a href="3.0/doc/ledger3.pdf">pdf</a> <span class="dim">(<a href="https://github.com/ledger/ledger/commits/master/doc/ledger3.texi">changes</a>)
-* <a href="3.0/doc/ledger.1.html">Ledger 3 man page</a> <span class="dim">(<a href="https://github.com/ledger/ledger/commits/master/doc/ledger.1">changes</a>)
-* <a href="3.0/doc/ledger-mode.html">ledger-mode manual</a> and <a href="3.0/doc/ledger-mode.pdf">pdf</a> <span class="dim">(<a href="https://github.com/ledger/ledger-mode/commits/master/doc/ledger-mode.texi">changes</a>)
+* <b><a href="3.3/doc/ledger3.html">Ledger 3 manual</a></b> and <a href="3.3/doc/ledger3.pdf">pdf</a> <span class="dim">(<a href="https://github.com/ledger/ledger/commits/master/doc/ledger3.texi">changes</a>)
+* <a href="3.3/doc/ledger.1.html">Ledger 3 man page</a> <span class="dim">(<a href="https://github.com/ledger/ledger/commits/master/doc/ledger.1">changes</a>)
+* <a href="3.3/doc/ledger-mode.html">ledger-mode manual</a> and <a href="3.3/doc/ledger-mode.pdf">pdf</a> <span class="dim">(<a href="https://github.com/ledger/ledger-mode/commits/master/doc/ledger-mode.texi">changes</a>)
 
 ## External links
 

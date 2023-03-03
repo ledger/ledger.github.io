@@ -13,10 +13,10 @@ ledger.1_repopath          := ledger/v3.3.1/doc
 ledger.texi_repopath       := ledger/v2.6.3
 ledger-mode.texi_repopath  := ledger-mode/master/doc
 
-ledger3.texi_build         := 3.0/doc
-ledger.1_build             := 3.0/doc
+ledger3.texi_build         := 3.3/doc
+ledger.1_build             := 3.3/doc
 ledger.texi_build          := 2.6
-ledger-mode.texi_build     := 3.0/doc
+ledger-mode.texi_build     := 3.3/doc
 
 docs: init pdf html
 

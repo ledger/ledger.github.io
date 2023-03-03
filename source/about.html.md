@@ -9,7 +9,7 @@ The ledger-cli.org site is kept in the
 It is static html generated from markdown by [middleman](https://middlemanapp.com).
 Commits will normally appear on ledger-cli.org immediately, otherwise on the hour.
 
-Version-specific documentation, with urls beginning `/3.0/` or
+Version-specific documentation, with urls beginning `/3.3/` or
 `/2.6/`, comes from the ledger docs in the
 [`master`](https://github.com/ledger/ledger/tree/master) and
 [`maint`](https://github.com/ledger/ledger/tree/maint) branches
