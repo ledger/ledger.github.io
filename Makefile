@@ -1,19 +1,20 @@
 MANPAGE := ledger.1
 TEXINFO := $(addsuffix .texi,ledger3 ledger-mode)
-SOURCES := $(MANPAGE) $(TEXINFO)
+SOURCES := version.texi $(MANPAGE) $(TEXINFO)
 PDF     := $(addsuffix .pdf,$(basename $(TEXINFO)))
 HTML    := $(addsuffix .html,$(basename $(TEXINFO)) $(MANPAGE))
 BUILD   := build
+OUTPUT  := $(BUILD)/doc
+CURL    := curl --silent --location
 
-HOST                       := https://raw.githubusercontent.com/ledger
-ledger3.texi_repopath      := ledger/v3.3.1/doc
-ledger.1_repopath          := ledger/v3.3.1/doc
-ledger.texi_repopath       := ledger/v2.6.3
-ledger-mode.texi_repopath  := ledger-mode/master/doc
+OWNER   := ledger
+REPO    := ledger
+LATEST  := $(shell curl -sqI -w '%{redirect_url}\n' -o /dev/null https://github.com/$(OWNER)/$(REPO)/releases/latest | rev | cut -d/ -f1 | rev)
 
-ledger3.texi_build         := 3.0/doc
-ledger.1_build             := 3.0/doc
-ledger-mode.texi_build     := 3.0/doc
+HOST                       := https://raw.githubusercontent.com
+ledger3.texi_repopath      := $(OWNER)/$(REPO)/$(LATEST)/doc
+ledger.1_repopath          := $(OWNER)/$(REPO)/$(LATEST)/doc
+ledger-mode.texi_repopath  := $(OWNER)/ledger-mode/master/doc
 
 docs: init sources pdf html
 
@@ -25,20 +26,34 @@ sources: $(SOURCES)
 
 .PHONY: init
 init:
-	mkdir -p $(BUILD)/$(ledger.texi_build) $(BUILD)/$(ledger3.texi_build)
+	mkdir -p $(OUTPUT)
 
 .PHONY: clean
 clean:
 	rm -rf $(BUILD) $(addsuffix *,$(basename $(SOURCES)))
 
 $(TEXINFO) $(MANPAGE):
-	curl -sLO $(HOST)/$($(@)_repopath)/$@
+	$(CURL) --remote-name $(HOST)/$($(@)_repopath)/$@
+
+# TODO: Remove the line after this comment once the next release after 3.3.1
+# is published as it will include the necessary changes for version.texi and
+# related files to be fetched from the tag instead of the master branch.
+version.texi: LATEST := master
+version.texi:
+	$(CURL) --parallel --create-dirs \
+		--output-dir doc --remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/$@.in \
+		--remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/CMakeLists.txt \
+		--next --silent --location --create-dirs \
+		--output-dir cmake --remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/cmake/LedgerVersion.cmake \
+		# curl
+	cmake -Wno-dev -S doc
+	mv doc/$@ $@
 
 %.pdf : %.texi
-	texi2pdf --batch --verbose --output=$(BUILD)/$($(<)_build)/$@ $<
+	texi2pdf --batch --verbose --output=$(OUTPUT)/$@ $<
 
 %.html : %.texi
-	makeinfo --force --html --no-split --output=$(BUILD)/$($(<)_build)/$@ $<
+	makeinfo --force --html --no-split --output=$(OUTPUT)/$@ $<
 
 %.1.html : %.1
-	groff -mandoc -Thtml $< > $(BUILD)/$($(<)_build)/$@
+	groff -mandoc -Thtml $< > $(OUTPUT)/$@
