@@ -39,12 +39,13 @@ $(TEXINFO) $(MANPAGE):
 	$(CURL) --remote-name $(HOST)/$($(@)_repopath)/$@
 
 version.texi:
-	$(CURL) --create-dirs \
-		--remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/$@.in \
+	$(CURL) --parallel --create-dirs \
+		--output-dir doc --remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/$@.in \
 		--remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/CMakeLists.txt \
-		--remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/cmake/LedgerVersion.cmake \
+		--next --silent --location --create-dirs \
+		--output-dir cmake --remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/cmake/LedgerVersion.cmake \
 		# curl
-	cmake -Wno-dev .
+	cmake -Wno-dev -S doc
 	mv doc/$@ $@
 
 %.pdf : %.texi
