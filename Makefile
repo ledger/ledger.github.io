@@ -1,7 +1,7 @@
 MAKEFLAGS := -j4
 
 MANPAGE := ledger.1
-TEXINFO := $(addsuffix .texi,ledger3 ledger ledger-mode)
+TEXINFO := $(addsuffix .texi,ledger3 ledger-mode)
 SOURCES := $(MANPAGE) $(TEXINFO)
 PDF     := $(addsuffix .pdf,$(basename $(TEXINFO)))
 HTML    := $(addsuffix .html,$(basename $(TEXINFO)) $(MANPAGE))
@@ -10,7 +10,6 @@ BUILD   := build
 HOST                       := https://raw.githubusercontent.com/ledger
 ledger3.texi_repopath      := ledger/v3.3.1/doc
 ledger.1_repopath          := ledger/v3.3.1/doc
-ledger.texi_repopath       := ledger/v2.6.3
 ledger-mode.texi_repopath  := ledger-mode/master/doc
 
 ledger3.texi_build         := 3.0/doc
