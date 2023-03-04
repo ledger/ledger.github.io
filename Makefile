@@ -17,7 +17,7 @@ ledger3.texi_build         := 3.0/doc
 ledger.1_build             := 3.0/doc
 ledger-mode.texi_build     := 3.0/doc
 
-docs: init pdf html
+docs: init sources pdf html
 
 pdf: $(PDF)
 
