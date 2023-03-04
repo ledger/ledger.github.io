@@ -17,7 +17,7 @@ ledger3.texi_repopath      := $(OWNER)/$(REPO)/$(LATEST)/doc
 ledger.1_repopath          := $(OWNER)/$(REPO)/$(LATEST)/doc
 ledger-mode.texi_repopath  := $(OWNER)/ledger-mode/master/doc
 
-docs: init pdf html
+docs: init sources pdf html
 
 pdf: $(PDF)
 
