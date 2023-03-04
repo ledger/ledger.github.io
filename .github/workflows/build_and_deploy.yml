@@ -28,5 +28,19 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Build website
       run: bundle exec middleman build
-    - name: Make docs
+    - name: Build documentation
       run: make docs
+    - name: Deploy
+      if: ${{ github.ref == 'refs/heads/master' }}
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      uses: reggionick/s3-deploy@v3
+      with:
+        folder: build
+        bucket: ${{ vars.AWS_S3_BUCKET }}
+        bucket-region: ${{ vars.AWS_S3_BUCKET_REGION }}
+        delete-removed: true
+        no-cache: true
+        private: true
+        files-to-include: ".*/*,*/*,**"
