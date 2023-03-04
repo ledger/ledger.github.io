@@ -1,24 +1,23 @@
 MAKEFLAGS := -j4
 
 MANPAGE := ledger.1
-TEXINFO := $(addsuffix .texi,ledger3 ledger ledger-mode)
-SOURCES := $(MANPAGE) $(TEXINFO)
+TEXINFO := $(addsuffix .texi,ledger3 ledger-mode)
+SOURCES := version.texi $(MANPAGE) $(TEXINFO)
 PDF     := $(addsuffix .pdf,$(basename $(TEXINFO)))
 HTML    := $(addsuffix .html,$(basename $(TEXINFO)) $(MANPAGE))
 BUILD   := build
+OUTPUT  := $(BUILD)/doc
 
-HOST                       := https://raw.githubusercontent.com/ledger
-ledger3.texi_repopath      := ledger/v3.3.1/doc
-ledger.1_repopath          := ledger/v3.3.1/doc
-ledger.texi_repopath       := ledger/v2.6.3
-ledger-mode.texi_repopath  := ledger-mode/master/doc
+OWNER   := afh
+REPO    := ledger
+LATEST  := fix-gha-texinfo-build # $(shell curl -sqI -w '%{redirect_url}\n' -o /dev/null https://github.com/$(OWNER)/$(REPO)/releases/latest | rev | cut -d/ -f1 | rev)
 
-ledger3.texi_build         := 3.3/doc
-ledger.1_build             := 3.3/doc
-ledger.texi_build          := 2.6
-ledger-mode.texi_build     := 3.3/doc
+HOST                       := https://raw.githubusercontent.com
+ledger3.texi_repopath      := $(OWNER)/$(REPO)/$(LATEST)/doc
+ledger.1_repopath          := $(OWNER)/$(REPO)/$(LATEST)/doc
+ledger-mode.texi_repopath  := $(OWNER)/ledger-mode/master/doc
 
-docs: init pdf html
+docs: init sources pdf html
 
 pdf: $(PDF)
 
@@ -28,7 +27,7 @@ sources: $(SOURCES)
 
 .PHONY: init
 init:
-	mkdir -p $(BUILD)/$(ledger.texi_build) $(BUILD)/$(ledger3.texi_build)
+	mkdir -p $(OUTPUT)
 
 .PHONY: clean
 clean:
@@ -37,11 +36,19 @@ clean:
 $(TEXINFO) $(MANPAGE):
 	curl -sLO $(HOST)/$($(@)_repopath)/$@
 
+version.texi:
+	curl -sL \
+		-O $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/$@.in \
+		-O $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/CMakeLists.txt \
+		# curl
+	cmake .
+	mv doc/$@ $@
+
 %.pdf : %.texi
-	texi2pdf --batch --verbose --output=$(BUILD)/$($(<)_build)/$@ $<
+	texi2pdf --batch --verbose --output=$(OUTPUT)/$@ $<
 
 %.html : %.texi
-	makeinfo --force --html --no-split --output=$(BUILD)/$($(<)_build)/$@ $<
+	makeinfo --force --html --no-split --output=$(OUTPUT)/$@ $<
 
 %.1.html : %.1
-	groff -mandoc -Thtml $< > $(BUILD)/$($(<)_build)/$@
+	groff -mandoc -Thtml $< > $(OUTPUT)/$@
