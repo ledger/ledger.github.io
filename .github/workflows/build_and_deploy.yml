@@ -17,10 +17,12 @@ jobs:
       PDFTEX: xetex
     steps:
     - uses: actions/checkout@v3
-    - uses: awalsh128/cache-apt-pkgs-action@v1
-      with:
-        packages: texinfo groff texlive-full
-        version: 1.0
+    - name: Install dependencies
+      run: |
+        sudo apt-get update;
+        sudo apt-get install --yes \
+          texinfo groff \
+          texlive-base texlive-fonts-recommended texlive-plain-generic
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
