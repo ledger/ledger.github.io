@@ -1,5 +1,3 @@
-MAKEFLAGS := -j4
-
 MANPAGE := ledger.1
 TEXINFO := $(addsuffix .texi,ledger3 ledger-mode)
 SOURCES := $(MANPAGE) $(TEXINFO)
