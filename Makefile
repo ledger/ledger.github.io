@@ -7,6 +7,7 @@ PDF     := $(addsuffix .pdf,$(basename $(TEXINFO)))
 HTML    := $(addsuffix .html,$(basename $(TEXINFO)) $(MANPAGE))
 BUILD   := build
 OUTPUT  := $(BUILD)/doc
+CURL    := curl --silent --location
 
 OWNER   := afh
 REPO    := ledger
@@ -35,14 +36,15 @@ clean:
 	rm -rf $(BUILD) $(addsuffix *,$(basename $(SOURCES)))
 
 $(TEXINFO) $(MANPAGE):
-	curl -sLO $(HOST)/$($(@)_repopath)/$@
+	$(CURL) --remote-name $(HOST)/$($(@)_repopath)/$@
 
 version.texi:
-	curl -sL \
-		-O $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/$@.in \
-		-O $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/CMakeLists.txt \
+	$(CURL) --create-dirs \
+		--remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/$@.in \
+		--remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/CMakeLists.txt \
+		--remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/cmake/LedgerVersion.cmake \
 		# curl
-	cmake .
+	cmake -Wno-dev .
 	mv doc/$@ $@
 
 %.pdf : %.texi
