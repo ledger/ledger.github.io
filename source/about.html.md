@@ -9,16 +9,14 @@ The ledger-cli.org site is kept in the
 It is static html generated from markdown by [middleman](https://middlemanapp.com).
 Commits will normally appear on ledger-cli.org immediately, otherwise on the hour.
 
-Version-specific documentation, with urls beginning `/3.3/` or
-`/2.6/`, comes from the ledger docs in the
-[`master`](https://github.com/ledger/ledger/tree/master) and
-[`maint`](https://github.com/ledger/ledger/tree/maint) branches
-respectively.
+Documentation, comes from the ledger docs in the
+[`master`](https://github.com/ledger/ledger/tree/master)
+branch.
 
 There is also a wiki, that of the ledger repo on GitHub, with a convenient
 url alias: [wiki.ledger-cli.org](http://wiki.ledger-cli.org).
 
-The site is built using [Travis CI](https://travis-ci.org/ledger/ledger-website) and deploys to an Amazon S3 bucket
+The site is built using [GitHub Actions](https://github.com/ledger/ledger-website/actions) and deploys to an Amazon S3 bucket
 which is then served up with an Amazon CloudFront distribution.
 
 We use this small [Lambda@Edge](http://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html) function to serve redirects and to redirect bare domain to `www`:
