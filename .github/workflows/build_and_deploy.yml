@@ -13,8 +13,6 @@ permissions:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-    env:
-      PDFTEX: xetex
     steps:
     - uses: actions/checkout@v3
     - name: Install dependencies
