@@ -17,8 +17,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Install dependencies
       run: |
-        apt-get update;
-        apt-get install --yes \
+        sudo apt-get update;
+        sudo apt-get install --yes \
           texinfo groff \
           texlive-base texlive-fonts-recommended texlive-plain-generic
     - name: Set up Ruby
