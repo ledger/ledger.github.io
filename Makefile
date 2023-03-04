@@ -1,7 +1,7 @@
 MAKEFLAGS := -j4
 
 MANPAGE := ledger.1
-TEXINFO := $(addsuffix .texi,ledger3 ledger ledger-mode)
+TEXINFO := $(addsuffix .texi,ledger3 ledger-mode)
 SOURCES := $(MANPAGE) $(TEXINFO)
 PDF     := $(addsuffix .pdf,$(basename $(TEXINFO)))
 HTML    := $(addsuffix .html,$(basename $(TEXINFO)) $(MANPAGE))
@@ -15,7 +15,6 @@ ledger-mode.texi_repopath  := ledger-mode/master/doc
 
 ledger3.texi_build         := 3.0/doc
 ledger.1_build             := 3.0/doc
-ledger.texi_build          := 2.6
 ledger-mode.texi_build     := 3.0/doc
 
 docs: init pdf html
