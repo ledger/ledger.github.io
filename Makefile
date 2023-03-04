@@ -10,7 +10,8 @@ OUTPUT  := $(BUILD)/doc
 
 OWNER   := afh
 REPO    := ledger
-LATEST  := fix-gha-texinfo-build # $(shell curl -sqI -w '%{redirect_url}\n' -o /dev/null https://github.com/$(OWNER)/$(REPO)/releases/latest | rev | cut -d/ -f1 | rev)
+LATEST  := fix-gha-texinfo-build
+# $(shell curl -sqI -w '%{redirect_url}\n' -o /dev/null https://github.com/$(OWNER)/$(REPO)/releases/latest | rev | cut -d/ -f1 | rev)
 
 HOST                       := https://raw.githubusercontent.com
 ledger3.texi_repopath      := $(OWNER)/$(REPO)/$(LATEST)/doc
