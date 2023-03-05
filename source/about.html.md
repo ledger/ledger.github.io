@@ -22,16 +22,16 @@ which is then served up with an Amazon CloudFront distribution.
 We use this small [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html) function to serve redirects and to redirect bare domain to `www`:
 
     'use strict';
-    
+
     exports.handler = (event, context, callback) => {
         const request = event.Records[0].cf.request;
         const host = request.headers.host[0].value;
-    
+
         if (host == "www.ledger-cli.org") {
             callback(null, request);
         } else {
             var redirectTarget = 'https://www.ledger-cli.org';
-    
+
             if (host == "git.ledger-cli.org") {
                 redirectTarget = "https://github.com/ledger/ledger";
             } else if (host == "list.ledger-cli.org") {
@@ -39,8 +39,8 @@ We use this small [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lam
             } else if (host == "wiki.ledger-cli.org") {
                 redirectTarget = "https://github.com/ledger/ledger/wiki";
             }
-            
-            var response = { 
+
+            var response = {
                 status: '302',
                 statusDescription: 'Found',
                 headers: {
@@ -50,7 +50,7 @@ We use this small [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lam
                     }],
                 },
             };
-            
+
             callback(null, response);
         }
     };
