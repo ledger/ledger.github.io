@@ -35,11 +35,10 @@ clean:
 $(TEXINFO) $(MANPAGE):
 	$(CURL) --remote-name $(HOST)/$($(@)_repopath)/$@
 
-# TODO: Remove the two lines after this comment once the next release after 3.3.1
+# TODO: Remove the line after this comment once the next release after 3.3.1
 # is published as it will include the necessary changes for version.texi and
 # related files to be fetched from the tag instead of the master branch.
-version.texi: OWNER := afh
-version.texi: LATEST := refactor-version-info
+version.texi: LATEST := master
 version.texi:
 	$(CURL) --parallel --create-dirs \
 		--output-dir doc --remote-name $(HOST)/$(OWNER)/$(REPO)/$(LATEST)/doc/$@.in \
