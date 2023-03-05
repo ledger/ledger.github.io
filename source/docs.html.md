@@ -14,9 +14,9 @@ title: Documentation - Ledger
 
 ## External links
 
-* The [ledger wiki](http://wiki.ledger-cli.org)
+* The [ledger wiki](https://wiki.ledger-cli.org)
  <span class=dim> ([changes](https://github.com/ledger/ledger/wiki/_history)) </span>
 * [ledger on Wikipedia](https://en.wikipedia.org/wiki/Ledger_%28software%29)
  <span class=dim> ([changes](https://en.wikipedia.org/w/index.php?title=Ledger_%28software%29&action=history)) </span>
-* John gave a nice audio introduction to Ledger in the [2011/01/26 FLOSS Weekly show](http://twit.tv/floss150) 
+* John gave a nice audio introduction to Ledger in the [2011/01/26 FLOSS Weekly show](https://twit.tv/floss150) 
 * hledger.org's [Accounting links](https://hledger.org/accounting.html#accounting-links) has some useful Ledger and accounting links
