@@ -13,7 +13,7 @@
     let
       pkgs = import nixpkgs { inherit system; };
       gems = with pkgs; bundlerEnv {
-        name = "ledger.github.io";
+        name = "ledger.github.io-gems";
         inherit ruby;
         gemdir = ./.;
       };
@@ -24,7 +24,9 @@
           name = "ledger.github.io";
           src = self;
 
-          nativeBuildInputs = with pkgs; [ gems ruby ];
+          phases = [ "unpackPhase" "buildPhase" "installPhase" ];
+
+          nativeBuildInputs = with pkgs; [ gems ruby node ];
 
           buildPhase = ''
             runHook preBuild

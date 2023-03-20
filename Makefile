@@ -9,7 +9,7 @@ CURL    := curl --silent --location
 
 OWNER   := ledger
 REPO    := ledger
-LATEST  := $(shell curl -sqI -w '%{redirect_url}\n' -o /dev/null https://github.com/$(OWNER)/$(REPO)/releases/latest | rev | cut -d/ -f1 | rev)
+LATEST  := $(shell curl -sqI -w '%{redirect_url}\n' -o /dev/null https://github.com/$(OWNER)/$(REPO)/releases/latest | awk -F/ '{print $$NF}' )
 
 HOST                       := https://raw.githubusercontent.com
 ledger3.texi_repopath      := $(OWNER)/$(REPO)/$(LATEST)/doc
