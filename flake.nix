@@ -26,7 +26,7 @@
 
           phases = [ "unpackPhase" "buildPhase" "installPhase" ];
 
-          nativeBuildInputs = with pkgs; [ gems ruby node ];
+          nativeBuildInputs = with pkgs; [ gems ruby nodejs ];
 
           buildPhase = ''
             runHook preBuild

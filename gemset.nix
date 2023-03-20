@@ -37,10 +37,10 @@
     platforms = [];
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "13ql00lw0fpvyil0ikw3y5cwn19nvk5h5fm2z8ai19c302j2dz48";
+      sha256 = "198nz2b8775rhp5qrh0q2r2qx8ljyjzvgm93wqjlwgw0w0zbycny";
       type = "gem";
     };
-    version = "3.23.0";
+    version = "3.24.0";
   };
   coffee-script = {
     dependencies = ["coffee-script-source" "execjs"];
@@ -339,10 +339,10 @@
     platforms = [];
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "17wg99w29hpiq9p4cmm8c6kdg4lcw0ll2c36qw7y50gy1cs4h5j2";
+      sha256 = "1qgwkcb8kxns8d5187cxjaxf18b7dmg9gh6cr9c1125m0bj2pnfk";
       type = "gem";
     };
-    version = "2.2.6.3";
+    version = "2.2.6.4";
   };
   rb-fsevent = {
     groups = ["default"];
