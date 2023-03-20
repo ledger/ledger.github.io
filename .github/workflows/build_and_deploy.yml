@@ -27,18 +27,17 @@ jobs:
 
    runs-on: ubuntu-latest
    steps:
-   - uses: actions/checkout@v3
-   - name: Set up Ruby
-     uses: ruby/setup-ruby@v1
-     with:
-       ruby-version: 2.7
-       bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-   - name: Build website
-     run: bundle exec middleman build
-
    - uses: cachix/install-nix-action@v20
      with:
        nix_path: nixpkgs=channel:nixos-unstable
+
+   - uses: actions/checkout@v3
+   - name: Build website
+     run: |
+      nix build .
+      mkdir -p build
+      cp -R result/* build
+
    - name: Build documentation
      env:
        OWNER: afh
