@@ -15,6 +15,44 @@
         "type": "github"
       }
     },
+    "ledger": {
+      "flake": false,
+      "locked": {
+        "dir": "doc",
+        "lastModified": 1679392702,
+        "narHash": "sha256-cgeZb1jGxNEl1HrRZRmWCMTwLurU+tB6+lSUwQlvzIk=",
+        "owner": "afh",
+        "repo": "ledger",
+        "rev": "7b7bb08f5c5903566f866af23acde6a3c451b7d3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "doc",
+        "owner": "afh",
+        "repo": "ledger",
+        "rev": "7b7bb08f5c5903566f866af23acde6a3c451b7d3",
+        "type": "github"
+      }
+    },
+    "ledger-mode": {
+      "flake": false,
+      "locked": {
+        "dir": "doc",
+        "lastModified": 1573256651,
+        "narHash": "sha256-nhChbyrV0pllxJEpVY5cP7i25mp4318Vxzk007pnueQ=",
+        "owner": "ledger",
+        "repo": "ledger-mode",
+        "rev": "964630f80e0e80dad83134a3660f56948390173a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "doc",
+        "owner": "ledger",
+        "ref": "v4.0.0",
+        "repo": "ledger-mode",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1679319606,
@@ -33,6 +71,8 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "ledger": "ledger",
+        "ledger-mode": "ledger-mode",
         "nixpkgs": "nixpkgs"
       }
     }

@@ -22,22 +22,16 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - name: Build website
         run: |
-          nix build .
           mkdir -p build
+          nix build .
           cp -R result/* build
       - name: Build documentation
-        env:
-          # TODO: change ${OWNER} to ledger prior to merging
-          OWNER: afh
-          REPO: ledger
         run: |
-          # TODO: change ledger to ${OWNER} prior to merging
-          LATEST=$(curl -sqI -w '%{redirect_url}' -o /dev/null https://github.com/ledger/${REPO}/releases/latest | awk -F/ '{print $NF}')
-          # TODO: remove this override prior to merging
-          LATEST=web-docs
-          nix build github:${OWNER}/${REPO}/${LATEST}#web-docs
           mkdir -p build/doc
+          nix build .#doc-ledger
           cp result/share/doc/ledger/ledger* build/doc
+          nix build .#doc-ledger-mode
+          cp result/ledger-mode.* build/doc
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
