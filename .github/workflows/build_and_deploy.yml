@@ -27,6 +27,7 @@ jobs:
           cp -R result/* build
       - name: Build documentation
         env:
+          # TODO: change ${OWNER} to ledger prior to merging
           OWNER: afh
           REPO: ledger
         run: |
@@ -37,13 +38,13 @@ jobs:
           nix build github:${OWNER}/${REPO}/${LATEST}#web-docs
           mkdir -p build/doc
           cp result/share/doc/ledger/ledger* build/doc
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: 'build'
+
   deploy:
+    if: ${{ github.ref == 'refs/heads/master' }}
     needs: build
     permissions:
       contents: read
@@ -54,6 +55,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
