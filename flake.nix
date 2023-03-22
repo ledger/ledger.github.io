@@ -8,12 +8,10 @@
     flake-utils.url = "github:numtide/flake-utils";
     # NOTA BENE: When a new release of ledger or ledger-mode is available, update
     # the tag in the url below and run `nix flake update`, so that GitHub Actions
-    # will build the documentation for ledger-cli.org from the latest release.
-    # TODO: Uncomment once a ledger release contains changes from afh/ledger@web-docs
-    #ledger.url = "github:ledger/ledger/v3.3.1";
-    # TODO: Remove once a ledger release contains changes from afh/ledger@web-docs
-    ledger.url = "github:afh/ledger/7b7bb08f5c5903566f866af23acde6a3c451b7d3?dir=doc";
-    ledger-mode.url = "github:ledger/ledger-mode/v4.0.0?dir=doc";
+    # will build the documentation from the latest ledger and ledger-mode release.
+    # TODO: Replace `master` with the tag of the ledger release following 3.3.1, once available.
+    ledger.url = "github:ledger/ledger/master";
+    ledger-mode.url = "github:ledger/ledger-mode/v4.0.0";
     ledger-mode.flake = false;
   };
 
