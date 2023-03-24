@@ -1,0 +1,94 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1678901627,
+        "narHash": "sha256-U02riOqrKKzwjsxc/400XnElV+UtPUQWpANPlyazjH0=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "93a2b84fc4b70d9e089d029deacc3583435c2ed6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "ledger": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1679447100,
+        "narHash": "sha256-cgeZb1jGxNEl1HrRZRmWCMTwLurU+tB6+lSUwQlvzIk=",
+        "owner": "ledger",
+        "repo": "ledger",
+        "rev": "cbc9993b502a21388eac7218b105b60a8a71150c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ledger",
+        "ref": "master",
+        "repo": "ledger",
+        "type": "github"
+      }
+    },
+    "ledger-mode": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573256651,
+        "narHash": "sha256-nhChbyrV0pllxJEpVY5cP7i25mp4318Vxzk007pnueQ=",
+        "owner": "ledger",
+        "repo": "ledger-mode",
+        "rev": "964630f80e0e80dad83134a3660f56948390173a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ledger",
+        "ref": "v4.0.0",
+        "repo": "ledger-mode",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1675153841,
+        "narHash": "sha256-EWvU3DLq+4dbJiukfhS7r6sWZyJikgXn6kNl7eHljW8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ea692c2ad1afd6384e171eabef4f0887d2b882d3",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1679410443,
+        "narHash": "sha256-xDHO/jixWD+y5pmW5+2q4Z4O/I/nA4MAa30svnZKK+M=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c9ece0059f42e0ab53ac870104ca4049df41b133",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixpkgs-unstable",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "ledger": "ledger",
+        "ledger-mode": "ledger-mode",
+        "nixpkgs": "nixpkgs_2"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

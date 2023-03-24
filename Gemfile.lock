@@ -10,7 +10,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.4.13.0)
       execjs (~> 2)
-    backports (3.23.0)
+    backports (3.24.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs

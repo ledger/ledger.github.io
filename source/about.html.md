@@ -5,7 +5,7 @@ title: About the site - Ledger
 # About the site
 
 The ledger-cli.org site is kept in the
-[ledger-website](https://github.com/ledger/ledger-website) repo ([changes](https://github.com/ledger/ledger-website/commits/master)).
+[ledger.github.io](https://github.com/ledger/ledger.github.io) repo ([changes](https://github.com/ledger/ledger.github.io/commits/master)).
 It is static html generated from markdown by [middleman](https://middlemanapp.com).
 Commits will normally appear on ledger-cli.org immediately, otherwise on the hour.
 
@@ -16,8 +16,8 @@ branch.
 There is also a wiki, that of the ledger repo on GitHub, with a convenient
 url alias: [wiki.ledger-cli.org](https://wiki.ledger-cli.org).
 
-The site is built using [GitHub Actions](https://github.com/ledger/ledger-website/actions) and deploys to an Amazon S3 bucket
-which is then served up with an Amazon CloudFront distribution.
+The site is built using [GitHub Actions](https://github.com/ledger/ledger.github.io/actions) and
+deploys to [GitHub Pages](https://pages.github.com).
 
 We use this small [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html) function to serve redirects and to redirect bare domain to `www`:
 
@@ -56,4 +56,4 @@ We use this small [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lam
     };
 
 
-The current webmaster is <a href="mailto:pete@petekeen.net">Pete Keen</a>. All help is welcome.
+<!-- The current webmaster is <a href="mailto:pete@petekeen.net">Pete Keen</a>. All help is welcome. -->

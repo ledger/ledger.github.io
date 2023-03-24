@@ -7,5 +7,7 @@ _*
 snapshot.tar.gz
 *.log
 *.aes
+.DS_Store
+result*
 vendor/
 .bundle/
