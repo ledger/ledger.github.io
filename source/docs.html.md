@@ -9,7 +9,7 @@ title: Documentation - Ledger
 </style>
 
 * <b><a href="doc/ledger3.html">Ledger 3 manual</a></b> and <a href="doc/ledger3.pdf">pdf</a> <span class="dim">(<a href="https://git.ledger-cli.org/ledger/commits/master/doc/ledger3.texi">changes</a>)
-* <a href="doc/ledger.1.html">Ledger 3 man page</a> <span class="dim">(<a href="https://git.ledger-cli.org/ledger/commits/master/doc/ledger.1">changes</a>)
+* <a href="doc/ledger.1.html">Ledger 3 man page</a> and <a href="doc/ledger.1.pdf">pdf</a> <span class="dim">(<a href="https://git.ledger-cli.org/ledger/commits/master/doc/ledger.1">changes</a>)
 * <a href="doc/ledger-mode.html">ledger-mode manual</a> and <a href="doc/ledger-mode.pdf">pdf</a> <span class="dim">(<a href="https://git.ledger-cli.org/ledger-mode/commits/master/doc/ledger-mode.texi">changes</a>)
 
 ## External links
