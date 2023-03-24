@@ -18,10 +18,10 @@ own textual format. Here’s what a single transaction might look like:
     Liabilities:MasterCard   $-10.00
 ```
 
-You use the `ledger` command line program to see the balance of your accounts:
+You use the `ledger` command-line program to see the balance of your accounts:
 
 ```
-$ ledger -f your-file.dat balance
+$ ledger -f example.dat balance
               $10.00  Expenses:Auto:Gas
              $-10.00  Liabilities:MasterCard
 --------------------
@@ -31,7 +31,7 @@ $ ledger -f your-file.dat balance
 or the history of a particular account:
 
 ```
-$ ledger -f your-file.dat register Expenses
+$ ledger -f example.dat register Expenses
 15-Oct-12 Exxon               Expenses:Auto:Gas          $10.00      $10.00
 ```
 
