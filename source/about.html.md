@@ -20,4 +20,4 @@ The site is built using [GitHub Actions](https://git.ledger-cli.org/ledger.githu
 deploys to [GitHub Pages](https://pages.github.com).
 
 [Cloudflare Redirect Rules](https://developers.cloudflare.com/rules/url-forwarding/single-redirects/examples/)
-are used to serve `git`, `wiki`, and `list` subdomain redirects and to redirect the apex domain to `www`.
+are used to serve `git`, `wiki`, and `list` subdomain redirects and to redirect the `www` subdomain to the apex domain.
