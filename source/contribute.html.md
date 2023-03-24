@@ -19,7 +19,7 @@ Searching the list archive is another good way to find answers.
 Please report bugs at the [GitHub issue page](https://github.com/ledger/ledger/issues).
 
 **Code**
-The [ledger source code](https://git.ledger-cli.org/) is available on GitHub, contributions welcome!
+The [ledger source code](https://git.ledger-cli.org/ledger) is available on GitHub, contributions welcome!
 
 **Website**
 [About ledger-cli.org](about.html) documents this site so you can help improve it.

@@ -58,7 +58,7 @@
          src = ledger;
 
          nativeBuildInputs = with pkgs; [
-           cmake groff texinfo tex
+           cmake groff ghostscript texinfo tex
          ];
 
          enableParallelBuilding = false;
@@ -68,6 +68,14 @@
          cmakeFlags = [ "-DBUILD_WEB_DOCS:BOOL=ON" "-Wno-dev" ];
 
          buildFlags = "doc";
+
+         postBuild = ''
+           pdfroff -man -dpaper=letter -P-pletter $src/doc/ledger.1 > ledger.1.pdf
+           '';
+
+         postInstall = ''
+           cp ledger.1.pdf $out/share/doc/ledger
+           '';
        };
 
        doc-ledger-mode = pkgs.stdenvNoCC.mkDerivation rec {
