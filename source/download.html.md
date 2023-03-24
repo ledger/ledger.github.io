@@ -4,11 +4,11 @@ title: Download - Ledger
 
 # Getting ledger
 
-The [ledger source code](https://git.ledger-cli.org/) is available on GitHub.
-[![Build Status master](https://img.shields.io/github/actions/workflow/status/ledger/ledger/cmake.yml?branch=master&label=master&style=flat)](https://github.com/ledger/ledger/actions/workflows/cmake.yml)
-[![Status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://github.com/ledger/ledger/pulse/monthly)
+The [ledger source code](https://git.ledger-cli.org/ledger) is available on GitHub.
+[![Build Status master](https://img.shields.io/github/actions/workflow/status/ledger/ledger/cmake.yml?branch=master&label=master&style=flat)](https://git.ledger-cli.org/ledger/actions/workflows/cmake.yml)
+[![Status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://git.ledger-cli.org/ledger/pulse/monthly)
 [![License](https://img.shields.io/badge/license-BSD-blue.svg?style=flat)](https://opensource.org/licenses/BSD-3-Clause)
-[![GitHub release](https://img.shields.io/github/release/ledger/ledger.svg?style=flat)](https://github.com/ledger/ledger/releases)
+[![GitHub release](https://img.shields.io/github/release/ledger/ledger.svg?style=flat)](https://git.ledger-cli.orgr/ledger/releases)
 
 Several people in the Open Source community have spent time creating
 Ledger binaries for specific platforms. If you discover others or would
