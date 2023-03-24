@@ -19,41 +19,5 @@ url alias: [wiki.ledger-cli.org](https://wiki.ledger-cli.org).
 The site is built using [GitHub Actions](https://github.com/ledger/ledger.github.io/actions) and
 deploys to [GitHub Pages](https://pages.github.com).
 
-We use this small [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html) function to serve redirects and to redirect bare domain to `www`:
-
-    'use strict';
-
-    exports.handler = (event, context, callback) => {
-        const request = event.Records[0].cf.request;
-        const host = request.headers.host[0].value;
-
-        if (host == "www.ledger-cli.org") {
-            callback(null, request);
-        } else {
-            var redirectTarget = 'https://www.ledger-cli.org';
-
-            if (host == "git.ledger-cli.org") {
-                redirectTarget = "https://github.com/ledger/ledger";
-            } else if (host == "list.ledger-cli.org") {
-                redirectTarget = "https://groups.google.com/group/ledger-cli";
-            } else if (host == "wiki.ledger-cli.org") {
-                redirectTarget = "https://github.com/ledger/ledger/wiki";
-            }
-
-            var response = {
-                status: '302',
-                statusDescription: 'Found',
-                headers: {
-                    location: [{
-                        key: 'Location',
-                        value: redirectTarget,
-                    }],
-                },
-            };
-
-            callback(null, response);
-        }
-    };
-
-
-<!-- The current webmaster is <a href="mailto:pete@petekeen.net">Pete Keen</a>. All help is welcome. -->
+[Cloudflare Redirect Rules](https://developers.cloudflare.com/rules/url-forwarding/single-redirects/examples/)
+are used to serve `git`, `wiki`, and `list` subdomain redirects and to redirect the apex domain to `www`.
