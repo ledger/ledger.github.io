@@ -1,0 +1,53 @@
+:root {
+  --light-color:#121212;
+  --light-background-color:#fcfcfc;
+  --light-highlight-code-background-color:#eee;
+  --light-link-color:#00e;
+  --light-visited-color:#551a8b;
+
+  --dark-color:#fefefe;
+  --dark-background-color:#212121;
+  --dark-highlight-code-background-color:#333;
+  --dark-link-color:#2997ff;
+  --dark-visited-color:#aa6fdf;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color:var(--light-color);
+    --background-color:var(--light-background-color);
+    --highlight-code-background-color:var(--light-highlight-code-background-color);
+    --link-color:var(--light-link-color);
+    --visited-color:var(--light-visited-color);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color:var(--dark-color);
+    --background-color:var(--dark-background-color);
+    --highlight-code-background-color:var(--dark-highlight-code-background-color);
+    --link-color:var(--dark-link-color);
+    --visited-color:var(--dark-visited-color);
+  }
+}
+
+body.light-theme, body.dark-theme {
+  color:var(--toggled-color);
+  background:var(--toggled-background-color);
+  nav ul li a[href="/"] {
+    color:var(--toggled-color);
+  }
+  pre code {
+    background-color:var(--toggled-highlight-code-background-color);
+  }
+  .github-corner svg {
+    color:var(--toggled-background-color) !important;
+    fill:var(--toggled-color) !important;
+  }
+  :link {
+    color:var(--toggled-link-color);
+  }
+  :visited {
+    color:var(--toggled-visited-color);
+  }
+}

@@ -1,9 +1,11 @@
+@import url("darkmode.css");
+
 body {
-    background-color:white;
-    color:black;
+    color:var(--color);
+    background:var(--background-color);
     font-family:sans-serif;
     margin:0;
-    line-height: 1.2;
+    line-height:1.2;
 }
 
 main {
@@ -18,14 +20,18 @@ header {
 
     li {
       display:inline-block;
-      margin: 0 2em 0 0;
+      margin:0 2em 0 0;
     }
 
    a { text-decoration:none; }
 }
 
-nav ul {
-  padding: 0;
+:link {
+  color:var(--link-color);
+}
+
+:visited {
+  color:var(--visited-color);
 }
 
 nav {
@@ -33,18 +39,19 @@ nav {
 
     ul {
       display:inline;
+      padding:0;
     }
 
     li {
       white-space:nowrap;
 
       a[href="/"] {
-          color: black;
+          color:var(--color);
       }
     }
     li:has(a[href="/"]) {
       font-size:50px;
-      margin-left: 0;
+      margin-left:0;
     }
 }
 
@@ -52,7 +59,7 @@ article {
     padding:1em;
 
     h1  {
-      font-size: 2em;
+      font-size:2em;
     }
 }
 
@@ -60,14 +67,14 @@ pre, code, tt {
     font-family:monospace;
 }
 
-pre {
+pre.highlight {
     margin:0 0 0 1em;
-}
-pre code {
-    padding:0.5em;
-    display:inline-block;
-    background: #eee;
-    font-size:small;
+    code {
+      padding:0.5em;
+      display:inline-block;
+      background:var(--highlight-code-background-color);
+      font-size:small;
+    }
 }
 
 .large {
@@ -83,13 +90,17 @@ pre code {
 }
 
 .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+.github-corner svg {
+  color:var(--background-color) !important;
+  fill:var(--color) !important;
+}
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width:765px) {
     header li {
-        margin: 1em 2em 0 0;
+        margin:1em 2em 0 0;
     }
     nav li:has(a[href="/"]) {
-      display: block;
-      margin: 0;
+      display:block;
+      margin:0;
     }
 }
