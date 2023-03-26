@@ -1,0 +1,15 @@
+@import url("darkmode.css");
+
+body {
+  color:var(--color);
+  background:var(--background-color);
+}
+
+:link {
+  color:var(--link-color);
+}
+
+:visited {
+  color:var(--visited-color);
+}
+
