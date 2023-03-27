@@ -36,6 +36,12 @@ tests=$(grep -Ev '^[ 	]*$' <<< "\
 
 # Verify that the list subdomain is redirected to the Google group mailling list and retains the URL path
 'list.ledger-cli.org/c/xM3EEukxYys 302:https://groups.google.com/g/ledger-cli/c/xM3EEukxYys'
+
+# Verify that the old web documentation URL is redirected to the current documentation
+'ledger-cli.org/3.0/doc/ledger3.html 301:https://ledger-cli.org/doc/ledger3.html'
+
+# Verify that the old print documentation URL is redirected to the current documentation
+'ledger-cli.org/3.0/doc/ledger3.pdf 301:https://ledger-cli.org/doc/ledger3.pdf'
 ")
 
 exit_code=0
