@@ -1,0 +1,24 @@
+name: Check subdomain and other redirects
+on:
+  schedule:
+    - cron: '32 5  *  *  0'
+      #      *  *  *  *  *
+      #      │  │  │  │  └─ 0-6  day of the week (or SUN-SAT)
+      #      │  │  │  └──── 1-12 month (or JAN-DEC)
+      #      │  │  └─────── 1-31 day of the month
+      #      │  └────────── 0-23 hour
+      #      └───────────── 0-59 minute
+      # https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check redirects
+        run: ./test/subdomain_redirects.sh
