@@ -26,6 +26,13 @@ header {
    a { text-decoration:none; }
 }
 
+a[href^="https://"]:not(:has(img, svg))::after {
+  content: "\25f9";
+  font-variant-position: super;
+  vertical-align: super;
+  font-size: 80%;
+}
+
 :link {
   color:var(--link-color);
 }
