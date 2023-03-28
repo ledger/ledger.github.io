@@ -27,7 +27,9 @@ header {
 }
 
 a[href^="https://"]:not(:has(img, svg))::after {
-  content: "\25f9";
+  content: "\21f1";
+  transform: scaleX(-1);
+  display: inline-block;
   font-variant-position: super;
   vertical-align: super;
   font-size: 80%;
