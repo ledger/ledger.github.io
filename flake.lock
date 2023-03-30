@@ -20,11 +20,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1679447100,
-        "narHash": "sha256-cgeZb1jGxNEl1HrRZRmWCMTwLurU+tB6+lSUwQlvzIk=",
+        "lastModified": 1680162671,
+        "narHash": "sha256-I8ML7sUzsrzRaYCh5b5SFOAFBNGnwzwN1jAyP7ALfKQ=",
         "owner": "ledger",
         "repo": "ledger",
-        "rev": "cbc9993b502a21388eac7218b105b60a8a71150c",
+        "rev": "b744ec91707e694c00a53107a516b2bdbee0714e",
         "type": "github"
       },
       "original": {
@@ -67,11 +67,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1679410443,
-        "narHash": "sha256-xDHO/jixWD+y5pmW5+2q4Z4O/I/nA4MAa30svnZKK+M=",
+        "lastModified": 1680121753,
+        "narHash": "sha256-rB3ZnNodA4o8Rq0sKZ0t/YdY/MRon4V+bW1b20adgr4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c9ece0059f42e0ab53ac870104ca4049df41b133",
+        "rev": "e779e17ebdf3907ce08c75c7c1b2dc8a1c5038c9",
         "type": "github"
       },
       "original": {
