@@ -4,7 +4,7 @@
   nixConfig.bash-prompt = "ledger-cli.org$ ";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "nixpkgs/nixpkgs-unstable"; # provides doxygen 1.9.6
     flake-utils.url = "github:numtide/flake-utils";
     # NOTA BENE: When a new release of ledger or ledger-mode is available, update
     # the tag in the url below and run `nix flake update`, so that GitHub Actions
@@ -13,9 +13,11 @@
     ledger.url = "github:ledger/ledger/master";
     ledger-mode.url = "github:ledger/ledger-mode/v4.0.0";
     ledger-mode.flake = false;
+    doxygen-awesome.url = "github:jothepro/doxygen-awesome-css/v2.2.0";
+    doxygen-awesome.flake = false;
   };
 
-  outputs = { self, nixpkgs, flake-utils, ledger, ledger-mode }:
+  outputs = { self, nixpkgs, flake-utils, ledger, ledger-mode, doxygen-awesome }:
     flake-utils.lib.eachDefaultSystem( system:
     let
       pkgs = import nixpkgs { inherit system; };
@@ -51,6 +53,32 @@
             runHook postInstall
           '';
         };
+
+       doc-ledger-api = pkgs.stdenvNoCC.mkDerivation rec {
+         name = "ledger-api";
+
+         src = ledger;
+
+         nativeBuildInputs = with pkgs; [
+           cmake doxygen graphviz # doxygen uses dot from graphviz to create diagrams
+         ];
+
+         enableParallelBuilding = false;
+
+         preConfigure = "cd doc";
+
+         cmakeFlags = [
+          "-Wno-dev"
+          "-DUSE_DOXYGEN:BOOL=ON"
+          "-DDOXYGEN_EXTRA_CSS:STRING=${doxygen-awesome}/doxygen-awesome.css"
+         ];
+
+         # Ensure the "generated on date at time" footer shows the actual date and time
+         # when the API documentation was generated.
+         preBuild = "export SOURCE_DATE_EPOCH=$(date +'%s')";
+
+         buildFlags = "doc.doxygen";
+       };
 
        doc-ledger = pkgs.stdenvNoCC.mkDerivation rec {
          name = "ledger";

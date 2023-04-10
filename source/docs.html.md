@@ -6,6 +6,7 @@ title: Documentation - Ledger
 
 * [**Ledger 3 manual**](doc/ledger3.html) and [pdf](doc/ledger3.pdf) ([changes](https://git.ledger-cli.org/ledger/commits/master/doc/ledger3.texi))
 * [Ledger 3 man page](doc/ledger.1.html) and [pdf](doc/ledger.1.pdf) ([changes](https://git.ledger-cli.org/ledger/commits/master/doc/ledger.1))
+* [Ledger 3 API documentation](doc/api)
 * [ledger-mode manual](doc/ledger-mode.html) and [pdf](doc/ledger-mode.pdf) ([changes](https://git.ledger-cli.org/ledger-mode/commits/master/doc/ledger-mode.texi))
 
 ## External links
