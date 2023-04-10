@@ -43,6 +43,12 @@ a[href^="https://"]:not(:has(img, svg))::after {
   color:var(--visited-color);
 }
 
+// Change color of links pointing to changes
+a[href^="https://git.ledger-cli.org"][href*="commits/master"],
+a[href*="action=history"],
+a[href="https://wiki.ledger-cli.org/_history"]
+{ color: #ccc; }
+
 nav {
     display:inline;
 

@@ -9,7 +9,7 @@
     # NOTA BENE: When a new release of ledger or ledger-mode is available, update
     # the tag in the url below and run `nix flake update`, so that GitHub Actions
     # will build the documentation from the latest ledger and ledger-mode release.
-    # TODO: Replace `master` with the tag of the ledger release following 3.3.1, once available.
+    # TODO: Replace `master` with the tag of the ledger release following 3.3.2, once available.
     ledger.url = "github:ledger/ledger/master";
     ledger-mode.url = "github:ledger/ledger-mode/v4.0.0";
     ledger-mode.flake = false;
@@ -20,7 +20,7 @@
     let
       pkgs = import nixpkgs { inherit system; };
       gems = with pkgs; bundlerEnv {
-        name = "ledger.github.io-gems";
+        name = "ledger-website-gems";
         inherit ruby;
         gemdir = ./.;
       };
@@ -32,7 +32,7 @@
       packages = rec {
         default = website;
         website = pkgs.stdenvNoCC.mkDerivation rec {
-          name = "ledger.github.io";
+          name = "ledger-website";
           src = self;
 
           dontConfigure = true;
@@ -65,7 +65,7 @@
 
          preConfigure = "cd doc";
 
-         cmakeFlags = [ "-DBUILD_WEB_DOCS:BOOL=ON" "-Wno-dev" ];
+         cmakeFlags = [ "-Wno-dev" "-DBUILD_WEB_DOCS:BOOL=ON" ];
 
          buildFlags = "doc";
 
