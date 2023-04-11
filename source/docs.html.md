@@ -4,19 +4,15 @@ title: Documentation - Ledger
 
 # Documentation
 
-<style>
-.dim, .dim a:link, .dim a:visited { color:#ccc; }
-</style>
-
-* <b><a href="doc/ledger3.html">Ledger 3 manual</a></b> and <a href="doc/ledger3.pdf">pdf</a> <span class="dim">(<a href="https://git.ledger-cli.org/ledger/commits/master/doc/ledger3.texi">changes</a>)
-* <a href="doc/ledger.1.html">Ledger 3 man page</a> and <a href="doc/ledger.1.pdf">pdf</a> <span class="dim">(<a href="https://git.ledger-cli.org/ledger/commits/master/doc/ledger.1">changes</a>)
-* <a href="doc/ledger-mode.html">ledger-mode manual</a> and <a href="doc/ledger-mode.pdf">pdf</a> <span class="dim">(<a href="https://git.ledger-cli.org/ledger-mode/commits/master/doc/ledger-mode.texi">changes</a>)
+* [**Ledger 3 manual**](doc/ledger3.html) and [pdf](doc/ledger3.pdf) ([changes](https://git.ledger-cli.org/ledger/commits/master/doc/ledger3.texi))
+* [Ledger 3 man page](doc/ledger.1.html) and [pdf](doc/ledger.1.pdf) ([changes](https://git.ledger-cli.org/ledger/commits/master/doc/ledger.1))
+* [Ledger 3 API documentation](doc/api)
+* [ledger-mode manual](doc/ledger-mode.html) and [pdf](doc/ledger-mode.pdf) ([changes](https://git.ledger-cli.org/ledger-mode/commits/master/doc/ledger-mode.texi))
 
 ## External links
 
-* The [ledger wiki](https://wiki.ledger-cli.org)
- <span class=dim> ([changes](https://wiki.ledger-cli.org/_history)) </span>
+* The [ledger wiki](https://wiki.ledger-cli.org) ([changes](https://wiki.ledger-cli.org/_history))
 * [ledger on Wikipedia](https://en.wikipedia.org/wiki/Ledger_%28software%29)
- <span class=dim> ([changes](https://en.wikipedia.org/w/index.php?title=Ledger_%28software%29&action=history)) </span>
+ ([changes](https://en.wikipedia.org/w/index.php?title=Ledger_%28software%29&action=history))
 * John gave a nice audio introduction to Ledger in the [2011/01/26 FLOSS Weekly show](https://twit.tv/floss150)
 * hledger.org's [Accounting links](https://hledger.org/accounting.html#accounting-links) has some useful Ledger and accounting links

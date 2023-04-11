@@ -4,23 +4,25 @@
   nixConfig.bash-prompt = "ledger-cli.org$ ";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "nixpkgs/nixpkgs-unstable"; # provides doxygen 1.9.6
     flake-utils.url = "github:numtide/flake-utils";
     # NOTA BENE: When a new release of ledger or ledger-mode is available, update
     # the tag in the url below and run `nix flake update`, so that GitHub Actions
     # will build the documentation from the latest ledger and ledger-mode release.
-    # TODO: Replace `master` with the tag of the ledger release following 3.3.1, once available.
+    # TODO: Replace `master` with the tag of the ledger release following 3.3.2, once available.
     ledger.url = "github:ledger/ledger/master";
     ledger-mode.url = "github:ledger/ledger-mode/v4.0.0";
     ledger-mode.flake = false;
+    doxygen-awesome.url = "github:jothepro/doxygen-awesome-css/v2.2.0";
+    doxygen-awesome.flake = false;
   };
 
-  outputs = { self, nixpkgs, flake-utils, ledger, ledger-mode }:
+  outputs = { self, nixpkgs, flake-utils, ledger, ledger-mode, doxygen-awesome }:
     flake-utils.lib.eachDefaultSystem( system:
     let
       pkgs = import nixpkgs { inherit system; };
       gems = with pkgs; bundlerEnv {
-        name = "ledger.github.io-gems";
+        name = "ledger-website-gems";
         inherit ruby;
         gemdir = ./.;
       };
@@ -32,7 +34,7 @@
       packages = rec {
         default = website;
         website = pkgs.stdenvNoCC.mkDerivation rec {
-          name = "ledger.github.io";
+          name = "ledger-website";
           src = self;
 
           dontConfigure = true;
@@ -52,6 +54,33 @@
           '';
         };
 
+       doc-ledger-api = pkgs.stdenvNoCC.mkDerivation rec {
+         name = "ledger-api";
+
+         src = ledger;
+
+         nativeBuildInputs = with pkgs; [
+           cmake doxygen graphviz # doxygen uses dot from graphviz to create diagrams
+         ];
+
+         enableParallelBuilding = false;
+
+         preConfigure = "cd doc";
+
+         cmakeFlags = [
+          "-Wno-dev"
+          "-DUSE_DOXYGEN:BOOL=ON"
+          "-DDOXYGEN_EXTRA_CSS:STRING=${doxygen-awesome}/doxygen-awesome.css"
+          "-DDOXYGEN_HTML_HEADER:STRING=${self}/apidoc_header.html"
+         ];
+
+         # Ensure the "generated on date at time" footer shows the actual date and time
+         # when the API documentation was generated.
+         preBuild = "export SOURCE_DATE_EPOCH=$(date +'%s')";
+
+         buildFlags = "doc.doxygen";
+       };
+
        doc-ledger = pkgs.stdenvNoCC.mkDerivation rec {
          name = "ledger";
 
@@ -65,7 +94,7 @@
 
          preConfigure = "cd doc";
 
-         cmakeFlags = [ "-DBUILD_WEB_DOCS:BOOL=ON" "-Wno-dev" ];
+         cmakeFlags = [ "-Wno-dev" "-DBUILD_WEB_DOCS:BOOL=ON" ];
 
          buildFlags = "doc";
 
