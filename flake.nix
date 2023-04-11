@@ -10,9 +10,7 @@
     # the tag in the url below and run `nix flake update`, so that GitHub Actions
     # will build the documentation from the latest ledger and ledger-mode release.
     # TODO: Replace `master` with the tag of the ledger release following 3.3.2, once available.
-    #ledger.url = "github:ledger/ledger/master";
-    # FIXME: Replace the next line with the one above once appropriate PR has been merged to master.
-    ledger.url = "github:afh/ledger/api-documentation";
+    ledger.url = "github:ledger/ledger/master";
     ledger-mode.url = "github:ledger/ledger-mode/v4.0.0";
     ledger-mode.flake = false;
     doxygen-awesome.url = "github:jothepro/doxygen-awesome-css/v2.2.0";
