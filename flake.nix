@@ -73,6 +73,7 @@
           "-Wno-dev"
           "-DUSE_DOXYGEN:BOOL=ON"
           "-DDOXYGEN_EXTRA_CSS:STRING=${doxygen-awesome}/doxygen-awesome.css"
+          "-DDOXYGEN_HTML_HEADER:STRING=${self}/apidoc_header.html"
          ];
 
          # Ensure the "generated on date at time" footer shows the actual date and time
