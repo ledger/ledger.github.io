@@ -1,0 +1,20 @@
+site_name: ledger
+site_url: https://ledger-cli.org
+site_dir: build
+repo_url: https://github.com/ledger/ledger.github.com/
+theme: readthedocs
+docs_dir: source
+use_directory_urls: false
+
+theme:
+  name: null
+  custom_dir: 'custom_theme/'
+
+nav:
+    - ledger: /
+    - Home: index.md
+    - Features: features.md
+    - Docs: docs.md
+    - Download: download.md
+    - Contribute: contribute.md
+    - Wiki: https://wiki.ledger-cli.org

@@ -19,11 +19,6 @@
     flake-utils.lib.eachDefaultSystem( system:
     let
       pkgs = import nixpkgs { inherit system; };
-      gems = with pkgs; bundlerEnv {
-        name = "ledger-website-gems";
-        inherit ruby;
-        gemdir = ./.;
-      };
       tex = with pkgs; texlive.combine {
         inherit (texlive) collection-plaingeneric collection-fontsrecommended;
       };
@@ -33,17 +28,12 @@
         default = website;
         website = pkgs.stdenvNoCC.mkDerivation rec {
           name = "ledger-website";
+          version = "5.0.0-${self.shortRev or "dirty"}";
           src = self;
 
           dontConfigure = true;
 
-          nativeBuildInputs = with pkgs; [ gems ruby nodejs ];
-
-          buildPhase = ''
-            runHook preBuild
-            bundle exec middleman build
-            runHook postBuild
-          '';
+          nativeBuildInputs = with pkgs; [ mkdocs python3.pkgs.libsass ];
 
           installPhase = ''
             runHook preInstall

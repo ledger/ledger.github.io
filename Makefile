@@ -16,6 +16,9 @@ ledger3.texi_repopath      := $(OWNER)/$(REPO)/$(LATEST)/doc
 ledger.1_repopath          := $(OWNER)/$(REPO)/$(LATEST)/doc
 ledger-mode.texi_repopath  := $(OWNER)/ledger-mode/master/doc
 
+install: source/css
+	mkdocs build
+
 docs: init sources pdf html
 
 pdf: $(PDF)
@@ -23,6 +26,11 @@ pdf: $(PDF)
 html: $(HTML)
 
 sources: $(SOURCES)
+
+.PHONY: source/css
+source/css: custom_theme/sass
+	python -c 'import sass; sass.compile(dirname=("$<", "$@"))'
+
 
 .PHONY: init
 init:

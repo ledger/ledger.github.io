@@ -82,9 +82,9 @@ pre, code, tt {
     font-family:monospace;
 }
 
-pre.highlight {
+pre {
     margin:0 0 0 1em;
-    code {
+    code[class^="language-"] {
       padding:0.5em;
       display:inline-block;
       background:var(--highlight-code-background-color);

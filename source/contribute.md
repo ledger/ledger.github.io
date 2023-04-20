@@ -1,5 +1,5 @@
 ---
-title: Contribute - Ledger
+title: Contribute
 ---
 
 # Contribute

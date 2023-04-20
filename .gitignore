@@ -1,3 +1,6 @@
+build
+# source/css is generated from custom_theme/sass
+source/css
 *.hi
 *.o
 *.html

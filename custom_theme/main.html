@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><%= current_page.data.title %></title>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     <meta name="description" content="Website and documentation for the open source command-line double-entry accounting system named ledger">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%= stylesheet_link_tag "site" %>
+    <link href="/css/site.css" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -14,19 +14,15 @@
       </aside>
       <header>
         <nav>
-          <ul>
-            <li><a href="/">ledger</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="docs.html">Docs</a></li>
-            <li><a href="download.html">Download</a></li>
-            <li><a href="contribute.html">Contribute</a></li>
-            <li><a href="https://wiki.ledger-cli.org/">Wiki</a></li>
-          </ul>
+        {% if nav|length>1 -%}<ul>
+          {% for nav_item in nav -%}
+            <li class="{% if nav_item.active %}current{% endif %}"><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></li>
+          {% endfor -%}
+        </ul>{% endif -%}
         </nav>
       </header>
       <article>
-        <%= yield %>
+      {{ page.content }}
       </article>
     </main>
   </body>

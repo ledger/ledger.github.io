@@ -1,5 +1,5 @@
 ---
-title: Features - Ledger
+title: Features
 ---
 
 # Features
