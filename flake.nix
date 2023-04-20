@@ -11,10 +11,8 @@
     # will build the documentation from the latest ledger and ledger-mode release.
     # TODO: Replace `master` with the tag of the ledger release following 3.3.2, once available.
     ledger.url = "github:ledger/ledger/master";
-    ledger-mode.url = "github:ledger/ledger-mode/v4.0.0";
-    ledger-mode.flake = false;
-    doxygen-awesome.url = "github:jothepro/doxygen-awesome-css/v2.2.0";
-    doxygen-awesome.flake = false;
+    ledger-mode = { url = "github:ledger/ledger-mode/v4.0.0"; flake = false; };
+    doxygen-awesome = { url = "github:jothepro/doxygen-awesome-css/v2.2.0"; flake = false; };
   };
 
   outputs = { self, nixpkgs, flake-utils, ledger, ledger-mode, doxygen-awesome }:
