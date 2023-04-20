@@ -1,16 +1,7 @@
-build
-# source/css is generated from custom_theme/sass
+# NOTA BENE: source/css is generated from custom_theme/sass
 source/css
-*.hi
-*.o
-*.html
-site
-_*
-*.org
-snapshot.tar.gz
-*.log
-*.aes
-.DS_Store
+# Files generated during build or development
+build
 result*
-vendor/
-.bundle/
+# Files specific to macOS
+.DS_Store
