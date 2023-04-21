@@ -35,4 +35,4 @@ $ ledger -f example.dat register Expenses
 15-Oct-12 Exxon               Expenses:Auto:Gas          $10.00      $10.00
 ```
 
-Read more about Ledger's [features](features.html).
+Read more about Ledger's [features](features.md).
