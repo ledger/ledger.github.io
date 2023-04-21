@@ -13,3 +13,83 @@ body {
   color:var(--visited-color);
 }
 
+@media print {
+  /* Given the size of the Table of Contents it may make sense
+   * to style it in a manner that it takes up less space or
+   * hide it altogether. */
+  /* #SEC_Contents { display: none; } */
+}
+@media screen {
+/* The following CSS rules place the Table of Contents
+ * in an omni-present side bar to the left of the content.
+ */
+:root {
+  --sidebar-width: 20rem;
+  --light-sidebar-background-color: #f7f7f7;
+  --light-sidebar-separator-color: #cdcdcd;
+  --dark-sidebar-background-color: #323232;
+  --dark-sidebar-separator-color: #cdcdcd;
+}
+@media (prefers-color-scheme: light) {
+:root {
+  --sidebar-background-color:var(--light-sidebar-background-color);
+  --sidebar-separator-color:var(--light-sidebar-separator-color);
+}
+}
+@media (prefers-color-scheme: dark) {
+:root {
+  --sidebar-background-color:var(--dark-sidebar-background-color);
+  --sidebar-separator-color:var(--dark-sidebar-separator-color);
+}
+}
+/* The `[Contents]` links provide less utility due to the
+ * omni-present Table of Contents in the sidebar.
+ * Therefore it would make sense to remove these links,
+ * e.g. using display: none;
+ * Yet the links are surrounded by plain text nodes containing
+ * `[` and `]`, which I'm uncertain how to hide. */
+/* a[rel=contents] { color: var(--sidebar-separator-color); } */
+body > * {
+  margin-left: calc(var(--sidebar-width) + 1rem);
+  overflow-x: hidden;
+}
+hr {
+  border: thin solid var(--sidebar-separator-color);
+}
+#SEC_Contents {
+  float: left;
+  width: var(--sidebar-width);
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: .5rem;
+  background-color: var(--sidebar-background-color);
+  border-right: thin solid var(--sidebar-separator-color);
+  height: 100vh;
+  overflow: scroll;
+
+  .contents {
+    margin-bottom: 5rem;
+
+    > ul > li {
+      padding-top: 1rem;
+      border-top: medium solid var(--sidebar-separator-color);
+
+      > a:first-child {
+        font-weight: bold;
+        font-size: 110%;
+      }
+    }
+
+    ul {
+      padding: 0;
+      margin: 0 0 1rem .5rem;
+
+      > li {
+        margin-bottom: .3rem;
+      }
+    }
+  }
+}
+} // @media screen
