@@ -19,7 +19,9 @@ body {
    * hide it altogether. */
   /* #SEC_Contents { display: none; } */
 }
-@media screen {
+@media only screen
+and (min-width:765px)
+and (orientation: landscape) {
 /* The following CSS rules place the Table of Contents
  * in an omni-present side bar to the left of the content.
  */
