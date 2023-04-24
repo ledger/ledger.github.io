@@ -102,7 +102,7 @@
            # Create print version of ledger manpage
            pdfroff -man -dpaper=letter -P-pletter $src/doc/ledger.1 > ledger.1.pdf
            # Patch web version of ledger manual to support dark mode
-           sed -e 's@</style>@&<link rel="stylesheet" type="text/css" href="/stylesheets/doc.css">@' ledger3.html -i
+           sed -e 's@</style>@&\n<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css"><link rel="stylesheet" type="text/css" href="/stylesheets/doc.css">@' ledger3.html -i
            '';
 
          postInstall = ''
@@ -129,7 +129,7 @@
            texi2pdf --batch ledger-mode.texi
            makeinfo --force --html --no-split ledger-mode.texi
            # Patch web version of ledger mode manual to support dark mode
-           sed -e 's@</style>@&<link rel="stylesheet" type="text/css" href="/stylesheets/doc.css">@' ledger-mode.html -i
+           sed -e 's@</style>@&\n<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css"><link rel="stylesheet" type="text/css" href="/stylesheets/doc.css">@' ledger-mode.html -i
            runHook postBuild
          '';
 
