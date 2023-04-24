@@ -10,6 +10,7 @@
 
   --dark-color:#fefefe;
   --dark-background-color:#212121;
+  --dark-site-background-color:#323232;
   --dark-highlight-code-background-color:#333;
   --dark-link-color:#2997ff;
   --dark-visited-color:#aa6fdf;
@@ -26,7 +27,7 @@
     --link-color:var(--light-link-color);
     --visited-color:var(--light-visited-color);
     --example-brightness:var(--light-example-brightness);
-    --example-bacground:var(--light-example-bacground);
+    --example-background:var(--light-example-background);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -38,7 +39,7 @@
     --link-color:var(--dark-link-color);
     --visited-color:var(--dark-visited-color);
     --example-brightness:var(--dark-example-brightness);
-    --example-bacground:var(--dark-example-bacground);
+    --example-background:var(--dark-example-background);
   }
 }
 
