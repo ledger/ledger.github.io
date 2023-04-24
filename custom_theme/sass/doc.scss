@@ -1,16 +1,25 @@
 @import url("darkmode.css");
 
+html {
+  background:var(--site-background-color);
+}
+
 body {
   color:var(--color);
   background:var(--background-color);
 }
 
-:link {
+a[href], :link {
   color:var(--link-color);
 }
 
-:visited {
+a[href]:visited {
   color:var(--visited-color);
+}
+
+div.example {
+  background:var(--example-background-color);
+  filter:brightness(var(--example-brightness));
 }
 
 @media print {
