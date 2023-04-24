@@ -1,0 +1,27 @@
+@import url("darkmode.css");
+
+html {
+  background-color:var(--site-background-color);
+}
+
+body {
+  color:var(--color);
+  background-color:var(--background-color);
+}
+
+h1, h2, h3, h4, div.example {
+  color:var(--color);
+}
+
+div.example {
+  filter:brightness(var(--example-brightness));
+  background-color:var(--example-background);
+}
+
+:link, a[href]:hover {
+  color:var(--link-color) !important;
+}
+
+a[href]:visited {
+  color:var(--visited-color) !important;
+}
