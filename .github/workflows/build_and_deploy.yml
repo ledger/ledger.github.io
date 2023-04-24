@@ -29,9 +29,9 @@ jobs:
         run: |
           mkdir -p build/doc
           nix build .#doc-ledger
-          cp result/share/doc/ledger/ledger* build/doc
+          cp result/share/doc/ledger/ledger* build/doc/
           nix build .#doc-ledger-mode
-          cp result/ledger-mode.* build/doc
+          cp result/ledger-mode.* build/doc/
           nix build .#doc-ledger-api
           cp -R result/share/doc/ledger/html build/doc/api/
       - name: Upload artifact

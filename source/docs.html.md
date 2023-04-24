@@ -4,10 +4,10 @@ title: Documentation - Ledger
 
 # Documentation
 
-* [**Ledger 3 manual**](doc/ledger3.html) and [pdf](doc/ledger3.pdf) ([changes](https://git.ledger-cli.org/ledger/commits/master/doc/ledger3.texi))
-* [Ledger 3 man page](doc/ledger.1.html) and [pdf](doc/ledger.1.pdf) ([changes](https://git.ledger-cli.org/ledger/commits/master/doc/ledger.1))
+* [**Ledger 3 manual**](doc/ledger3.html) as [pdf](doc/ledger3.pdf) or [txt](doc/ledger3.txt) ([changes](https://git.ledger-cli.org/ledger/commits/master/doc/ledger3.texi))
+* [Ledger 3 man page](doc/ledger.1.html) as [pdf](doc/ledger.1.pdf) ([changes](https://git.ledger-cli.org/ledger/commits/master/doc/ledger.1))
 * [Ledger 3 API documentation](doc/api)
-* [ledger-mode manual](doc/ledger-mode.html) and [pdf](doc/ledger-mode.pdf) ([changes](https://git.ledger-cli.org/ledger-mode/commits/master/doc/ledger-mode.texi))
+* [ledger-mode manual](doc/ledger-mode.html) as [pdf](doc/ledger-mode.pdf) or [txt](doc/ledger-mode.txt) ([changes](https://git.ledger-cli.org/ledger-mode/commits/master/doc/ledger-mode.texi))
 
 ## External links
 
