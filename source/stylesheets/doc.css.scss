@@ -1,16 +1,21 @@
 @import url("darkmode.css");
 
-body, html, div.example {
-  color:var(--color);
-  background:var(--background-color);
+html {
+  background-color:var(--site-background-color);
 }
 
-h1, h2, h3, h4 {
+body {
+  color:var(--color);
+  background-color:var(--background-color);
+}
+
+h1, h2, h3, h4, div.example {
   color:var(--color);
 }
 
 div.example {
-  filter:brightness(var(--exmaple-brightness));
+  filter:brightness(var(--example-brightness));
+  background-color:var(--example-background);
 }
 
 :link, a[href]:hover {
