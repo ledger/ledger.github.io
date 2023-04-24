@@ -4,12 +4,14 @@
   --light-highlight-code-background-color:#eee;
   --light-link-color:#00e;
   --light-visited-color:#551a8b;
+  --light-example-brightness:95%;
 
   --dark-color:#fefefe;
   --dark-background-color:#212121;
   --dark-highlight-code-background-color:#333;
   --dark-link-color:#2997ff;
   --dark-visited-color:#aa6fdf;
+  --light-example-brightness:125%;
 }
 
 @media (prefers-color-scheme: light) {
@@ -19,6 +21,7 @@
     --highlight-code-background-color:var(--light-highlight-code-background-color);
     --link-color:var(--light-link-color);
     --visited-color:var(--light-visited-color);
+    --example-brightness:var(--light-example-brightness);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -28,6 +31,7 @@
     --highlight-code-background-color:var(--dark-highlight-code-background-color);
     --link-color:var(--dark-link-color);
     --visited-color:var(--dark-visited-color);
+    --example-brightness:var(--dark-example-brightness);
   }
 }
 

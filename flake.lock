@@ -40,16 +40,16 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1681225150,
-        "narHash": "sha256-rGEZDhK36F7pGZ4hSlRnX4D/vMNRdbe+A8vurvm262c=",
-        "owner": "afh",
+        "lastModified": 1681914536,
+        "narHash": "sha256-CP4rZaQEhLQ0jSDG9XNFbCrHQPrFNl9Tzm0s3fHqXsk=",
+        "owner": "ledger",
         "repo": "ledger",
-        "rev": "0c7149bd2ba1b459af35507b8332439554f02c5a",
+        "rev": "d81e9245c60350abc1af47b466a38dc5296417d9",
         "type": "github"
       },
       "original": {
-        "owner": "afh",
-        "ref": "api-documentation",
+        "owner": "ledger",
+        "ref": "master",
         "repo": "ledger",
         "type": "github"
       }
