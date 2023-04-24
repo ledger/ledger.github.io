@@ -1,17 +1,20 @@
 @import url("darkmode.css");
 
-body, html {
+html {
+  background:var(--site-background-color);
+}
+
+body {
   color:var(--color);
   background:var(--background-color);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, div.example {
   color:var(--color);
 }
 
 div.example {
-  color:var(--color);
-  background:var(--background-color);
+  background:var(--example-background-color);
   filter:brightness(var(--example-brightness));
 }
 
