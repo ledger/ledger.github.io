@@ -75,7 +75,7 @@
          src = ledger;
 
          nativeBuildInputs = with pkgs; [
-           cmake groff ghostscript texinfo tex
+           cmake mandoc ghostscript texinfo tex
          ];
 
          enableParallelBuilding = false;
@@ -87,15 +87,8 @@
          buildFlags = "doc";
 
          postBuild = ''
-           # Create print version of ledger manpage
-           pdfroff -man -dpaper=letter -P-pletter $src/doc/ledger.1 > ledger.1.pdf
            # Patch web version of ledger manual to support dark mode
            sed -e 's@</style>@&\n<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css"><link rel="stylesheet" type="text/css" href="/stylesheets/doc.css">@' ledger3.html -i
-           '';
-
-         postInstall = ''
-           # Install print version of ledger manpage
-           cp ledger.1.pdf $out/share/doc/ledger
            '';
        };
 
@@ -116,6 +109,7 @@
            runHook preBuild
            texi2pdf --batch ledger-mode.texi
            makeinfo --force --html --no-split ledger-mode.texi
+           makeinfo --force --plaintext --no-split -o ledger-mode.txt ledger-mode.texi
            # Patch web version of ledger mode manual to support dark mode
            sed -e 's@</style>@&\n<link rel="stylesheet" type="text/css" href="https://www.gnu.org/software/gnulib/manual.css"><link rel="stylesheet" type="text/css" href="/stylesheets/doc.css">@' ledger-mode.html -i
            runHook postBuild
@@ -124,7 +118,7 @@
          installPhase = ''
            runHook preInstall
            mkdir -p $out
-           cp ledger-mode.html ledger-mode.pdf $out/
+           cp ledger-mode.html ledger-mode.pdf ledger-mode.txt $out/
            runHook postInstall
          '';
        };
