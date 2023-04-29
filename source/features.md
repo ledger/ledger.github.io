@@ -1,5 +1,5 @@
 ---
-title: Features - Ledger
+title: Features
 ---
 
 # Features
@@ -43,4 +43,4 @@ accounting systems include:
   check account balances, reconcile accounts, keep track of capital
   gains on stocks, etc.
 
-Read the [docs](docs.html) to learn more.
+Read the [docs](docs.md) to learn more.

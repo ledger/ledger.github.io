@@ -1,5 +1,5 @@
 ---
-title: Documentation - Ledger
+title: Documentation
 ---
 
 # Documentation

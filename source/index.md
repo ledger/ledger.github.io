@@ -12,7 +12,7 @@ and released under the BSD license.  It has also inspired several
 To get started with Ledger, add transactions to a text file in Ledger’s
 own textual format. Here’s what a single transaction might look like:
 
-```
+```ledger
 2015/10/12 Exxon
     Expenses:Auto:Gas         $10.00
     Liabilities:MasterCard   $-10.00
@@ -20,7 +20,7 @@ own textual format. Here’s what a single transaction might look like:
 
 You use the `ledger` command-line program to see the balance of your accounts:
 
-```
+```shell
 $ ledger -f example.dat balance
               $10.00  Expenses:Auto:Gas
              $-10.00  Liabilities:MasterCard
@@ -30,9 +30,9 @@ $ ledger -f example.dat balance
 
 or the history of a particular account:
 
-```
+```shell
 $ ledger -f example.dat register Expenses
 15-Oct-12 Exxon               Expenses:Auto:Gas          $10.00      $10.00
 ```
 
-Read more about Ledger's [features](features.html).
+Read more about Ledger's [features](features.md).

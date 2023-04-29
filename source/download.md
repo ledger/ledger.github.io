@@ -1,5 +1,5 @@
 ---
-title: Download - Ledger
+title: Download
 ---
 
 # Getting ledger

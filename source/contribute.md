@@ -1,5 +1,5 @@
 ---
-title: Contribute - Ledger
+title: Contribute
 ---
 
 # Contribute
@@ -22,7 +22,7 @@ Please report bugs at the [GitHub issue page](https://github.com/ledger/ledger/i
 The [ledger source code](https://git.ledger-cli.org/ledger) is available on GitHub, contributions welcome!
 
 **Website**
-[About ledger-cli.org](about.html) documents this site so you can help improve it.
+[About ledger-cli.org](about.md) documents this site so you can help improve it.
 
 **Twitter**
 [#ledgercli](https://twitter.com/search?q=%23ledgercli&src=typd&f=realtime) Ledger-related tweets

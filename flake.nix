@@ -11,21 +11,14 @@
     # will build the documentation from the latest ledger and ledger-mode release.
     # TODO: Replace `master` with the tag of the ledger release following 3.3.2, once available.
     ledger.url = "github:ledger/ledger/master";
-    ledger-mode.url = "github:ledger/ledger-mode/v4.0.0";
-    ledger-mode.flake = false;
-    doxygen-awesome.url = "github:jothepro/doxygen-awesome-css/v2.2.0";
-    doxygen-awesome.flake = false;
+    ledger-mode = { url = "github:ledger/ledger-mode/v4.0.0"; flake = false; };
+    doxygen-awesome = { url = "github:jothepro/doxygen-awesome-css/v2.2.0"; flake = false; };
   };
 
   outputs = { self, nixpkgs, flake-utils, ledger, ledger-mode, doxygen-awesome }:
     flake-utils.lib.eachDefaultSystem( system:
     let
       pkgs = import nixpkgs { inherit system; };
-      gems = with pkgs; bundlerEnv {
-        name = "ledger-website-gems";
-        inherit ruby;
-        gemdir = ./.;
-      };
       tex = with pkgs; texlive.combine {
         inherit (texlive) collection-plaingeneric collection-fontsrecommended;
       };
@@ -35,17 +28,12 @@
         default = website;
         website = pkgs.stdenvNoCC.mkDerivation rec {
           name = "ledger-website";
+          version = "5.0.0-${self.shortRev or "dirty"}";
           src = self;
 
           dontConfigure = true;
 
-          nativeBuildInputs = with pkgs; [ gems ruby nodejs ];
-
-          buildPhase = ''
-            runHook preBuild
-            bundle exec middleman build
-            runHook postBuild
-          '';
+          nativeBuildInputs = with pkgs; [ mkdocs python3.pkgs.libsass ];
 
           installPhase = ''
             runHook preInstall
