@@ -4,7 +4,7 @@
   nixConfig.bash-prompt = "ledger-cli.org$ ";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixpkgs-unstable"; # provides doxygen 1.9.6
+    nixpkgs.url = "nixpkgs/nixpkgs-unstable"; # provides doxygen >=1.9.6
     flake-utils.url = "github:numtide/flake-utils";
     # NOTA BENE: When a new release of ledger or ledger-mode is available, update
     # the tag in the url below and run `nix flake update`, so that GitHub Actions
@@ -12,7 +12,7 @@
     # TODO: Replace `master` with the tag of the ledger release following 3.3.2, once available.
     ledger.url = "github:ledger/ledger/master";
     ledger-mode = { url = "github:ledger/ledger-mode/v4.0.0"; flake = false; };
-    doxygen-awesome = { url = "github:jothepro/doxygen-awesome-css/v2.2.0"; flake = false; };
+    doxygen-awesome = { url = "github:jothepro/doxygen-awesome-css/v2.2.1"; flake = false; };
   };
 
   outputs = { self, nixpkgs, flake-utils, ledger, ledger-mode, doxygen-awesome }:
