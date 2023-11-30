@@ -3,16 +3,16 @@
     "doxygen-awesome": {
       "flake": false,
       "locked": {
-        "lastModified": 1685630484,
-        "narHash": "sha256-WlLf0cHskFNC0M5CqFNfmEIzOzTocesqOqgawz4fpNY=",
+        "lastModified": 1701297937,
+        "narHash": "sha256-siudS4jboZcKNyFWkFHVAlyiWhPy/MrwrYkS/1AdxiE=",
         "owner": "jothepro",
         "repo": "doxygen-awesome-css",
-        "rev": "df83fbf22cfff76b875c13d324baf584c74e96d0",
+        "rev": "8fe5ac37f007d4a249f4469271a9ba6972a1393f",
         "type": "github"
       },
       "original": {
         "owner": "jothepro",
-        "ref": "v2.2.1",
+        "ref": "v2.3.0",
         "repo": "doxygen-awesome-css",
         "type": "github"
       }
