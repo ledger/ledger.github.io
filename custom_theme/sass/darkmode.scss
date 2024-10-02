@@ -43,6 +43,11 @@
   }
 }
 
+pre.example-preformatted {
+  /* Override hard-coded background color from gnu manual.css with dark/light mode variant */
+  background-color:var(--highlight-code-background-color) !important;
+}
+
 body.light-theme, body.dark-theme {
   color:var(--toggled-color);
   background:var(--toggled-background-color);
