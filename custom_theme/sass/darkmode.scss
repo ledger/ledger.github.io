@@ -43,7 +43,7 @@
   }
 }
 
-pre.example-preformatted {
+pre.example-preformatted, pre[class^="example"], pre[class^="lisp"] {
   /* Override hard-coded background color from gnu manual.css with dark/light mode variant */
   background-color:var(--highlight-code-background-color) !important;
 }
