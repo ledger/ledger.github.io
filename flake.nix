@@ -4,6 +4,7 @@
   nixConfig.bash-prompt = "ledger-cli.org$ ";
 
   inputs = {
+    nixpkgs.url = "nixpkgs/master";
     flake-utils.url = "github:numtide/flake-utils";
     # NOTA BENE: When a new release of ledger or ledger-mode is available, update
     # the tag in the url below and run `nix flake update`, so that GitHub Actions
@@ -11,10 +12,9 @@
     # TODO: Replace `master` with the tag of the ledger release following 3.3.2, once available.
     ledger.url = "github:ledger/ledger/master";
     ledger-mode = { url = "github:ledger/ledger-mode/v4.0.0"; flake = false; };
-    doxygen-awesome = { url = "github:jothepro/doxygen-awesome-css/v2.3.4"; flake = false; };
   };
 
-  outputs = { self, nixpkgs, flake-utils, ledger, ledger-mode, doxygen-awesome }:
+  outputs = { self, nixpkgs, flake-utils, ledger, ledger-mode }:
     flake-utils.lib.eachDefaultSystem( system:
     let
       pkgs = import nixpkgs { inherit system; };
@@ -25,7 +25,7 @@
     {
       packages = rec {
         default = website;
-        website = pkgs.stdenvNoCC.mkDerivation rec {
+        website = pkgs.stdenvNoCC.mkDerivation {
           name = "ledger-website";
           version = "5.0.0-${self.shortRev or "dirty"}";
           src = self;
@@ -41,7 +41,7 @@
           '';
         };
 
-       doc-ledger-api = pkgs.stdenvNoCC.mkDerivation rec {
+       doc-ledger-api = pkgs.stdenvNoCC.mkDerivation {
          name = "ledger-api";
 
          src = ledger;
@@ -57,7 +57,7 @@
          cmakeFlags = [
           "-Wno-dev"
           "-DUSE_DOXYGEN:BOOL=ON"
-          "-DDOXYGEN_EXTRA_CSS:STRING=${doxygen-awesome}/doxygen-awesome.css"
+          "-DDOXYGEN_EXTRA_CSS:STRING=${pkgs.doxygen-awesome-css}/doxygen-awesome.css"
           "-DDOXYGEN_HTML_HEADER:STRING=${self}/apidoc_header.html"
          ];
 
@@ -68,7 +68,7 @@
          buildFlags = "doc.doxygen";
        };
 
-       doc-ledger = pkgs.stdenvNoCC.mkDerivation rec {
+       doc-ledger = pkgs.stdenvNoCC.mkDerivation {
          name = "ledger";
 
          src = ledger;
@@ -91,7 +91,7 @@
            '';
        };
 
-       doc-ledger-mode = pkgs.stdenvNoCC.mkDerivation rec {
+       doc-ledger-mode = pkgs.stdenvNoCC.mkDerivation {
          name = "ledger-mode";
 
          src = ledger-mode;
