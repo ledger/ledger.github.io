@@ -25,7 +25,7 @@
     {
       packages = rec {
         default = website;
-        website = pkgs.stdenvNoCC.mkDerivation rec {
+        website = pkgs.stdenvNoCC.mkDerivation {
           name = "ledger-website";
           version = "5.0.0-${self.shortRev or "dirty"}";
           src = self;
@@ -41,7 +41,7 @@
           '';
         };
 
-       doc-ledger-api = pkgs.stdenvNoCC.mkDerivation rec {
+       doc-ledger-api = pkgs.stdenvNoCC.mkDerivation {
          name = "ledger-api";
 
          src = ledger;
@@ -68,7 +68,7 @@
          buildFlags = "doc.doxygen";
        };
 
-       doc-ledger = pkgs.stdenvNoCC.mkDerivation rec {
+       doc-ledger = pkgs.stdenvNoCC.mkDerivation {
          name = "ledger";
 
          src = ledger;
@@ -91,7 +91,7 @@
            '';
        };
 
-       doc-ledger-mode = pkgs.stdenvNoCC.mkDerivation rec {
+       doc-ledger-mode = pkgs.stdenvNoCC.mkDerivation {
          name = "ledger-mode";
 
          src = ledger-mode;
