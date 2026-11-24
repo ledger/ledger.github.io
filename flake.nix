@@ -56,7 +56,7 @@
          cmakeFlags = [
           "-Wno-dev"
           "-DUSE_DOXYGEN:BOOL=ON"
-          "-DDOXYGEN_EXTRA_CSS:STRING=${pkgs.doxygen-awesome-css}/doxygen-awesome.css"
+          "-DDOXYGEN_EXTRA_CSS:STRING=${pkgs.doxygen-awesome-css}/share/doxygen-awesome-css/doxygen-awesome.css"
           "-DDOXYGEN_HTML_HEADER:STRING=${self}/apidoc_header.html"
          ];
 
